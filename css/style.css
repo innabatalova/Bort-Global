@@ -336,4 +336,23 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 /*# sourceMappingURL=style.css.map */
