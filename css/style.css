@@ -353,6 +353,87 @@ button {
 
 ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1420px;
+  margin: auto;
+}
+
+.navigation {
+  position: relative;
+  background-color: #000000;
+}
+
+.navigation-wrapper {
+  height: 40px;
+  display: flex;
+}
+
+.navigation__sub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.navigation:after {
+  content: "";
+  background-color: #B9B9B9;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+}
+
+.language {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.language-wrapper {
+  display: flex;
+}
+
+.language__item {
+  padding-right: 12px;
+}
+
+.language__select {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #B9B9B9;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.navbar__item {
+  margin-right: 40px;
+}
+
+.account {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
 }
 /*# sourceMappingURL=style.css.map */

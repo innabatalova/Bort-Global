@@ -5,28 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Категории товаров</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="top-navigation">
+      <div class="navigation">
         <div class="container">
-          <ul class="language">
-            <li class="language__item">ENG</li>
-            <li class="language__item">RU</li>
-            <li class="language__item">DE</li>
-          </ul>
-          <ul class="navbar">
-            <li class="navbar__item">О компании</li>
-            <li class="navbar__item">Гарантия и сервис</li>
-            <li class="navbar__item">Стать дилером</li>
-            <li class="navbar__item">Интернет-магазин</li>
-            <li class="navbar__item">Оптовый портал</li>
-            <li class="navbar__item">Контакты</li>
-          </ul>
-          <a href="#" class="account">Личный кабинет</a>
+          <div class="navigation-wrapper">
+            <div class="language-wrapper">
+              <ul class="language">
+                <li class="language__item">eng</li>
+                <li class="language__item language__select">ru</li>
+                <li class="language__item language__select">de</li>
+              </ul>
+              <img src="image/Vector.svg" alt="icon arrow" class="arrow" />
+            </div>
+            <div class="navigation__sub">
+              <ul class="navbar">
+                <li class="navbar__item">О компании</li>
+                <li class="navbar__item">Гарантия и сервис</li>
+                <li class="navbar__item">Стать дилером</li>
+                <li class="navbar__item">Интернет-магазин</li>
+                <li class="navbar__item">Оптовый портал</li>
+                <li class="navbar__item">Контакты</li>
+              </ul>
+              <a href="#" class="account">Личный кабинет</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <script src="js\jquery-3.6.0.min.js"></script>
+    <script src="js\jquery.validate.min.js"></script>
+    <script src="js\main.js"></script>
   </body>
 </html>
