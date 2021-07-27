@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -22,19 +26,23 @@
             <div class="language-wrapper">
               <ul class="language">
                 <li class="language__item">eng</li>
-                <li class="language__item language__select">ru</li>
-                <li class="language__item language__select">de</li>
+                <li class="language__item language__select">
+                  <a href="#">ru</a>
+                </li>
+                <li class="language__item language__select">
+                  <a href="#">de</a>
+                </li>
               </ul>
               <img src="image/Vector.svg" alt="icon arrow" class="arrow" />
             </div>
             <div class="navigation__sub">
               <ul class="navbar">
-                <li class="navbar__item">О компании</li>
-                <li class="navbar__item">Гарантия и сервис</li>
-                <li class="navbar__item">Стать дилером</li>
-                <li class="navbar__item">Интернет-магазин</li>
-                <li class="navbar__item">Оптовый портал</li>
-                <li class="navbar__item">Контакты</li>
+                <li class="navbar__item"><a href="#">О компании</a></li>
+                <li class="navbar__item"><a href="#">Гарантия и сервис</a></li>
+                <li class="navbar__item"><a href="#">Стать дилером</a></li>
+                <li class="navbar__item"><a href="#">Интернет-магазин</a></li>
+                <li class="navbar__item"><a href="#">Оптовый портал</a></li>
+                <li class="navbar__item"><a href="#">Контакты</a></li>
               </ul>
               <a href="#" class="account">Личный кабинет</a>
             </div>
@@ -47,7 +55,7 @@
           <div class="large-2">
             <a href="#"
               ><img
-                src="image/Bort_logo 1.png"
+                src="image/Bort_logo_1.svg"
                 alt="Bort logo"
                 class="logo__image"
             /></a>
@@ -61,16 +69,38 @@
             </span>
           </div>
           <div class="large-5 button-wrapper">
-            <button class="button button__ready">Написать нам</button>
+            <button class="button button_ready">Написать нам</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x searchbar">
+          <div class="large-9">
+            <ul class="searchbar__list">
+              <li class="searchbar__item"><a href="#">инструменты</a></li>
+              <li class="searchbar__item"><a href="#">клининг</a></li>
+              <li class="searchbar__item"><a href="#">автотовары</a></li>
+              <li class="searchbar__item"><a href="#">бытовая техника</a></li>
+              <li class="searchbar__item">
+                <a href="#">ручные инструменты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="large-3 image-wrapper">
+            <img
+              src="image/search.svg"
+              alt="icon search"
+              class="searchbar__image"
+            />
           </div>
         </div>
       </div>
     </header>
 
-    <script src="js\jquery-3.6.0.min.js"></script>
-    <script src="js\jquery.validate.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/foundation.js"></script>
-    <script src="js\main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

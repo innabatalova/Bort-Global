@@ -346,9 +346,8 @@ a {
   color: inherit;
 }
 
-button {
-  cursor: pointer;
-  outline: none;
+a:active, a:focus, a:hover {
+  color: inherit;
 }
 
 ul {
@@ -432,6 +431,10 @@ ul {
   line-height: 14px;
 }
 
+.account:hover, .account:focus {
+  color: #FFFFFF;
+}
+
 .logo {
   margin-top: 25px;
 }
@@ -466,7 +469,7 @@ ul {
   text-align: end;
 }
 
-.button__ready {
+.button_ready {
   width: 220px;
   height: 45px;
   font-family: Roboto;
@@ -474,6 +477,50 @@ ul {
   font-weight: normal;
   font-size: 15px;
   line-height: 15px;
-  background: #D9760F;
+  background-color: #D9760F;
+}
+
+.button_ready:hover, .button_ready:focus {
+  background-color: #D9760F;
+}
+
+.searchbar {
+  position: relative;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.searchbar:before {
+  content: "";
+  background-color: #B9B9B9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+}
+
+.searchbar__list {
+  display: flex;
+}
+
+.searchbar__item {
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.searchbar__image {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */
