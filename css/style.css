@@ -356,6 +356,10 @@ ul {
   margin: 0;
 }
 
+.container {
+  padding: 0;
+}
+
 .navigation {
   position: relative;
   background-color: #000000;
@@ -522,5 +526,62 @@ ul {
 
 .image-wrapper {
   text-align: end;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 780px;
+  }
+  .navbar__item {
+    margin-right: 20px;
+  }
+  .button_ready {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  .info-wrapper {
+    padding-left: 0;
+  }
+  .searchbar__item {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+  .navigation, .info-wrapper, .button-wrapper, .searchbar__list {
+    display: none;
+  }
+  .logo-wrapper {
+    text-align: center;
+  }
+  .searchbar:before {
+    top: -135px;
+    height: 5px;
+    background-color: #000000;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 85%;
+  }
+  .logo__image {
+    max-width: 100px;
+    max-height: 30px;
+  }
+  .image-wrapper {
+    margin-top: -130px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
