@@ -357,7 +357,8 @@ ul {
 }
 
 .container {
-  padding: 0;
+  max-width: 1420px;
+  margin: auto;
 }
 
 .navigation {
@@ -439,20 +440,17 @@ ul {
   color: #FFFFFF;
 }
 
-.logo {
+.logo-wrapper {
+  display: flex;
   margin-top: 25px;
 }
 
-.logo-wrapper {
-  padding: 0;
-}
-
 .logo__image {
-  width: 195px;
+  max-width: 195px;
   height: 60px;
 }
 
-.info {
+.info_span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -461,19 +459,21 @@ ul {
   color: #8D8D8D;
 }
 
-.info__work {
+.info_work {
   color: #000000;
 }
 
 .info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   padding-left: 50px;
 }
 
-.button-wrapper {
-  text-align: end;
-}
-
 .button_ready {
+  margin-left: 15px;
+  margin-bottom: 0;
   width: 220px;
   height: 45px;
   font-family: Roboto;
@@ -489,19 +489,9 @@ ul {
 }
 
 .searchbar {
-  position: relative;
   margin-top: 50px;
-  align-items: center;
-}
-
-.searchbar:before {
-  content: "";
-  background-color: #B9B9B9;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .searchbar__list {
@@ -509,79 +499,12 @@ ul {
 }
 
 .searchbar__item {
-  margin-right: 50px;
   text-transform: uppercase;
+  margin-right: 50px;
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-}
-
-.searchbar__image {
-  width: 17px;
-  height: 17px;
-  cursor: pointer;
-}
-
-.image-wrapper {
-  text-align: end;
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 780px;
-  }
-  .navbar__item {
-    margin-right: 20px;
-  }
-  .button_ready {
-    margin-top: 10px;
-    width: 150px;
-    height: 40px;
-  }
-  .info-wrapper {
-    padding-left: 0;
-  }
-  .searchbar__item {
-    font-size: 11px;
-    line-height: 13px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
-  .navigation, .info-wrapper, .button-wrapper, .searchbar__list {
-    display: none;
-  }
-  .logo-wrapper {
-    text-align: center;
-  }
-  .searchbar:before {
-    top: -135px;
-    height: 5px;
-    background-color: #000000;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: 85%;
-  }
-  .logo__image {
-    max-width: 100px;
-    max-height: 30px;
-  }
-  .image-wrapper {
-    margin-top: -130px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

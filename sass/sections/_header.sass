@@ -66,35 +66,40 @@
     color: $white
 
 .logo
-  margin-top: 25px
 
   &-wrapper
-    padding: 0
+    display: flex
+    margin-top: 25px
 
   &__image
-    width: 195px
+    max-width: 195px
     height: 60px
 
 .info
-  font-family: Roboto
-  font-style: normal
-  font-weight: normal
-  font-size: 13px
-  line-height: 20px
-  color: $dark_grey
 
-  &__work
+  &_span
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 20px
+    color: $dark_grey
+
+  &_work
     color: $black
 
   &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
     padding-left: 50px
 
 .button
 
-  &-wrapper
-    text-align: end
-
   &_ready
+    margin-left: 15px
+    margin-bottom: 0
     width: 220px
     height: 45px
     font-family: Roboto
@@ -108,37 +113,18 @@
       background-color: $orange
 
 .searchbar
-  position: relative
   margin-top: 50px
-  align-items: center
-
-  &:before
-    content: ""
-    background-color: $grey
-    height: 1px
-    position: absolute
-    left: 0
-    right: 0
-    top: -25px
+  display: flex
+  justify-content: space-between
 
   &__list
     display: flex
 
   &__item
-    margin-right: 50px
     text-transform: uppercase
+    margin-right: 50px
     font-family: Russo One
     font-style: normal
     font-weight: normal
     font-size: 13px
     line-height: 16px
-
-  &__image
-    width: 17px
-    height: 17px
-    cursor: pointer
-
-.image
-
-  &-wrapper
-    text-align: end
