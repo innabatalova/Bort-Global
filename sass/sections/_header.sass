@@ -113,6 +113,7 @@
       background-color: $orange
 
 .searchbar
+  position: relative
   margin-top: 50px
   display: flex
   justify-content: space-between
@@ -128,3 +129,64 @@
     font-weight: normal
     font-size: 13px
     line-height: 16px
+
+  &::before
+    content: ""
+    background-color: $grey
+    height: 1px
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 45px
+
+//адаптив под средний размер
+
+@media screen and ( max-width: 986px )
+
+  .navbar
+
+    &__item
+      margin-right: 20px
+
+@media screen and ( max-width: 866px )
+
+  .navbar
+
+    &__item
+      margin-right: 10px
+
+  .searchbar
+
+    &__item
+      margin-right: 25px
+
+//адаптив под мобильные устройства
+
+@media screen and ( max-width: 740px )
+
+  .navigation, .info-wrapper, .searchbar
+    display: none
+
+  .logo
+
+    &-wrapper
+      align-items: center
+      justify-content: space-between
+
+    &__image
+      width: 100px
+      height: 30px
+
+    &__line
+      display: block
+      background-color: $black
+      width: 20px
+      height: 1px
+      margin-bottom: 7px
+
+    &__end
+      margin-bottom: 0
+
+    &__search
+      width: 18px
+      height: 18px
