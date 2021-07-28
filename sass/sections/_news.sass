@@ -1,0 +1,119 @@
+.news
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__title
+    position: relative
+    margin-top: 80px
+    margin-bottom: 75px
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+
+    &:before
+      content: ""
+      background-color: $orange
+      height: 5px
+      width: 90px
+      position: absolute
+      left: 0
+      top: 55px
+
+  &__date
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 24px
+    margin-bottom: 15px
+
+  &-card
+    justify-content: space-between
+    padding: 1px
+    padding-bottom: 5px
+    max-width: 23%
+    border: none
+
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 15px
+      line-height: 19px
+      margin-bottom: 20px
+
+  &__info
+    color: $dark_grey
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 19px
+    margin-bottom: 20px
+
+  &__link
+    text-decoration-line: underline
+    color: $blue
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 13px
+    line-height: 19px
+
+    &:active, &:focus, &:hover
+      color: $blue
+
+//адаптив под средний размер
+@media screen and ( max-width: 866px )
+
+  .news
+
+    &-wrapper
+      min-width: none
+
+    &-card
+      max-width: 45%
+
+//адаптив под мобильные устройства
+
+@media screen and ( max-width: 740px )
+
+  .news
+
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-top: 60px
+      margin-bottom: 45px
+
+      &:before
+        top: 30px
+
+    &-wrapper
+      min-width: 900px
+      flex-wrap: nowrap
+      overflow-x: hidden
+
+    &-card
+      margin-right: 15px
+
+      &__title
+        font-size: 12px
+        line-height: 16px
+
+    &__date
+      font-size: 10px
+      line-height: 12px
+
+    &__info
+      font-size: 11px
+      line-height: 15px
+
+    &__link
+      font-size: 12px
+      line-height: 12px

@@ -699,4 +699,126 @@ ul {
     margin-right: 0;
   }
 }
+
+.news-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news__title {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 75px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.news__title:before {
+  content: "";
+  background-color: #D9760F;
+  height: 5px;
+  width: 90px;
+  position: absolute;
+  left: 0;
+  top: 55px;
+}
+
+.news__date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.news-card {
+  justify-content: space-between;
+  padding: 1px;
+  padding-bottom: 5px;
+  max-width: 23%;
+  border: none;
+}
+
+.news-card__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.news__info {
+  color: #8D8D8D;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.news__link {
+  text-decoration-line: underline;
+  color: #018DA7;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.news__link:active, .news__link:focus, .news__link:hover {
+  color: #018DA7;
+}
+
+@media screen and (max-width: 866px) {
+  .news-wrapper {
+    min-width: none;
+  }
+  .news-card {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+  .news__title:before {
+    top: 30px;
+  }
+  .news-wrapper {
+    min-width: 900px;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+  .news-card {
+    margin-right: 15px;
+  }
+  .news-card__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .news__date {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .news__info {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .news__link {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
