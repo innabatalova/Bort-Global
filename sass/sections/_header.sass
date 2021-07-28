@@ -41,6 +41,11 @@
   &__select
     display: none
 
+.arrow
+  width: 8px
+  height: 8px
+  margin-top: 15px
+
 .navbar
   display: flex
   align-items: center
@@ -71,13 +76,16 @@
     display: flex
     margin-top: 25px
 
-  &__image
+  &-image
     max-width: 195px
     height: 60px
 
+  &-search
+    display: none
+
 .info
 
-  &_span
+  &__span
     font-family: Roboto
     font-style: normal
     font-weight: normal
@@ -85,7 +93,7 @@
     line-height: 20px
     color: $dark_grey
 
-  &_work
+  &__work
     color: $black
 
   &-wrapper
@@ -173,20 +181,24 @@
       align-items: center
       justify-content: space-between
 
-    &__image
+    &-image
       width: 100px
       height: 30px
 
-    &__line
+    &-mobile
+      cursor: pointer
+
+    &-line
       display: block
       background-color: $black
       width: 20px
       height: 1px
       margin-bottom: 7px
 
-    &__end
+    &-end
       margin-bottom: 0
 
-    &__search
+    &-search
+      display: block
       width: 18px
       height: 18px
