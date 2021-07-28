@@ -356,11 +356,6 @@ ul {
   margin: 0;
 }
 
-.container {
-  max-width: 1420px;
-  margin: auto;
-}
-
 .navigation {
   position: relative;
   background-color: #000000;
@@ -574,5 +569,31 @@ ul {
     width: 18px;
     height: 18px;
   }
+}
+
+.charter {
+  background: url(../image/BG-charter.jpg);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  color: #FFFFFF;
+}
+
+.breadcrumb-list__item {
+  margin-right: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__nav:after {
+  margin-left: 15px;
+  content: url(../image/icon_breadcrumb.svg);
 }
 /*# sourceMappingURL=style.css.map */
