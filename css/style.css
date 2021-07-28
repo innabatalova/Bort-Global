@@ -676,7 +676,7 @@ ul {
   line-height: 23px;
 }
 
-.card__end {
+.card_end {
   margin-right: 0;
 }
 
@@ -692,10 +692,10 @@ ul {
     font-size: 9px;
     line-height: 12px;
   }
-  .card__end {
+  .card_end {
     margin-right: 0;
   }
-  .card__mobile {
+  .card_mobile {
     margin-right: 0;
   }
 }
