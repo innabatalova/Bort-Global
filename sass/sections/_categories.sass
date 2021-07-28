@@ -3,7 +3,8 @@
 
   &-card
     padding: 20px
-    margin-right: 20px
+    max-width: 23%
+    margin-right: 15px
     margin-bottom: 20px
 
 .card
@@ -11,6 +12,7 @@
   &-wrapper
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 
   &__image
     max-width: 250px
@@ -22,3 +24,29 @@
     font-weight: normal
     font-size: 16px
     line-height: 23px
+
+  &__end
+    margin-right: 0
+
+//адаптив под мобильные устройства
+
+@media screen and ( max-width: 740px )
+
+  .categories
+    margin-top: 40px
+
+    &-card
+      min-width: 47%
+      margin-right: 10px
+
+  .card
+
+    &__title
+      font-size: 9px
+      line-height: 12px
+
+    &__end
+      margin-right: 0
+
+    &__mobile
+      margin-right: 0
