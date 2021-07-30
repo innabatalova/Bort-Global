@@ -884,10 +884,10 @@ ul {
 
 .banner__arrow {
   position: absolute;
-  width: 85px;
-  height: 85px;
   bottom: 0;
   right: 0;
+  width: 85px;
+  height: 85px;
   border-bottom: 100px solid #D9760F;
   border-left: 100px solid transparent;
   z-index: 99;
@@ -899,5 +899,54 @@ ul {
   position: absolute;
   top: 60px;
   right: 25px;
+}
+
+@media screen and (max-width: 986px) {
+  .banner-card {
+    padding-right: 120px;
+  }
+  .banner__title {
+    font-size: 25px;
+    line-height: 22px;
+  }
+  .banner__info {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .banner {
+    margin-top: 40px;
+  }
+  .banner-wrapper {
+    flex-direction: column;
+  }
+  .banner-card {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    min-height: 140px;
+  }
+  .banner__title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .banner__info {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .banner__arrow {
+    width: 60px;
+    height: 60px;
+    border-bottom: 60px solid #D9760F;
+    border-left: 60px solid transparent;
+  }
+  .banner__arrow:before {
+    content: url(../image/banner-mobile.svg);
+    top: 30px;
+    right: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
