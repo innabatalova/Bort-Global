@@ -1,0 +1,67 @@
+.banner
+  margin-top: 100px
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
+  &-card
+    position: relative
+    padding-top: 55px
+    padding-left: 50px
+    padding-right: 200px
+    color: $white
+    max-width: 48.5%
+    min-height: 300px
+
+    &:before
+      content: ""
+      background: linear-gradient(105.05deg, #000000 1.74%, rgba(0, 0, 0, 0.26) 60.59%)
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      position: absolute
+
+    &_one
+      background: url(../image/banner-1.png)
+      background-repeat: no-repeat
+      background-size: cover
+
+    &_two
+      background: url(../image/banner-2.png)
+      background-repeat: no-repeat
+      background-size: cover
+
+  &__title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 29px
+    z-index: 99
+
+  &__info
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 13px
+    line-height: 18px
+    z-index: 99
+
+  &__arrow
+    position: absolute
+    width: 85px
+    height: 85px
+    bottom: 0
+    right: 0
+    border-bottom: 100px solid $orange
+    border-left: 100px solid transparent
+    z-index: 99
+    cursor: pointer
+
+    &:before
+      content: url(../image/banner-arrow.svg)
+      position: absolute
+      top: 60px
+      right: 25px
