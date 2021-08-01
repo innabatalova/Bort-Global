@@ -1,10 +1,5 @@
 .news
 
-  &-wrapper
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-
   &__title
     position: relative
     margin-top: 80px
@@ -38,6 +33,7 @@
     padding-bottom: 5px
     max-width: 23%
     border: none
+    min-height: 275px
 
     &__title
       font-family: Roboto
@@ -73,11 +69,9 @@
 
   .news
 
-    &-wrapper
-      min-width: none
-
     &-card
       max-width: 45%
+      min-width: 45%
 
 //адаптив под мобильные устройства
 
@@ -93,11 +87,6 @@
 
       &:before
         top: 30px
-
-    &-wrapper
-      min-width: 900px
-      flex-wrap: nowrap
-      overflow-x: hidden
 
     &-card
       margin-right: 15px

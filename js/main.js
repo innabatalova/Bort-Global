@@ -34,5 +34,44 @@ linkArrow.on("click", function(){
 
 });
 
+//карусель для секции news под мобильные экраны
+
+// $(window).on('resize', function() {
+//   let win = $(this);
+//   if (win.width() < 999) {
+
+//     $('.news-card').addClass('gallery-cell');
+    
+//   }
+
+//   if (win.width() < 866) {
+
+//     $('.news-wrapper').addClass('best-goods-gallery');
+//     //$('.news-card').addClass('gallery-cell');
+
+//   } else {
+//     $('.news-wrapper').removeClass('best-goods-gallery');
+//   }
+
+//   if (win.width() > 866) {
+
+//     $('.best-goods-gallery').addClass('news-wrapper');
+
+//   } else {
+//     $('.best-goods-gallery').removeClass('news-wrapper');
+//   }
+
+// });
+   
+ 
+
+
+
+$('.best-goods-gallery').flickity({
+  freeScroll: true,
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false
+ });
 
 });

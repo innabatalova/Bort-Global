@@ -704,7 +704,6 @@ ul {
 .news-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .news__title {
@@ -743,6 +742,7 @@ ul {
   padding-bottom: 5px;
   max-width: 23%;
   border: none;
+  min-height: 275px;
 }
 
 .news-card__title {
@@ -779,11 +779,9 @@ ul {
 }
 
 @media screen and (max-width: 866px) {
-  .news-wrapper {
-    min-width: none;
-  }
   .news-card {
     max-width: 45%;
+    min-width: 45%;
   }
 }
 
@@ -796,11 +794,6 @@ ul {
   }
   .news__title:before {
     top: 30px;
-  }
-  .news-wrapper {
-    min-width: 900px;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
   }
   .news-card {
     margin-right: 15px;
