@@ -356,6 +356,21 @@ ul {
   margin: 0;
 }
 
+.top-line {
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  height: 17px;
+  background-color: #F5F5F5;
+}
+
+.bottom-line {
+  display: block;
+  margin-top: 55px;
+  height: 45px;
+  background-color: #000000;
+}
+
 .navigation {
   position: relative;
   background-color: #000000;
