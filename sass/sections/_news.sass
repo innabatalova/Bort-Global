@@ -25,13 +25,11 @@
     font-weight: normal
     font-size: 12px
     line-height: 24px
-    margin-bottom: 15px
+    margin-bottom: 20px
 
   &-card
     justify-content: space-between
-    padding: 1px
-    padding-bottom: 5px
-    max-width: 23%
+    max-width: 90%
     border: none
     min-height: 275px
 
@@ -65,13 +63,19 @@
       color: $blue
 
 //адаптив под средний размер
-@media screen and ( max-width: 866px )
-
+@media screen and ( max-width: 1120px )
   .news
 
     &-card
-      max-width: 45%
-      min-width: 45%
+      max-width: 95%
+      height: 310px
+
+    &__title
+      font-size: 14px
+      line-height: 20px
+
+    &__date
+      margin-bottom: 10px
 
 //адаптив под мобильные устройства
 
@@ -89,11 +93,13 @@
         top: 30px
 
     &-card
-      margin-right: 15px
+      height: 160px
+      min-height: 160px
 
       &__title
         font-size: 12px
         line-height: 16px
+        margin-top: 0
 
     &__date
       font-size: 10px

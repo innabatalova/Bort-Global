@@ -34,44 +34,39 @@ linkArrow.on("click", function(){
 
 });
 
-//карусель для секции news под мобильные экраны
+//карусель для секции news
 
-// $(window).on('resize', function() {
-//   let win = $(this);
-//   if (win.width() < 999) {
-
-//     $('.news-card').addClass('gallery-cell');
-    
-//   }
-
-//   if (win.width() < 866) {
-
-//     $('.news-wrapper').addClass('best-goods-gallery');
-//     //$('.news-card').addClass('gallery-cell');
-
-//   } else {
-//     $('.news-wrapper').removeClass('best-goods-gallery');
-//   }
-
-//   if (win.width() > 866) {
-
-//     $('.best-goods-gallery').addClass('news-wrapper');
-
-//   } else {
-//     $('.best-goods-gallery').removeClass('news-wrapper');
-//   }
-
-// });
-   
+$(function() {
+ $(".owl-carousel").owlCarousel();
  
+});
 
+//Адаптив карусели для секции news
+$('.owl-carousel').owlCarousel({
+  items: 1,
+  
+responsive: {
+  // Ширина от 530 пикселей
+    530: {
+      // Количество элементов 3
+      items: 2,
+      
+    },
+  // Ширина от 740 пикселей
+    740: {
+      // Количество элементов 3
+      items: 3,
+      
+    },
+    // Ширина от 866 пикселей
+    866: {
+      // Количество элементов 3
+      items: 4,
+      
+    }
+  }
 
-
-$('.best-goods-gallery').flickity({
-  freeScroll: true,
-  contain: true,
-  prevNextButtons: false,
-  pageDots: false
- });
+  
+});
 
 });
