@@ -966,4 +966,97 @@ ul {
     right: 15px;
   }
 }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.footer-listing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer__logo {
+  max-width: 195px;
+  max-height: 60px;
+  margin-bottom: 60px;
+}
+
+.footer__phone {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.footer__phone_code {
+  color: #D9760F;
+}
+
+.footer__address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.footer__map {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  color: #018DA7;
+  text-decoration-line: underline;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.listing-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.listing__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 28px;
+  color: #8D8D8D;
+  text-transform: none;
+}
+
+.copyright {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 28px;
+  color: #B9B9B9;
+  padding-left: 38px;
+}
 /*# sourceMappingURL=style.css.map */
