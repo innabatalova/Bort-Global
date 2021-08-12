@@ -72,4 +72,39 @@ responsive: {
   
 });
 
+//создание кликабельности для стрелочки "вверх"
+
+let topArrow = $(".mobile-arrow")
+
+topArrow.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+  location.href='#' 
+
+});
+
+//появление при пролистывании кнопки "вверх"
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('.mobile-arrow').fadeIn();
+ 
+} else {
+ 
+$('.mobile-arrow').fadeOut();
+ 
+}
+ 
+});
+ 
+$('.mobile-arrow').click(function() {
+ 
+$('body,html').animate({scrollTop:0},600);
+ 
+});
+ 
+});
+
 });

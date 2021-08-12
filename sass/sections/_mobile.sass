@@ -1,0 +1,56 @@
+//изменения в блоке header
+@media screen and ( max-width: 740px )
+
+  .navigation, .info-wrapper, .searchbar
+    display: none
+
+  .logo
+
+    &-wrapper
+      align-items: center
+      justify-content: space-between
+
+    &-image
+      width: 100px
+      height: 30px
+
+    &-mobile
+      cursor: pointer
+
+    &-line
+      display: block
+      background-color: $black
+      width: 20px
+      height: 1px
+      margin-bottom: 7px
+
+    &-end
+      margin-bottom: 0
+
+    &-search
+      display: block
+      width: 18px
+      height: 18px
+
+  //появление мобильной кнопки "вверх
+
+  .mobile
+
+    &-arrow
+      position: fixed
+      bottom: 15px
+      right: 15px
+      display:
+      text-align: center
+      padding-top: 5px
+      right: 15px
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      background-color: $orange
+      border: 6px solid $white
+      z-index: 99
+
+    &__img
+      width: 12px
+      height: 6px
