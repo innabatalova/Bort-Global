@@ -89,19 +89,19 @@ $(window).scroll(function() {
  
 if($(this).scrollTop() != 0) {
  
-$('.mobile-arrow').fadeIn();
+$('.scroll-arrow').fadeIn();
  
 } else {
  
-$('.mobile-arrow').fadeOut();
+$('.scroll-arrow').fadeOut();
  
 }
  
 });
  
-$('.mobile-arrow').click(function() {
+$('.scroll-arrow').click(function() {
  
-$('body,html').animate({scrollTop:0},600);
+$('body,html').animate({scrollTop:0},400);
  
 });
  

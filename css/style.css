@@ -1140,7 +1140,7 @@ ul {
     width: 18px;
     height: 18px;
   }
-  .mobile-arrow {
+  .scroll-arrow {
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -1154,7 +1154,7 @@ ul {
     border: 6px solid #FFFFFF;
     z-index: 99;
   }
-  .mobile-img {
+  .scroll-img {
     width: 12px;
     height: 6px;
   }
