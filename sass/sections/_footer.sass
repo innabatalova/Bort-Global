@@ -48,6 +48,13 @@
     color: $blue
     text-decoration-line: underline
 
+.listing
+
+  &-wrapper
+    display: flex
+    justify-content: space-around
+    margin-bottom: 30px
+
   &__title
     margin-bottom: 20px
     text-transform: uppercase
@@ -57,13 +64,6 @@
     font-size: 15px
     line-height: 18px
     color: $black
-
-.listing
-
-  &-wrapper
-    display: flex
-    justify-content: space-around
-    margin-bottom: 30px
 
   &__item
     font-family: Roboto
@@ -140,15 +140,18 @@
       line-height: 13px
       margin-bottom: 20px
 
-    &__title
-      font-size: 14px
-      line-height: 17px
+    &__catalog
+      margin-bottom: 30px
 
   .listing
 
     &-wrapper
       flex-wrap: wrap
       justify-content: start
+
+    &__title
+      font-size: 14px
+      line-height: 17px
 
     &__item
       font-size: 12px

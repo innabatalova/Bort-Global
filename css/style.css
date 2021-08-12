@@ -816,6 +816,7 @@ ul {
   .news-card {
     height: 190px;
     min-height: 160px;
+    padding-right: 20px;
   }
   .news-card__title {
     font-size: 12px;
@@ -1023,7 +1024,13 @@ ul {
   text-decoration-line: underline;
 }
 
-.footer__title {
+.listing-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.listing__title {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: Russo One;
@@ -1032,12 +1039,6 @@ ul {
   font-size: 15px;
   line-height: 18px;
   color: #000000;
-}
-
-.listing-wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
 }
 
 .listing__item {
@@ -1109,13 +1110,16 @@ ul {
     line-height: 13px;
     margin-bottom: 20px;
   }
-  .footer__title {
-    font-size: 14px;
-    line-height: 17px;
+  .footer__catalog {
+    margin-bottom: 30px;
   }
   .listing-wrapper {
     flex-wrap: wrap;
     justify-content: start;
+  }
+  .listing__title {
+    font-size: 14px;
+    line-height: 17px;
   }
   .listing__item {
     font-size: 12px;

@@ -43,12 +43,15 @@ $(function() {
 
 //Адаптив карусели для секции news
 $('.owl-carousel').owlCarousel({
+  
   items: 1,
+  margin: -30,
   
 responsive: {
   // Ширина от 530 пикселей
     530: {
       // Количество элементов 3
+
       items: 2,
       
     },
