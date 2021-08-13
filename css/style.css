@@ -998,9 +998,8 @@ ul {
 }
 
 .listing-wrapper {
-  display: flex;
-  justify-content: space-around;
   margin-bottom: 30px;
+  padding-left: 20px;
 }
 
 .listing-title {
@@ -1145,6 +1144,7 @@ ul {
     bottom: 15px;
     right: 15px;
     text-align: center;
+    display: block;
     padding-top: 5px;
     right: 15px;
     width: 50px;
