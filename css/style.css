@@ -376,6 +376,38 @@ ul {
   background-color: #000000;
 }
 
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.buttons__block {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 14px;
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.bort__button {
+  margin-top: 40px;
+}
+
+.bort-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  border: 3px solid;
+}
+
+.bort-button35 {
+  width: 210px;
+  padding: 8px;
+}
+
 .navigation {
   position: relative;
   background-color: #000000;
