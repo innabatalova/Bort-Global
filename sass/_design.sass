@@ -4,6 +4,7 @@
     display: flex
     justify-content: space-between
     margin-top: 50px
+    background-color: lightgrey
 
   &__block
     display: flex
@@ -12,19 +13,89 @@
     width: 100%
     border: 1px solid grey
 
+//стили кнопок
 .bort
 
   &__button
     margin-top: 40px
 
   &-button
-    font-family: Roboto
-    font-style: normal
-    font-weight: normal
-    font-size: 15px
-    line-height: 15px
-    border: 3px solid
 
-  &-button35
-    width: 210px
-    padding: 8px
+    &-black35, &-white35, &-orange35, &-disabled35
+      width: 210px
+      padding: 8px
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 15px
+
+    &-black35, &-black45, &-black50
+      color: $black
+      background-color: inherit
+      border: 3px solid
+
+      &:hover
+        color: $white
+        background-color: $black
+        border: 3px solid $black
+
+      &:active
+        color: $white
+        background-color: $dark_grey
+        border: 3px solid $dark_grey
+
+    &-white35, &-white45, &-white50
+      color: $white
+      background-color: inherit
+      border: 3px solid $white
+
+      &:hover
+        color: $black
+        background-color: $white
+        border: 3px solid $white
+
+      &:active
+        color: $white
+        background-color: $dark_grey
+        border: 3px solid $dark_grey
+
+    &-orange35, &-orange45, &-orange50
+      color: $white
+      background-color: $orange
+      border: 3px solid $orange
+
+      &:hover
+        color: $white
+        background-color: #E78826
+        border: 3px solid #E78826
+
+      &:active
+        color: $white
+        background-color: #CC6D0A
+        border: 3px solid #CC6D0A
+
+    &-disabled35, &-disabled45, &-disabled50
+      color: $white
+      background-color: $grey
+      border: 3px solid $grey
+
+    &-black45, &-white45, &-orange45, &-disabled45
+      width: 210px
+      padding: 13px
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 15px
+
+    &-black50, &-white50, &-orange50, &-disabled50
+      width: 210px
+      padding: 15px
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 15px
+
+//стили формы обратной связи 

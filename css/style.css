@@ -380,6 +380,7 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  background-color: lightgrey;
 }
 
 .buttons__block {
@@ -394,18 +395,94 @@ ul {
   margin-top: 40px;
 }
 
-.bort-button {
+.bort-button-black35, .bort-button-white35, .bort-button-orange35, .bort-button-disabled35 {
+  width: 210px;
+  padding: 8px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 15px;
+}
+
+.bort-button-black35, .bort-button-black45, .bort-button-black50 {
+  color: #000000;
+  background-color: inherit;
   border: 3px solid;
 }
 
-.bort-button35 {
+.bort-button-black35:hover, .bort-button-black45:hover, .bort-button-black50:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 3px solid #000000;
+}
+
+.bort-button-black35:active, .bort-button-black45:active, .bort-button-black50:active {
+  color: #FFFFFF;
+  background-color: #8D8D8D;
+  border: 3px solid #8D8D8D;
+}
+
+.bort-button-white35, .bort-button-white45, .bort-button-white50 {
+  color: #FFFFFF;
+  background-color: inherit;
+  border: 3px solid #FFFFFF;
+}
+
+.bort-button-white35:hover, .bort-button-white45:hover, .bort-button-white50:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+.bort-button-white35:active, .bort-button-white45:active, .bort-button-white50:active {
+  color: #FFFFFF;
+  background-color: #8D8D8D;
+  border: 3px solid #8D8D8D;
+}
+
+.bort-button-orange35, .bort-button-orange45, .bort-button-orange50 {
+  color: #FFFFFF;
+  background-color: #D9760F;
+  border: 3px solid #D9760F;
+}
+
+.bort-button-orange35:hover, .bort-button-orange45:hover, .bort-button-orange50:hover {
+  color: #FFFFFF;
+  background-color: #E78826;
+  border: 3px solid #E78826;
+}
+
+.bort-button-orange35:active, .bort-button-orange45:active, .bort-button-orange50:active {
+  color: #FFFFFF;
+  background-color: #CC6D0A;
+  border: 3px solid #CC6D0A;
+}
+
+.bort-button-disabled35, .bort-button-disabled45, .bort-button-disabled50 {
+  color: #FFFFFF;
+  background-color: #B9B9B9;
+  border: 3px solid #B9B9B9;
+}
+
+.bort-button-black45, .bort-button-white45, .bort-button-orange45, .bort-button-disabled45 {
   width: 210px;
-  padding: 8px;
+  padding: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.bort-button-black50, .bort-button-white50, .bort-button-orange50, .bort-button-disabled50 {
+  width: 210px;
+  padding: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
 }
 
 .navigation {
@@ -531,18 +608,6 @@ ul {
 .button_ready {
   margin-left: 15px;
   margin-bottom: 0;
-  width: 220px;
-  height: 45px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 15px;
-  background-color: #D9760F;
-}
-
-.button_ready:hover, .button_ready:focus {
-  background-color: #D9760F;
 }
 
 .searchbar {
