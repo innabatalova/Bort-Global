@@ -46,11 +46,56 @@
           </button>
         </div>
       </div>
+      <div class="form-wrapper">
+        <div class="bort-modal">
+          <h3 class="bort-modal-title">обратная связь</h3>
+          <form action="#" class="bort-modal-form">
+            <span class="bort-modal-text">Ваше ФИО</span>
+            <input
+              type="text"
+              name="name"
+              class="bort-modal-contacts"
+              required
+              minlength="2"
+            />
+            <span class="bort-modal-text">Контактный телефон</span>
+            <input
+              name="phone"
+              type="tel"
+              class="bort-phone bort-modal-contacts invalid"
+              required
+              minlength="18"
+            />
+            <span class="bort-modal-text">E-mail</span>
+            <input
+              name="Email"
+              type="email"
+              class="bort-modal-contacts invalid"
+              required
+              minlength="2"
+            />
+            <span class="bort-modal-text">Ваше сообщение</span>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="bort-modal-message"
+            ></textarea>
+            <button class="bort-modal-button bort-button-orange50">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/vendor.js"></script>
     <script src="js/foundation.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.mask.min copy.js"></script>
     <script src="js/main.js"></script>
+    -->
   </body>
 </html>

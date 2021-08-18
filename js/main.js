@@ -109,4 +109,31 @@ $('body,html').animate({scrollTop:0},400);
  
 });
 
+
+$(".bort-phone").mask('+7 (900) 000 00 00', minlength=10);
+
+// $ (".bort-modal-form").each(function(){
+
+// $(this).validate({
+
+//   errorClass: "invalid",
+
+//   messages: {
+//     name: {
+//       required: "Пожалуйста, введите Ваше имя",
+//       minlength: "Имя должно состоять минимум из 2 букв",
+//     },
+
+//     email: {
+//       required: "Пожалуйста, введите Ваш адрес электронной почты",
+//       email: "Ваш адрес электронной почты должен быть в формате name@domain.com.",
+//     },
+
+//     phone: {
+//     required:"Телефон обязателен",
+//     },
+  
+//   },
+//  });
+
 });
