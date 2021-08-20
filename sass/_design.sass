@@ -102,9 +102,9 @@
 .form
 
   &-wrapper
+    display: flex
     margin-top: 40px
     border: 1px solid lightgrey
-    width: 45%
     padding: 20px
 
 .bort
@@ -147,3 +147,91 @@
 
     &-button
       width: 100%
+
+//стили колонки footer
+.bort
+
+  &__list
+
+    &__wrapper
+      margin-left: 60px
+
+  &-listing
+
+    &-title
+      margin-bottom: 20px
+      text-transform: uppercase
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 18px
+      color: $black
+
+    &-item
+      font-family: Roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 13px
+      line-height: 28px
+      color: $dark_grey
+      text-transform: none
+
+//стили для карточки новостей
+
+.item
+
+  &__news
+
+    &__wrapper
+      margin-left: 160px
+
+.bort
+
+  &__news
+    width: 360px
+
+  &-news
+
+    &-card
+      justify-content: space-between
+      max-width: 90%
+      border: none
+      min-height: 275px
+
+      &__title
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        line-height: 19px
+        margin-bottom: 20px
+
+      &__date
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 24px
+        margin-bottom: 20px
+
+      &__info
+        color: $dark_grey
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 19px
+        margin-bottom: 20px
+
+      &__link
+        text-decoration-line: underline
+        color: $blue
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 13px
+        line-height: 19px
+
+        &:active, &:focus, &:hover
+          color: $blue

@@ -19,60 +19,16 @@
       left: 0
       top: 55px
 
-  &__date
-    font-family: Roboto
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 24px
-    margin-bottom: 20px
-
-  &-card
-    justify-content: space-between
-    max-width: 90%
-    border: none
-    min-height: 275px
-
-    &__title
-      font-family: Roboto
-      font-style: normal
-      font-weight: 500
-      font-size: 15px
-      line-height: 19px
-      margin-bottom: 20px
-
-  &__info
-    color: $dark_grey
-    font-family: Roboto
-    font-style: normal
-    font-weight: 300
-    font-size: 13px
-    line-height: 19px
-    margin-bottom: 20px
-
-  &__link
-    text-decoration-line: underline
-    color: $blue
-    font-family: Roboto
-    font-style: normal
-    font-weight: 500
-    font-size: 13px
-    line-height: 19px
-
-    &:active, &:focus, &:hover
-      color: $blue
-
 //адаптив под средний размер
 @media screen and ( max-width: 1120px )
   .news
 
-    &-card
-      max-width: 95%
-      height: 310px
+    &__card
+      height: 320px
 
-    &__title
-      font-size: 14px
-      line-height: 20px
+      &__title
+        font-size: 14px
+        line-height: 20px
 
     &__date
       margin-bottom: 10px
@@ -92,7 +48,7 @@
       &:before
         top: 30px
 
-    &-card
+    &__card
       height: 190px
       min-height: 160px
       padding-right: 20px
