@@ -235,3 +235,196 @@
 
         &:active, &:focus, &:hover
           color: $blue
+
+.checkbox
+
+  &-wrapper
+    position: absolute
+    bottom: 180px
+    left: 580px
+    margin-left: 60px
+
+.select
+
+  &-wrapper
+    position: absolute
+    bottom: 180px
+    left: 880px
+    margin-left: 60px
+
+//стили для checkbox
+
+.bort
+
+  &-checkbox
+    position: absolute
+    appearance: none
+
+    &-label
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 13px
+      color: $dark_grey
+
+      &:before
+        content: ''
+        position: absolute
+        top: 3px
+        left: -18px
+        width: 16px
+        height: 16px
+        border: 1px solid $dark_grey
+        border-radius: 3px
+        z-index: 1
+
+      &:after
+        position: absolute
+        content: ''
+        width: 16px
+        height: 16px
+        background: url(/image/check.svg) no-repeat
+        background-position-x: center
+        background-position-y: center
+        border-radius: 3px
+        background-color: $orange
+        top: 3px
+        left: -18px
+        z-index: 2
+        opacity: 0
+
+.bort
+
+  &-checkbox
+
+    &:hover
+      left: -18px
+      top: 3px
+      width: 16px
+      height: 16px
+      border: 1px solid $orange
+      z-index: 3
+      border-radius: 3px
+
+    &:checked  + label
+      color: $black
+
+      &:after
+        opacity: 1
+
+//стили для select
+
+.bort
+
+  &-select
+    position: absolute
+    appearance: none
+
+    &-label
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 13px
+      color: $dark_grey
+
+      &:before
+        content: ''
+        position: absolute
+        top: 3px
+        left: -18px
+        width: 16px
+        height: 16px
+        border: 1px solid $dark_grey
+        border-radius: 14px
+        z-index: 1
+
+      &:after
+        position: absolute
+        content: ''
+        width: 16px
+        height: 16px
+        background: url(/image/select.svg) no-repeat
+        background-position-x: center
+        background-position-y: center
+        border-radius: 14px
+        background-color: $white
+        border: 1px solid $orange
+        top: 3px
+        left: -18px
+        z-index: 2
+        opacity: 0
+
+.bort
+
+  &-select
+
+    &:hover
+      left: -18px
+      top: 3px
+      width: 16px
+      height: 16px
+      border: 1px solid $orange
+      z-index: 3
+      border-radius: 14px
+
+    &:checked  + label
+      color: $black
+
+      &:after
+        opacity: 1
+
+//стили для checkbox-disabled, select-disabled
+
+.bort
+
+  &-checkbox
+
+    &-disabled
+      position: absolute
+      appearance: none
+
+      &-label
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 13px
+        color: $grey
+
+        &:before
+          content: ''
+          position: absolute
+          top: 3px
+          left: 57px
+          width: 16px
+          height: 16px
+          border: 1px solid $light_grey
+          border-radius: 3px
+          z-index: 1
+
+  &-select
+
+    &-disabled
+      position: absolute
+      appearance: none
+
+      &-label
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 13px
+        color: $grey
+
+        &:before
+          content: ''
+          position: absolute
+          top: 3px
+          left: 57px
+          width: 16px
+          height: 16px
+          border: 1px solid $light_grey
+          border-radius: 14px
+          z-index: 1
