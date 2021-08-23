@@ -486,7 +486,9 @@ ul {
 }
 
 .form-wrapper {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
   border: 1px solid lightgrey;
   padding: 20px;
@@ -620,17 +622,15 @@ ul {
 }
 
 .checkbox-wrapper {
-  position: absolute;
-  bottom: 180px;
-  left: 580px;
-  margin-left: 60px;
+  position: relative;
+  margin-top: -150px;
+  margin-left: 550px;
 }
 
 .select-wrapper {
-  position: absolute;
-  bottom: 180px;
-  left: 880px;
-  margin-left: 60px;
+  position: relative;
+  margin-top: -150px;
+  margin-left: 80px;
 }
 
 .bort-checkbox {
@@ -804,6 +804,81 @@ ul {
   border: 1px solid #F5F5F5;
   border-radius: 14px;
   z-index: 1;
+}
+
+.input__form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bort-input45, .bort-input45-disabled {
+  height: 45px;
+  padding: 15px;
+  max-width: 206px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  border: 1px solid #B9B9B9;
+  background-color: #FFFFFF;
+}
+
+.bort-input45-disabled, .bort-input45-disabled-disabled {
+  background-color: #F5F5F5;
+}
+
+.bort-input45:hover, .bort-input45-disabled:hover {
+  border: 1px solid #8D8D8D;
+  box-shadow: none;
+  color: #000000;
+}
+
+.bort-input45:focus, .bort-input45-disabled:focus {
+  border: 1px solid #000000;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.bort-input50, .bort-input50-disabled {
+  height: 50px;
+  padding: 15px;
+  max-width: 206px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  border: 1px solid #B9B9B9;
+  background-color: #FFFFFF;
+}
+
+.bort-input50-disabled, .bort-input50-disabled-disabled {
+  background-color: #F5F5F5;
+}
+
+.bort-input50:hover, .bort-input50-disabled:hover {
+  border: 1px solid #8D8D8D;
+  box-shadow: none;
+  color: #000000;
+}
+
+.bort-input50:focus, .bort-input50-disabled:focus {
+  border: 1px solid #000000;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.bort-input-title, .bort-input-title-disabled {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.bort-input-title-disabled, .bort-input-title-disabled-disabled {
+  color: #8D8D8D;
 }
 
 .navigation {

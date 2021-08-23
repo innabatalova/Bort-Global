@@ -102,7 +102,9 @@
 .form
 
   &-wrapper
+    position: relative
     display: flex
+    flex-wrap: wrap
     margin-top: 40px
     border: 1px solid lightgrey
     padding: 20px
@@ -239,18 +241,16 @@
 .checkbox
 
   &-wrapper
-    position: absolute
-    bottom: 180px
-    left: 580px
-    margin-left: 60px
+    position: relative
+    margin-top: -150px
+    margin-left: 550px
 
 .select
 
   &-wrapper
-    position: absolute
-    bottom: 180px
-    left: 880px
-    margin-left: 60px
+    position: relative
+    margin-top: -150px
+    margin-left: 80px
 
 //стили для checkbox
 
@@ -428,3 +428,77 @@
           border: 1px solid $light_grey
           border-radius: 14px
           z-index: 1
+
+//стили для input
+
+.input
+
+  &__form
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+
+  &-wrapper
+
+.bort
+
+  &-input45, &-input45-disabled
+    height: 45px
+    padding: 15px
+    max-width: 206px
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 15px
+    border: 1px solid $grey
+    background-color: $white
+
+    &-disabled
+      background-color: $light_grey
+
+    &:hover
+      border: 1px solid $dark_grey
+      box-shadow: none
+      color: $black
+
+    &:focus
+      border: 1px solid $black
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15)
+
+  &-input50, &-input50-disabled
+    height: 50px
+    padding: 15px
+    max-width: 206px
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 15px
+    border: 1px solid $grey
+    background-color: $white
+
+    &-disabled
+      background-color: $light_grey
+
+    &:hover
+      border: 1px solid $dark_grey
+      box-shadow: none
+      color: $black
+
+    &:focus
+      border: 1px solid $black
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15)
+
+  &-input
+
+    &-title, &-title-disabled
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 15px
+      color: $black
+
+      &-disabled
+        color: $dark_grey
