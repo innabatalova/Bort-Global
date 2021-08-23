@@ -112,4 +112,23 @@ $(document).ready(function () {
 
   $(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
 
+
+//раскрывающийся пункт меню (дизайн-система)
+
+let openBortMenu = $(".bort-menu-item")
+
+
+openBortMenu.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".bort-menu-subitem").slideToggle(400),
+
+   $(".bort-menu-arrows").toggleClass('bort-menu-arrows-transform')
+
+  
+
+});
+
+  
+
+
 });
