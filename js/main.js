@@ -115,14 +115,14 @@ $(document).ready(function () {
 
 //раскрывающийся пункт меню (дизайн-система)
 
-let openBortMenu = $(".bort-submenu-item")
+let openBortMenu = $(".bort-submenu-top")
 
 
 openBortMenu.on("click", function(){
   //  console.log ("Клик по кнопке меню")
-   $(".bort-submenu-item").slideToggle(400),
+   $(".bort-submenu-list").slideToggle(400),
 
-   $(".bort-submenu-arrows").toggleClass('bort-menu-arrows-transform')
+   $(".bort-submenu-arrows").toggleClass('bort-submenu-arrows-transform')
 
   
 

@@ -451,7 +451,7 @@
   &-input45, &-input45-disabled
     height: 45px
     padding: 15px
-    max-width: 206px
+    width: 206px
     font-family: Roboto
     font-style: normal
     font-weight: normal
@@ -475,7 +475,7 @@
   &-input50, &-input50-disabled
     height: 50px
     padding: 15px
-    max-width: 206px
+    width: 206px
     font-family: Roboto
     font-style: normal
     font-weight: normal
@@ -514,7 +514,7 @@
 .bort
 
   &__menu
-    margin-left: 180px
+    margin-left: 110px
 
   &__submenu
     margin-left: 110px
@@ -554,7 +554,8 @@
 
   &-submenu
 
-    &-item
+    &-top
+
       display: flex
       align-items: center
       justify-content: space-between
@@ -568,14 +569,40 @@
       line-height: 12px
       color: $white
       background-color: $orange
+      margin-bottom: 5px
 
-      &-arrows
-        width: 12px
-        height: 8px
+    &-arrows
+      width: 12px
+      height: 8px
 
-        &-transform
-          transform: rotate(180deg)
+      &-transform
+        transform: rotate(180deg)
 
     &-icon
       width: 8px
       height: 12px
+
+    &-list
+      display: none
+
+    &-item
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 330px
+      height: 40px
+      padding: 14px 18px
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 12px
+      color: $black
+      background-color: $lighest_grey
+      margin-bottom: 5px
+
+      &:hover, &:focus
+        color: $dark_grey
+
+      &:active
+        background-color: $light_grey

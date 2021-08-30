@@ -824,7 +824,7 @@ ul {
 .bort-input45, .bort-input45-disabled {
   height: 45px;
   padding: 15px;
-  max-width: 206px;
+  width: 206px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -852,7 +852,7 @@ ul {
 .bort-input50, .bort-input50-disabled {
   height: 50px;
   padding: 15px;
-  max-width: 206px;
+  width: 206px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -891,7 +891,7 @@ ul {
 }
 
 .bort__menu {
-  margin-left: 180px;
+  margin-left: 110px;
 }
 
 .bort__submenu {
@@ -932,7 +932,7 @@ ul {
   background-color: #D9760F;
 }
 
-.bort-submenu-item {
+.bort-submenu-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -946,20 +946,50 @@ ul {
   line-height: 12px;
   color: #FFFFFF;
   background-color: #D9760F;
+  margin-bottom: 5px;
 }
 
-.bort-submenu-item-arrows {
+.bort-submenu-arrows {
   width: 12px;
   height: 8px;
 }
 
-.bort-submenu-item-arrows-transform {
+.bort-submenu-arrows-transform {
   transform: rotate(180deg);
 }
 
 .bort-submenu-icon {
   width: 8px;
   height: 12px;
+}
+
+.bort-submenu-list {
+  display: none;
+}
+
+.bort-submenu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 40px;
+  padding: 14px 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  background-color: #F5F5F5;
+  margin-bottom: 5px;
+}
+
+.bort-submenu-item:hover, .bort-submenu-item:focus {
+  color: #8D8D8D;
+}
+
+.bort-submenu-item:active {
+  background-color: #F5F5F5;
 }
 
 .navigation {
