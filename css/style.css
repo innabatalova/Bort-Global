@@ -361,6 +361,10 @@ ul {
   margin: 0;
 }
 
+.grid-container {
+  max-width: 85rem;
+}
+
 .top-line {
   display: block;
   margin-top: 120px;
@@ -374,6 +378,29 @@ ul {
   margin-top: 55px;
   height: 45px;
   background-color: #000000;
+}
+
+.owl-dots {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 50px;
+  left: 9%;
+  width: 340px;
+  height: 20px;
+}
+
+.owl-dot {
+  background-color: #FFFFFF !important;
+  width: 40px;
+  height: 2px;
+  opacity: 0.2 !important;
+  z-index: 1 !important;
+}
+
+.owl-dot.active {
+  background-color: #FFFFFF !important;
+  opacity: 1 !important;
 }
 
 .buttons-wrapper {
@@ -991,6 +1018,10 @@ ul {
 
 .bort-submenu-item:active {
   background-color: #F5F5F5;
+}
+
+.header {
+  padding-bottom: 30px;
 }
 
 .navigation {
@@ -1695,5 +1726,208 @@ ul {
     width: 12px;
     height: 6px;
   }
+}
+
+.main {
+  position: relative;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/bg-main-slider-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 50%;
+}
+
+.main-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: 300px;
+}
+
+.main-img {
+  background: url(../image/bg-main-slider-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 50%;
+}
+
+.main__title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 51px;
+  line-height: 61px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.main__model {
+  color: #D9760F;
+}
+
+.main__description {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8D8D8D;
+}
+
+.main__info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.main-slider-navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.main-chest-prev {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main-chest-prev-item {
+  width: 50px;
+  height: 50px;
+}
+
+.main-chest-prev-item:nth-child(1) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main-chest-prev-item:nth-child(5) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-chest-prev-item:nth-child(7) {
+  background: #000000;
+}
+
+.main-chest-prev-item:nth-child(8) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-chest-prev-item:nth-child(9) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-chest-next {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main-chest-next-item {
+  width: 50px;
+  height: 50px;
+}
+
+.main-chest-next-item:nth-child(3) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main-chest-next-item:nth-child(5) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-chest-next-item:nth-child(7) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-chest-next-item:nth-child(8) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-chest-next-item:nth-child(9) {
+  background: #000000;
+}
+
+.present-wrapper {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+.present-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+  margin-right: 40px;
+  width: 50%;
+}
+
+.present-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.present-name {
+  font-weight: bold;
+}
+
+.present-text {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.present-guarantee {
+  color: #000000;
+}
+
+.present-map {
+  background: url(../image/present-map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 650px;
 }
 /*# sourceMappingURL=style.css.map */
