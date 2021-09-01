@@ -1938,6 +1938,53 @@ ul {
   }
 }
 
+@media screen and (max-width: 740px) {
+  .main-card {
+    width: 60%;
+  }
+  .main-card-wrapper {
+    width: 170px;
+    margin-bottom: 20px;
+  }
+  .main-img {
+    background-position-x: -70px;
+  }
+  .main__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main__description {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .main__info {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .main-slider-navigation {
+    display: none;
+  }
+  .main-chest-prev, .main-chest-next {
+    display: none;
+  }
+  .owl-dots {
+    bottom: 25px;
+    width: 85px;
+  }
+  .owl-dot {
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-card-wrapper {
+    width: 140px;
+  }
+  .main__button {
+    width: 130px;
+  }
+}
+
 .present-wrapper {
   display: flex;
   margin-top: 90px;
@@ -1948,7 +1995,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 330px;
+  padding: 1px;
   margin-right: 40px;
   width: 50%;
 }
@@ -1997,7 +2044,6 @@ ul {
   .present-info {
     width: 100%;
     margin-bottom: 30px;
-    height: 170px;
   }
   .present-map {
     width: 100%;
@@ -2018,6 +2064,18 @@ ul {
     font-size: 12px;
     line-height: 15px;
     padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .present {
+    margin-top: -70px;
+  }
+  .present-title, .present-text {
+    margin-bottom: 20px;
+  }
+  .present-map {
+    height: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */

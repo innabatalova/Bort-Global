@@ -178,7 +178,7 @@
         padding-left: 10px
         padding-right: 10px
 
-    &-chest,
+    &-chest
 
       &-prev, &-next
         width: 120px
@@ -202,3 +202,58 @@
 @media screen and ( max-width: 740px )
 
   .main
+
+    &-card
+      width: 60%
+
+      &-wrapper
+        width: 170px
+        margin-bottom: 20px
+
+    &-img
+      background-position-x: -70px
+
+    &__title
+      font-size: 16px
+      line-height: 19px
+
+    &__description
+      font-size: 11px
+      line-height: 13px
+
+    &__info
+      font-size: 10px
+      line-height: 13px
+
+    &-slider
+
+      &-navigation
+        display: none
+
+    &-chest
+
+      &-prev, &-next
+        display: none
+
+  .owl
+
+    &-dots
+      bottom: 25px
+      width: 85px
+
+    &-dot
+      width: 10px
+
+//адаптив под малые мобильные устройства
+
+@media screen and ( max-width: 480px )
+
+  .main
+
+    &-card
+
+      &-wrapper
+        width: 140px
+
+    &__button
+      width: 130px
