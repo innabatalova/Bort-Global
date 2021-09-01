@@ -1021,7 +1021,11 @@ ul {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
   padding-bottom: 30px;
+  z-index: 99;
 }
 
 .navigation {
@@ -1684,6 +1688,9 @@ ul {
   .logo-wrapper {
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
+    padding-top: 25px;
+    position: sticky;
   }
   .logo-image {
     width: 100px;
