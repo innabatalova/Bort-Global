@@ -34,15 +34,15 @@ $(document).ready(function () {
 
   });
 
-  //карусель для секции news
+  //карусель для секции news (slide-category)
 
   $(function () {
-    $(".owl-carousel").owlCarousel();
+    $(".slide-category").owlCarousel();
 
   });
 
   //Адаптив карусели для секции news
-  $('.owl-carousel').owlCarousel({
+  $('.slide-category').owlCarousel({
 
     items: 1,
     margin: -30,
@@ -130,5 +130,26 @@ openBortMenu.on("click", function(){
 
   
 
+
+//карусель index main-slider
+
+  $(function () {
+    $(".main-slider").owlCarousel();
+
+  });
+
+$('.main-slider').owlCarousel({
+
+    items: 1,
+    loop: true,
+    dots: true,
+    nav: true,
+    navContainer: ".main-slider-navigation",
+    dotsEach: true,
+    navText: ["<img src='image/main-prev.svg'>", "<img src='image/main-next.svg'>"]
+      }
+
+
+  );
 
 });
