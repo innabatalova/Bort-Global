@@ -387,7 +387,6 @@ ul {
   bottom: 50px;
   left: 9%;
   width: 340px;
-  height: 20px;
 }
 
 .owl-dot {
@@ -1884,8 +1883,18 @@ ul {
 }
 
 @media screen and (max-width: 986px) {
+  .main-wrapper {
+    height: 450px;
+  }
+  .main-card {
+    height: 450px;
+    background-size: 100% 100%;
+  }
   .main-card-wrapper {
     width: 310px;
+  }
+  .main-img {
+    height: 450px;
   }
   .main__title {
     font-size: 31.5714px;
@@ -1905,6 +1914,26 @@ ul {
     font-size: 9.28572px;
     line-height: 9px;
     padding-top: 10px;
+  }
+  .main-slider-navigation {
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-chest-prev, .main-chest-next {
+    width: 120px;
+    height: 120px;
+  }
+  .main-chest-prev-item, .main-chest-next-item {
+    width: 40px;
+    height: 40px;
+  }
+  .owl-dots {
+    bottom: 40px;
+    width: 170px;
+  }
+  .owl-dot {
+    width: 20px;
   }
 }
 
