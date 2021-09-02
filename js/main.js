@@ -153,14 +153,14 @@ $('.main-slider').owlCarousel({
   );
 
 
-//карусель index main-slider
+//карусель index novelty-slider
 
   $(function () {
-    $(".owl-carousel").owlCarousel();
+    $(".novelty-slider").owlCarousel();
 
   });
 
-$('.owl-carousel').owlCarousel({
+$('.novelty-slider').owlCarousel({
 
     items: 1,
     margin: -70,
@@ -213,11 +213,80 @@ $('.owl-carousel').owlCarousel({
 
   );
 
+
+//карусель index popular-slider
+
+  $(function () {
+    $(".popular-slider").owlCarousel();
+
+  });
+
+$('.popular-slider').owlCarousel({
+
+    items: 1,
+    margin: -70,
+    loop: true,
+    dots: false,
+    nav: false,
+    navContainer: ".popular-slider-navigation",
+    navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"],
+    responsive:{
+
+      400:{
+        margin: -160
+
+
+      },
+
+      530:{
+        items: 2,
+        margin: 0
+
+
+      },
+
+      680:{
+        items: 3,
+        margin: 0
+
+
+      },
+
+      1150: {
+
+        items: 4,
+        margin: 0
+        
+      
+      }
+
+
+
+
+    }
+    
+  
+  }
+
+    
+      
+
+
+  );
+
   //создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
 
   let linkNoveltyCardArrow = $(".novelty-card-wrapper-link")
 
   linkNoveltyCardArrow.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    window.open('#') //ссылки на странички категорий
+
+  });
+
+  let linkpopularCardArrow = $(".popular-card-wrapper-link")
+
+  linkpopularCardArrow.on("click", function () {
     //  console.log ("Клик по кнопке меню")
     window.open('#') //ссылки на странички категорий
 
