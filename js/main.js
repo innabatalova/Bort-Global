@@ -50,7 +50,7 @@ $(document).ready(function () {
     responsive: {
       // Ширина от 530 пикселей
       530: {
-        // Количество элементов 3
+        // Количество элементов 2
 
         items: 2,
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
       },
       // Ширина от 866 пикселей
       866: {
-        // Количество элементов 3
+        // Количество элементов 4
         items: 4,
         margin: 0
 
@@ -162,16 +162,53 @@ $('.main-slider').owlCarousel({
 
 $('.owl-carousel').owlCarousel({
 
-    items: 4,
+    items: 1,
+    margin: -70,
     loop: true,
     dots: false,
-    nav: true,
+    nav: false,
     navContainer: ".novelty-slider-navigation",
-    navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"]
-    // navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"]
-    //   }
-    
+    navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"],
+    responsive:{
+
+      400:{
+        margin: -160
+
+
+      },
+
+      530:{
+        items: 2,
+        margin: 0
+
+
+      },
+
+      680:{
+        items: 3,
+        margin: 0
+
+
+      },
+
+      1150: {
+
+        items: 4,
+        margin: 0
+        
+      
       }
+
+
+
+
+    }
+    
+  
+  }
+
+    
+      
 
 
   );

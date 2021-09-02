@@ -2037,6 +2037,12 @@ ul {
   width: 650px;
 }
 
+@media screen and (max-width: 1200px) {
+  .present-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 986px) {
   .present {
     margin-top: -50px;
@@ -2196,5 +2202,61 @@ ul {
 .novelty-card-arrow {
   width: 5px !important;
   height: 8px;
+}
+
+@media screen and (max-width: 1420px) {
+  .novelty-slider-navigation {
+    display: none;
+  }
+  .novelty-card-wrapper-link {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .novelty {
+    padding-top: 25px;
+  }
+  .novelty-video {
+    display: none;
+  }
+  .novelty-card {
+    max-width: 280px;
+    height: 350px;
+    padding: 25px;
+  }
+  .novelty-card-img {
+    max-width: 200px;
+  }
+  .novelty-card-title {
+    font-size: 11.25px;
+    line-height: 14px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+  .novelty-card-link {
+    font-size: 9.75px;
+    line-height: 14px;
+  }
+  .novelty-card-wrapper-link {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .novelty-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .novelty-info {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .novelty-card {
+    max-width: 240px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
