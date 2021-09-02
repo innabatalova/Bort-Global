@@ -1,0 +1,103 @@
+.novelty
+  position: relative
+  background-color: $lighest_grey
+  padding-top: 50px
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 36px
+    color: $dark_grey
+    margin-bottom: 15px
+
+    &-name
+      color: $black
+      text-transform: uppercase
+
+  &-info
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    line-height: 24px
+    color: $dark_grey
+    margin-bottom: 50px
+
+  &-slider
+    padding-bottom: 90px
+
+    &-navigation
+      position: absolute
+      display: flex
+      justify-content: space-between
+      width: 100%
+      top: 55%
+      padding-left: 2%
+      padding-right: 2%
+      z-index: 1
+
+      &:before
+        content: ""
+        position: absolute
+        top: -18px
+        left: 10px
+        width: 60px
+        height: 60px
+        background-color: $white
+        z-index: -1
+
+      &:after
+        content: ""
+        position: absolute
+        top: -18px
+        right: 10px
+        width: 60px
+        height: 60px
+        background-color: $white
+        z-index: -1
+
+  &-card
+    max-width: 320px
+    justify-content: space-between
+    padding: 40px
+    height: 480px
+
+    &-img
+      max-width: 250px
+      height: 250px
+
+    &-title
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 18px
+      text-transform: uppercase
+      color: $black
+      margin-top: 40px
+      margin-bottom: 15px
+      width: 90%
+      text-align: start
+
+    &-wrapper
+
+      &-link
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 35%
+        cursor: pointer
+
+    &-link
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 19px
+      color: $orange
+
+    &-arrow
+      width: 5px !important
+      height: 8px

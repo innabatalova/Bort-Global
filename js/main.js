@@ -152,4 +152,38 @@ $('.main-slider').owlCarousel({
 
   );
 
+
+//карусель index main-slider
+
+  $(function () {
+    $(".owl-carousel").owlCarousel();
+
+  });
+
+$('.owl-carousel').owlCarousel({
+
+    items: 4,
+    loop: true,
+    dots: false,
+    nav: true,
+    navContainer: ".novelty-slider-navigation",
+    navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"]
+    // navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"]
+    //   }
+    
+      }
+
+
+  );
+
+  //создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
+
+  let linkNoveltyCardArrow = $(".novelty-card-wrapper-link")
+
+  linkNoveltyCardArrow.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    window.open('#') //ссылки на странички категорий
+
+  });
+
 });

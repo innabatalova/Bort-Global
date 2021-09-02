@@ -1684,6 +1684,9 @@ ul {
   .logo-wrapper {
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
+    padding-top: 25px;
+    position: sticky;
   }
   .logo-image {
     width: 100px;
@@ -2077,5 +2080,121 @@ ul {
   .present-map {
     height: 220px;
   }
+}
+
+.novelty {
+  position: relative;
+  background-color: #F5F5F5;
+  padding-top: 50px;
+}
+
+.novelty-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #8D8D8D;
+  margin-bottom: 15px;
+}
+
+.novelty-title-name {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.novelty-info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: #8D8D8D;
+  margin-bottom: 50px;
+}
+
+.novelty-slider {
+  padding-bottom: 90px;
+}
+
+.novelty-slider-navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 55%;
+  padding-left: 2%;
+  padding-right: 2%;
+  z-index: 1;
+}
+
+.novelty-slider-navigation:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  z-index: -1;
+}
+
+.novelty-slider-navigation:after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  z-index: -1;
+}
+
+.novelty-card {
+  max-width: 320px;
+  justify-content: space-between;
+  padding: 40px;
+  height: 480px;
+}
+
+.novelty-card-img {
+  max-width: 250px;
+  height: 250px;
+}
+
+.novelty-card-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 90%;
+  text-align: start;
+}
+
+.novelty-card-wrapper-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  cursor: pointer;
+}
+
+.novelty-card-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #D9760F;
+}
+
+.novelty-card-arrow {
+  width: 5px !important;
+  height: 8px;
 }
 /*# sourceMappingURL=style.css.map */
