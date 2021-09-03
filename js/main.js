@@ -85,29 +85,51 @@ $(document).ready(function () {
   });
 
   //появление при пролистывании кнопки "вверх"
-  $(function () {
+  // $(function () {
 
-    $(window).scroll(function () {
+  //   $(window).scroll(function () {
 
-      if ($(this).scrollTop() != 0) {
+  //     if ($(this).scrollTop()>200) {
 
-        $('.scroll-arrow').fadeIn();
+  //       $('.scroll-arrow').fadeIn();
 
-      } else {
+  //     } else {
 
-        $('.scroll-arrow').fadeOut();
+  //       $('.scroll-arrow').fadeOut();
 
-      }
+  //     }
 
-    });
+  //   });
 
-    $('.scroll-arrow').click(function () {
+  //   $('.scroll-arrow').click(function () {
 
-      $('body,html').animate({ scrollTop: 0 }, 400);
+  //     $('body,html').animate({ scrollTop: 0 }, 1500);
 
-    });
+  //   });
 
-  });
+  // });
+
+  $(function() {
+  // при нажатии на кнопку scrollup
+  $('.scroll-arrow').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+// при прокрутке окна (window)
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.scroll-arrow').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scroll-arrow').fadeOut();
+  }
+});
 
 
   $(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
@@ -163,13 +185,19 @@ $('.main-slider').owlCarousel({
 $('.novelty-slider').owlCarousel({
 
     items: 1,
-    margin: -70,
+    margin: -40,
     loop: true,
     dots: false,
     nav: false,
     navContainer: ".novelty-slider-navigation",
     navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"],
     responsive:{
+
+      360:{
+        margin: -70
+
+
+      },
 
       400:{
         margin: -160
@@ -224,13 +252,19 @@ $('.novelty-slider').owlCarousel({
 $('.popular-slider').owlCarousel({
 
     items: 1,
-    margin: -70,
+    margin: -40,
     loop: true,
     dots: false,
     nav: false,
     navContainer: ".popular-slider-navigation",
     navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"],
     responsive:{
+
+      360:{
+        margin: -70
+
+
+      },
 
       400:{
         margin: -160
