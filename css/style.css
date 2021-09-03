@@ -2421,6 +2421,9 @@ ul {
   .popular-card-wrapper-link {
     width: 45%;
   }
+  .popular-slider {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 866px) {
@@ -2486,7 +2489,7 @@ ul {
   top: 80px;
 }
 
-.story-message-deckription {
+.story-message-description {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2510,6 +2513,87 @@ ul {
 }
 
 .story__button__wrapper {
+  display: flex;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 1070px) {
+  .story-wrapper {
+    margin-top: 50px;
+  }
+  .story__button {
+    margin-right: 10px;
+    width: 160px;
+  }
+  .story__button__wrapper {
+    margin-top: 20px;
+  }
+  .story-message-title:before {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .story-wrapper {
+    margin-bottom: 60px;
+    flex-direction: column;
+    height: 100%;
+    order: 1;
+  }
+  .story-img {
+    width: 100%;
+    min-height: 450px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    background: url(../image/bg-bort-story-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .story-message {
+    width: 100%;
+    max-width: 100%;
+  }
+  .story-message-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .story-message-title:before {
+    top: 40px;
+  }
+  .story-message-description, .story-message-text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .story__button {
+    height: 35px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .story-img {
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .story-message-title:before {
+    top: 50px;
+  }
+  .story__button {
+    margin-right: 0;
+  }
+  .story__button__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

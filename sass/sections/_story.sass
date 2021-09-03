@@ -41,7 +41,7 @@
         left: 0
         top: 80px
 
-    &-deckription
+    &-description
       font-family: Roboto
       font-style: normal
       font-weight: normal
@@ -62,12 +62,99 @@
     margin-right: 20px
 
     &__wrapper
+      display: flex
       margin-top: 40px
 
 //адаптив под средний размер
+@media screen and ( max-width: 1070px )
+
+  .story
+
+    &-wrapper
+      margin-top: 50px
+
+    &__button
+      margin-right: 10px
+      width: 160px
+
+      &__wrapper
+        margin-top: 20px
+
+    &-message
+
+      &-title
+
+        &:before
+          top: 100px
 
 @media screen and ( max-width: 986px )
+  .section
 
-//адаптив под мобильные устройства
+    &-wrapper
+      display: flex
+      flex-direction: column-reverse
+
+  .story
+    // order: 1
+
+    &-wrapper
+      margin-bottom: 60px
+      flex-direction: column
+      height: 100%
+      order: 1
+
+    &-img
+      width: 100%
+      min-height: 450px
+      max-width: 100%
+      margin-bottom: 30px
+      background: url(../image/bg-bort-story-tablet.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+
+    &-message
+      width: 100%
+      max-width: 100%
+
+      &-title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 30px
+
+        &:before
+          top: 40px
+
+      &-description, &-text
+        font-size: 11px
+        line-height: 14px
+
+    &__button
+      height: 35px
+      font-size: 12px
+      line-height: 15px
+      padding-top: 8px
 
 @media screen and ( max-width: 740px )
+
+  .story
+
+    &-img
+      min-height: 250px
+
+@media screen and ( max-width: 540px )
+  .story
+
+    &-message
+
+      &-title
+
+        &:before
+          top: 50px
+
+    &__button
+      margin-right: 0
+
+      &__wrapper
+        display: flex
+        justify-content: space-between
+        padding-right: 5px
