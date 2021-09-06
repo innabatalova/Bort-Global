@@ -2668,7 +2668,12 @@ ul {
   border-bottom: 8px solid #D9760F;
 }
 
-.searchbar__submenu__wrapper__grinders {
+.searchbar__menu__item__tool {
+  width: 100%;
+  height: 50px;
+}
+
+.searchbar__submenu__wrapper__grinders, .searchbar__submenu__wrapper__cordless {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -2681,13 +2686,13 @@ ul {
   box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.35);
 }
 
-.searchbar__submenu__wrapper__grinders__visability {
+.searchbar__submenu__wrapper__grinders__visability, .searchbar__submenu__wrapper__cordless__visability {
   visibility: visible;
   opacity: 1;
   z-index: 6;
 }
 
-.searchbar__submenu__wrapper__grinders:hover, .searchbar__submenu__wrapper__grinders:focus {
+.searchbar__submenu__wrapper__grinders:hover, .searchbar__submenu__wrapper__grinders:focus, .searchbar__submenu__wrapper__cordless:hover, .searchbar__submenu__wrapper__cordless:focus {
   visibility: visible;
   opacity: 1;
 }
@@ -2715,7 +2720,7 @@ ul {
   background-image: none;
 }
 
-.searchbar__submenu__topline__grinders {
+.searchbar__submenu__topline {
   position: relative;
   width: 100%;
   height: 10px;
