@@ -1216,6 +1216,12 @@ ul {
   box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width: 1200px) {
+  .search-input {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 986px) {
   .navbar__item {
     margin-right: 20px;
@@ -2775,5 +2781,26 @@ ul {
   height: 10px;
   background-color: #D9760F;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 986px) {
+  .searchbar__item {
+    margin-right: 25px;
+  }
+  .searchbar__menu__wrapper__car {
+    left: 170px;
+  }
+  .searchbar__menu__wrapper__tech {
+    left: 300px;
+  }
+  .searchbar__menu__wrapper__handtool {
+    left: 470px;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .searchbar__item {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
