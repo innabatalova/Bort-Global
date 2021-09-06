@@ -84,30 +84,7 @@ $(document).ready(function () {
 
   });
 
-  //появление при пролистывании кнопки "вверх"
-  // $(function () {
-
-  //   $(window).scroll(function () {
-
-  //     if ($(this).scrollTop()>200) {
-
-  //       $('.scroll-arrow').fadeIn();
-
-  //     } else {
-
-  //       $('.scroll-arrow').fadeOut();
-
-  //     }
-
-  //   });
-
-  //   $('.scroll-arrow').click(function () {
-
-  //     $('body,html').animate({ scrollTop: 0 }, 1500);
-
-  //   });
-
-  // });
+ 
 
   $(function() {
   // при нажатии на кнопку scrollup
@@ -325,5 +302,33 @@ $('.popular-slider').owlCarousel({
     window.open('#') //ссылки на странички категорий
 
   });
+
+
+//раскрывающийся пункт меню (index decktop)
+
+let openMenu = $(".searchbar__item__tool")
+
+
+openMenu.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchbar__menu__wrapper__tool").slideToggle(400)
+
+  
+
+});
+
+//раскрывающийся пункт подменю (index decktop)
+
+let openSubMenu = $(".searchbar-menu-item-grinders")
+
+openSubMenu.on("mouseover", function(){
+  //  console.log ("Клик по кнопке меню")
+
+   $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
+
+  
+
+});
+
 
 });

@@ -1178,6 +1178,10 @@ ul {
   line-height: 16px;
 }
 
+.searchbar__item:hover, .searchbar__item:focus {
+  color: #D9760F;
+}
+
 .searchbar::before {
   content: "";
   background-color: #B9B9B9;
@@ -2598,5 +2602,45 @@ ul {
     justify-content: space-between;
     padding-right: 5px;
   }
+}
+
+.searchbar-menu-item {
+  width: 300px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  background-color: #FFFFFF;
+  background-position-x: 270px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.searchbar-menu-wrapper {
+  position: absolute;
+  display: none;
+  z-index: 5;
+}
+
+.searchbar__menu__wrapper__tool {
+  left: -25px;
+  top: 47px;
+}
+
+.searchbar__menu__topline__tool {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #D9760F;
+  margin-bottom: 0;
+}
+
+.searchbar__menu__topline__tool:after {
+  content: '';
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #D9760F;
 }
 /*# sourceMappingURL=style.css.map */
