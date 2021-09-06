@@ -306,54 +306,83 @@ $('.popular-slider').owlCarousel({
 
 //раскрывающийся пункт меню (index decktop)
 
-let openMenuTool = $(".searchbar__item__tool")
-
-openMenuTool.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchbar__menu__wrapper__tool").slideToggle(400)
-
+$(".searchbar__item__tool").click(function(){
+    if(!$(".searchbar__menu__wrapper__tool").hasClass("slided")) return $(".searchbar__menu__wrapper__tool").addClass("slided").slideDown(400);
+    $(".searchbar__menu__wrapper__tool").removeClass("slided").slideUp(400);
 });
 
-let openMenuClining = $(".searchbar__item__clining")
 
-openMenuClining.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchbar__menu__wrapper__clining").slideToggle(400)
 
+$(".searchbar__item__clining").click(function(){
+    if(!$(".searchbar__menu__wrapper__clining").hasClass("slided")) return $(".searchbar__menu__wrapper__clining").addClass("slided").slideDown(400);
+    $(".searchbar__menu__wrapper__clining").removeClass("slided").slideUp(400);
 });
 
-let openMenuCar = $(".searchbar__item__car")
 
-openMenuCar.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchbar__menu__wrapper__car").slideToggle(400)
-
+$(".searchbar__item__car").click(function(){
+    if(!$(".searchbar__menu__wrapper__car").hasClass("slided")) return $(".searchbar__menu__wrapper__car").addClass("slided").slideDown(400);
+    $(".searchbar__menu__wrapper__car").removeClass("slided").slideUp(400);
 });
 
-let openMenuTech = $(".searchbar__item__tech")
-
-openMenuTech.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchbar__menu__wrapper__tech").slideToggle(400)
-
+$(".searchbar__item__tech").click(function(){
+    if(!$(".searchbar__menu__wrapper__tech").hasClass("slided")) return $(".searchbar__menu__wrapper__tech").addClass("slided").slideDown(400);
+    $(".searchbar__menu__wrapper__tech").removeClass("slided").slideUp(400);
 });
 
-let openMenuHandtool = $(".searchbar__item__handtool")
-
-openMenuHandtool.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchbar__menu__wrapper__handtool").slideToggle(400)
-
+$(".searchbar__item__handtool").click(function(){
+    if(!$(".searchbar__menu__wrapper__handtool").hasClass("slided")) return $(".searchbar__menu__wrapper__handtool").addClass("slided").slideDown(400);
+    $(".searchbar__menu__wrapper__handtool").removeClass("slided").slideUp(400);
 });
+
+//закрытие меню при клике вне элементов меню
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+		let closeMenuTool = $(".searchbar__menu__wrapper__tool"); // тут указываем ID элемента
+    let closeMenuClining = $(".searchbar__menu__wrapper__clining");
+    let closeMenuCar = $(".searchbar__menu__wrapper__car");
+    let closeMenuTech = $(".searchbar__menu__wrapper__tech");
+    let closeMenuHandtool = $(".searchbar__menu__wrapper__handtool");
+
+		if (!closeMenuTool.is(e.target) // если клик был не по блоку
+		    && closeMenuTool.has(e.target).length === 0) { // и не по его дочерним элементам
+			closeMenuTool.hide(); // скрываем его
+		}
+
+    if (closeMenuClining.has(e.target).length === 0){
+         closeMenuClining.hide();
+     }
+     if (closeMenuCar.has(e.target).length === 0){
+         closeMenuCar.hide();
+     }
+     if (closeMenuTech.has(e.target).length === 0){
+        closeMenuTech.hide();
+     }
+     if (closeMenuHandtool.has(e.target).length === 0){
+         closeMenuHandtool.hide();
+    }
+
+	});
+
 
 //раскрывающийся пункт подменю (index decktop)
 
-let openSubMenu = $(".searchbar-menu-item-grinders")
+let openSubMenuTool = $(".searchbar-menu-item-grinders")
 
-openSubMenu.on("mouseover", function(){
+openSubMenuTool.on("mouseover", function(){
   //  console.log ("Клик по кнопке меню")
 
    $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
+
+  
+
+});
+
+let openSubMenuCordless = $(".searchbar-menu-item-cordless")
+
+openSubMenuCordless.on("mouseover", function(){
+  //  console.log ("Клик по кнопке меню")
+
+   $(".searchbar__submenu__wrapper__cordless").toggleClass('searchbar__submenu__wrapper__cordless__visability')
 
   
 
