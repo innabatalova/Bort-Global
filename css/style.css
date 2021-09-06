@@ -1075,7 +1075,7 @@ ul {
 }
 
 .language__item {
-  padding-right: 12px;
+  min-width: 25px;
 }
 
 .language__select {
@@ -1190,6 +1190,30 @@ ul {
   left: 0;
   right: 0;
   bottom: 45px;
+}
+
+.search {
+  display: flex;
+  height: 20px;
+}
+
+.search-input {
+  width: 300px;
+  height: 100%;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: none;
+  margin-right: 5px;
+}
+
+.search-input:hover, .search-input:focus {
+  border: none;
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+}
+
+.search-input:active {
+  border: none;
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 986px) {
