@@ -306,14 +306,43 @@ $('.popular-slider').owlCarousel({
 
 //раскрывающийся пункт меню (index decktop)
 
-let openMenu = $(".searchbar__item__tool")
+let openMenuTool = $(".searchbar__item__tool")
 
-
-openMenu.on("click", function(){
+openMenuTool.on("click", function(){
   //  console.log ("Клик по кнопке меню")
    $(".searchbar__menu__wrapper__tool").slideToggle(400)
 
-  
+});
+
+let openMenuClining = $(".searchbar__item__clining")
+
+openMenuClining.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchbar__menu__wrapper__clining").slideToggle(400)
+
+});
+
+let openMenuCar = $(".searchbar__item__car")
+
+openMenuCar.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchbar__menu__wrapper__car").slideToggle(400)
+
+});
+
+let openMenuTech = $(".searchbar__item__tech")
+
+openMenuTech.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchbar__menu__wrapper__tech").slideToggle(400)
+
+});
+
+let openMenuHandtool = $(".searchbar__item__handtool")
+
+openMenuHandtool.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchbar__menu__wrapper__handtool").slideToggle(400)
 
 });
 
