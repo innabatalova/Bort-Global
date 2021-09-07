@@ -1485,7 +1485,7 @@ ul {
   font-weight: normal;
   font-size: 30px;
   line-height: 29px;
-  z-index: 99;
+  z-index: 3;
 }
 
 .banner__info {
@@ -1494,7 +1494,7 @@ ul {
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
-  z-index: 99;
+  z-index: 3;
 }
 
 .banner__arrow {
@@ -1505,7 +1505,7 @@ ul {
   height: 85px;
   border-bottom: 100px solid #D9760F;
   border-left: 100px solid transparent;
-  z-index: 99;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -1727,12 +1727,17 @@ ul {
   .navigation, .info-wrapper, .searchbar {
     display: none;
   }
+  .header {
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
   .logo-wrapper {
     align-items: center;
     justify-content: space-between;
     margin-top: 0;
-    padding-top: 25px;
-    position: sticky;
+    padding-top: 10px;
   }
   .logo-image {
     width: 100px;
