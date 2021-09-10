@@ -388,5 +388,89 @@ openSubMenuCordless.on("mouseover", function(){
 
 });
 
+//открытие мобильного меню
+
+let openMobileTool = $(".searchmobile-tool")
+let openMobileClining = $(".searchmobile-clining")
+let openMobileCar = $(".searchmobile-car")
+let openMobileTech = $(".searchmobile-tech")
+let openMobileHandtool = $(".searchmobile-handtool")
+
+ openMobileTool.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".menu-tool").slideToggle(500)
+
+
+  });
+
+let openMobileSubmenuSaws = $(".searchmobile-saws")
+
+openMobileSubmenuSaws.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".submenu-saws").slideToggle(500)
+
+
+  });
+
+  
+
+  openMobileClining.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".menu-clining").slideToggle(500)
+
+
+  });
+
+   openMobileCar.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".menu-car").slideToggle(500)
+
+
+  });
+
+   openMobileTech.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".menu-tech").slideToggle(500)
+
+
+  });
+
+   openMobileHandtool.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".menu-handtool").slideToggle(500)
+
+
+  });
+
+
+//замена значка + на -
+
+let plusMinusMenu = $(".plus")
+
+plusMinusMenu.on("click", function(){
+  
+   if (this.innerText == "+")
+    this.innerText = "–";
+
+  else {
+    this.innerText = "–";
+    this.innerText = "+";
+  }
+  
+
+});
+
+
+
+//открытие мобильного подменю
+
+// let openMobileSubmenuSaws = $(".searchmobile-saws")
+
+//  openMobileSubmenuSaws.on("click", function () {
+//     //  console.log ("Клик по кнопке меню")
+//     $(".submenu-saws").slideToggle(500)
+
+
+//   });
 
 });

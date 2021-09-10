@@ -1,0 +1,128 @@
+.searchmobile
+  background-color: $lighest_grey
+
+  &-wrapper
+    display: flex
+    flex-direction: column
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 16px
+    text-transform: uppercase
+    margin-left: 5px
+
+  &-item
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    cursor: pointer
+    background-color: $white
+    margin-bottom: 1px
+    margin-top: 1px
+
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-height: 50px
+      width: 100%
+
+  &-plus
+    font-family: Kaisei HarunoUmi
+    font-size: 20px
+    text-transform: none
+    width: 28px
+    height: 28px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $lighest_grey
+    padding-bottom: 3px
+
+  &-menu
+    position: relative
+    display: none
+    margin-left: 0
+    width: 100%
+
+    &:after
+      position: absolute
+      content: ''
+      width: 105%
+      top: 0
+      bottom: 0
+      left: -2.5%
+      right: -2.5%
+      background-color: $lighest_grey
+      z-index: -2
+
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 14px
+
+    &-item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      cursor: pointer
+      background-color: $lighest_grey
+      min-height: 45px
+      padding-left: 10px
+      margin-bottom: 1px
+      margin-top: 1px
+
+    &-plus
+      font-family: Kaisei HarunoUmi
+      font-size: 20px
+      text-transform: none
+      width: 28px
+      height: 28px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $light_grey
+      padding-bottom: 3px
+
+  &-submenu
+    display: none
+    position: relative
+    width: 100%
+    margin-left: 0
+    z-index: 1
+
+    &:after
+      position: absolute
+      content: ''
+      width: 113%
+      top: 0
+      bottom: 0
+      right: 0
+      left: -10%
+      z-index: -1
+      background-color: $light_grey
+
+    &-item
+      position: relative
+      display: flex
+      align-items: center
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 14px
+      min-height: 45px
+      margin-bottom: 1px
+      padding-left: 10px
+      background-color: $light_grey
+      border-bottom: 1px solid $white
+
+      &-last
+        border-bottom: none
