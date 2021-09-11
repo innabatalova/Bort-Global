@@ -1737,6 +1737,9 @@ button {
     top: 0;
     z-index: 99;
   }
+  .logo {
+    position: relative;
+  }
   .logo-wrapper {
     align-items: center;
     justify-content: space-between;
@@ -1764,6 +1767,45 @@ button {
     display: block;
     width: 18px;
     height: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .logo-search-image {
+    width: 18px;
+    height: 18px;
+  }
+  .logo-search-visible {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 0 15px;
+  }
+  .logo-search-input {
+    margin-bottom: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 80%;
+  }
+  .logo-search-input::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+  }
+  .logo-search-input:hover, .logo-search-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
   .scroll-arrow {
     position: fixed;
@@ -2874,6 +2916,11 @@ button {
   justify-content: center;
   background-color: #F5F5F5;
   padding-bottom: 3px;
+}
+
+.searchmobile-plus:focus {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .searchmobile-menu {

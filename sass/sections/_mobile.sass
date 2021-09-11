@@ -11,6 +11,7 @@
     z-index: 99
 
   .logo
+    position: relative
 
     &-wrapper
       align-items: center
@@ -39,6 +40,45 @@
       display: block
       width: 18px
       height: 18px
+      text-align: center
+      margin-bottom: 5px
+
+      &-image
+        width: 18px
+        height: 18px
+
+      &-visible
+        position: absolute
+        z-index: 10
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background-color: $white
+        padding: 0 15px
+
+      &-input
+        margin-bottom: 0
+        border: none
+        outline: none
+        box-shadow: none
+        width: 80%
+
+        &::placeholder
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          font-size: 11px
+          line-height: 13px
+          color: $black
+
+        &:hover, &:focus
+          border: none
+          outline: none
+          box-shadow: none
 
   //появление мобильной кнопки "вверх
 

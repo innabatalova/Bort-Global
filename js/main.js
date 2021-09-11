@@ -403,15 +403,6 @@ let openMobileHandtool = $(".searchmobile-handtool")
 
   });
 
-let openMobileSubmenuSaws = $(".searchmobile-saws")
-
-openMobileSubmenuSaws.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".submenu-saws").slideToggle(500)
-
-
-  });
-
   
 
   openMobileClining.on("click", function () {
@@ -443,18 +434,22 @@ openMobileSubmenuSaws.on("click", function () {
   });
 
 
-//замена значка + на -
+//замена значка + на -, смена цвета фона 
 
 let plusMinusMenu = $(".plus")
 
 plusMinusMenu.on("click", function(){
   
    if (this.innerText == "+")
-    this.innerText = "–";
+    this.innerText = "–",
+    $(this).css({backgroundColor: 'black', color: 'white'});
+    
 
   else {
     this.innerText = "–";
     this.innerText = "+";
+    $(this).css({backgroundColor: '#F5F5F5', color: 'black'});
+    
   }
   
 
@@ -464,13 +459,67 @@ plusMinusMenu.on("click", function(){
 
 //открытие мобильного подменю
 
-// let openMobileSubmenuSaws = $(".searchmobile-saws")
+let openMobileSubmenuSaws = $(".searchmobile-saws")
+let openMobileSubmenuDrill = $(".searchmobile-drill")
+let openMobileSubmenuCordless = $(".searchmobile-cordless")
+let openMobileSubmenuGrinder = $(".searchmobile-grinder")
+let openMobileSubmenuMeasuring = $(".searchmobile-measuring")
+let openMobileSubmenuWelding = $(".searchmobile-welding")
 
-//  openMobileSubmenuSaws.on("click", function () {
-//     //  console.log ("Клик по кнопке меню")
-//     $(".submenu-saws").slideToggle(500)
+
+ openMobileSubmenuSaws.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".submenu-saws").slideToggle(500)
 
 
-//   });
+  });
+
+  openMobileSubmenuDrill.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".submenu-drill").slideToggle(500)
+
+
+  });
+
+   openMobileSubmenuCordless.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    $(".submenu-cordless").slideToggle(500)
+
+
+  });
+
+  openMobileSubmenuGrinder.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+$(".submenu-grinder").slideToggle(500)
+
+
+});
+
+  openMobileSubmenuMeasuring.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+$(".submenu-measuring").slideToggle(500)
+
+
+});
+
+  openMobileSubmenuWelding.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+$(".submenu-welding").slideToggle(500)
+
+
+});
+
+
+let openSearchInput = $(".logo-search-image")
+
+openSearchInput.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+
+   $(".logo-search").addClass('logo-search-visible').removeClass('logo-search')
+   
+
+  
+
+});
 
 });

@@ -76,7 +76,23 @@
               class="logo-image"
           /></a>
 
-          <img src="image/search.svg" alt="icon search" class="logo-search" />
+          <form action="#" class="logo-search">
+            <img
+              src="image/search.svg"
+              alt="icon search"
+              class="logo-search-image"
+            />
+            <input
+              type="text"
+              class="logo-search-input"
+              placeholder="Поиск по каталогу"
+            />
+            <img
+              src="image/logo-search-arrow.svg"
+              alt="logo search arrow"
+              class="logo-search-arrow"
+            />
+          </form>
 
           <div class="info-wrapper">
             <div class="info">
@@ -1339,16 +1355,18 @@
     <div class="grid-container">
       <div class="searchmobile">
         <ul class="searchmobile-wrapper">
-          <li class="searchmobile-item searchmobile-tool">
+          <li class="searchmobile-item">
             <div class="searchmobile-item-wrapper">
               <span class="searchmobile-title">инструменты</span>
-              <span class="plus searchmobile-plus">+</span>
+              <span class="plus searchmobile-plus searchmobile-tool">+</span>
             </div>
             <ul class="searchmobile-menu menu-tool">
-              <li class="searchmobile-menu-item searchmobile-saws">
+              <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
                   <span class="searchmobile-menu-title">Пилы</span>
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span class="plus searchmobile-menu-plus searchmobile-saws"
+                    >+</span
+                  >
                 </div>
                 <ul class="searchmobile-submenu submenu-saws">
                   <li class="searchmobile-submenu-item">
@@ -1367,8 +1385,22 @@
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
                   <span class="searchmobile-menu-title">Дрели и миксеры</span>
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span class="plus searchmobile-menu-plus searchmobile-drill"
+                    >+</span
+                  >
                 </div>
+                <ul class="searchmobile-submenu submenu-drill">
+                  <li class="searchmobile-submenu-item">Сетевые дрели</li>
+                  <li class="searchmobile-submenu-item">Дрели ударные</li>
+                  <li class="searchmobile-submenu-item">Сетевые шуруповерты</li>
+                  <li
+                    class="
+                      searchmobile-submenu-item searchmobile-submenu-item-last
+                    "
+                  >
+                    Граверы
+                  </li>
+                </ul>
               </li>
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
@@ -1381,8 +1413,41 @@
                   <span class="searchmobile-menu-title"
                     >Аккумуляторный инструмент</span
                   >
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span
+                    class="plus searchmobile-menu-plus searchmobile-cordless"
+                    >+</span
+                  >
                 </div>
+                <ul class="searchmobile-submenu submenu-cordless">
+                  <li class="searchmobile-submenu-item">
+                    Болгарки (УШМ) аккумуляторные
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Перфораторы аккумуляторные
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Дрели-шуруповерты аккумуляторые
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Гайковерты аккумуляторные
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Лобзики аккумуляторные
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Пилы сабельные аккумуляторные
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Реноваторы аккумуляторные
+                  </li>
+                  <li
+                    class="
+                      searchmobile-submenu-item searchmobile-submenu-item-last
+                    "
+                  >
+                    Аккумуляторы для инструмента
+                  </li>
+                </ul>
               </li>
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
@@ -1403,8 +1468,29 @@
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
                   <span class="searchmobile-menu-title">Шлифмашины</span>
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span class="plus searchmobile-menu-plus searchmobile-grinder"
+                    >+</span
+                  >
                 </div>
+                <ul class="searchmobile-submenu submenu-grinder">
+                  <li class="searchmobile-submenu-item">
+                    Орбитальные шлифмашины
+                  </li>
+                  <li class="searchmobile-submenu-item">
+                    Ленточные шлифмашины
+                  </li>
+                  <li class="searchmobile-submenu-item">Болгарки (УШМ)</li>
+                  <li class="searchmobile-submenu-item">
+                    Вибрационные шлифмашины
+                  </li>
+                  <li
+                    class="
+                      searchmobile-submenu-item searchmobile-submenu-item-last
+                    "
+                  >
+                    Реноваторы
+                  </li>
+                </ul>
               </li>
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
@@ -1423,16 +1509,40 @@
                   <span class="searchmobile-menu-title"
                     >Измерительные инструменты</span
                   >
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span
+                    class="plus searchmobile-menu-plus searchmobile-measuring"
+                    >+</span
+                  >
                 </div>
+                <ul class="searchmobile-submenu submenu-measuring">
+                  <li class="searchmobile-submenu-item">Лазерные уровни</li>
+                  <li
+                    class="
+                      searchmobile-submenu-item searchmobile-submenu-item-last
+                    "
+                  >
+                    Мультиметры
+                  </li>
+                </ul>
               </li>
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
                   <span class="searchmobile-menu-title"
                     >Сварочное оборудование</span
                   >
-                  <span class="plus searchmobile-menu-plus">+</span>
+                  <span class="plus searchmobile-menu-plus searchmobile-welding"
+                    >+</span
+                  >
                 </div>
+                <ul class="searchmobile-submenu submenu-welding">
+                  <li
+                    class="
+                      searchmobile-submenu-item searchmobile-submenu-item-last
+                    "
+                  >
+                    Аппараты для сварки труб
+                  </li>
+                </ul>
               </li>
               <li class="searchmobile-menu-item">
                 <div class="searchmobile-item-wrapper">
@@ -1442,10 +1552,10 @@
               </li>
             </ul>
           </li>
-          <li class="searchmobile-item searchmobile-clining">
+          <li class="searchmobile-item">
             <div class="searchmobile-item-wrapper">
               <span class="searchmobile-title">клининг</span>
-              <span class="plus searchmobile-plus">+</span>
+              <span class="plus searchmobile-plus searchmobile-clining">+</span>
             </div>
             <ul class="searchmobile-menu menu-clining">
               <li class="searchmobile-menu-item">
@@ -1478,10 +1588,10 @@
               </li>
             </ul>
           </li>
-          <li class="searchmobile-item searchmobile-car">
+          <li class="searchmobile-item">
             <div class="searchmobile-item-wrapper">
               <span class="searchmobile-title">автотовары</span>
-              <span class="plus searchmobile-plus">+</span>
+              <span class="plus searchmobile-plus searchmobile-car">+</span>
             </div>
             <ul class="searchmobile-menu menu-car">
               <li class="searchmobile-menu-item">
@@ -1508,10 +1618,10 @@
               </li>
             </ul>
           </li>
-          <li class="searchmobile-item searchmobile-tech">
+          <li class="searchmobile-item">
             <div class="searchmobile-item-wrapper">
               <span class="searchmobile-title">Бытовая техника</span>
-              <span class="plus searchmobile-plus">+</span>
+              <span class="plus searchmobile-plus searchmobile-tech">+</span>
             </div>
             <ul class="searchmobile-menu menu-tech">
               <li class="searchmobile-menu-item">
@@ -1548,10 +1658,12 @@
               </li>
             </ul>
           </li>
-          <li class="searchmobile-item searchmobile-handtool">
+          <li class="searchmobile-item">
             <div class="searchmobile-item-wrapper">
               <span class="searchmobile-title">Ручные инструменты</span>
-              <span class="plus searchmobile-plus">+</span>
+              <span class="plus searchmobile-plus searchmobile-handtool"
+                >+</span
+              >
             </div>
             <ul class="searchmobile-menu menu-handtool">
               <li class="searchmobile-menu-item">
