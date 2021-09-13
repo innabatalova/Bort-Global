@@ -1,21 +1,4 @@
-.searchmobile
-  position: fixed
-  top: 40px
-  bottom: 0
-  right: 0
-  left: 0
-  z-index: 15
-
-  &-wrapper
-    margin-top: 30px
-
-  &-item
-
-    &-wrapper
-      padding-right: 0.625rem
-      padding-left: 0.625rem
-
-  //изменения в блоке header
+//изменения в блоке header
 @media screen and ( max-width: 740px )
 
   .navigation, .info-wrapper, .searchbar
@@ -41,6 +24,16 @@
       height: 30px
 
     &-mobile
+      cursor: pointer
+
+    &-close
+      display: none
+      width: 28px
+      height: 28px
+      position: absolute
+      left: 0.625rem
+      z-index: 15
+      background-color: $white
       cursor: pointer
 
     &-line
@@ -100,32 +93,6 @@
           border: none
           outline: none
           box-shadow: none
-
-//мобильный подвал при открытии мобильного меню
-.footer
-
-  &-mobile
-
-    &-listing
-
-      &-item
-        font-weight: 500
-        font-size: 13px
-
-  &__mobile
-
-    &__listing
-
-      &__wrapper
-        display: flex
-        justify-content: space-between
-        padding-top: 40px
-        padding-bottom: 40px
-        background-color: $white
-
-    &__contacts
-      background-color: $white
-      padding-bottom: 40px
 
   //появление мобильной кнопки "вверх
 

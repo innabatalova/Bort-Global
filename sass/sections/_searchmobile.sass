@@ -1,9 +1,17 @@
 .searchmobile
-  background-color: $lighest_grey
+  display: none
+  background-color: $white
+  position: fixed
+  top: 40px
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 15
 
   &-wrapper
     display: flex
     flex-direction: column
+    margin-top: 30px
 
   &-title
     font-family: Russo One
@@ -21,7 +29,7 @@
     flex-wrap: wrap
     cursor: pointer
     background-color: $white
-    margin-bottom: 1px
+    border-bottom: 1px solid $lighest_grey
     margin-top: 1px
 
     &-wrapper
@@ -30,6 +38,16 @@
       justify-content: space-between
       min-height: 50px
       width: 100%
+      padding-right: 0.625rem
+      padding-left: 0.625rem
+
+  &-shadow
+    display: block
+    margin-bottom: -20px
+    margin-top: 20px
+    height: 5px
+    width: 100%
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05)
 
   &-plus
     font-family: Kaisei HarunoUmi
@@ -130,3 +148,31 @@
 
       &-last
         border-bottom: none
+
+//мобильный подвал при открытии мобильного меню
+.footer
+
+  &-mobile
+    padding-right: 0.625rem
+    padding-left: 0.625rem
+
+    &-listing
+
+      &-item
+        font-weight: 500
+        font-size: 13px
+
+  &__mobile
+
+    &__listing
+
+      &__wrapper
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+        background-color: $white
+
+    &__contacts
+      background-color: $white
+      padding-bottom: 40px

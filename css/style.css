@@ -1727,24 +1727,6 @@ button {
   }
 }
 
-.searchmobile {
-  position: fixed;
-  top: 40px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 15;
-}
-
-.searchmobile-wrapper {
-  margin-top: 30px;
-}
-
-.searchmobile-item-wrapper {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-}
-
 @media screen and (max-width: 740px) {
   .navigation, .info-wrapper, .searchbar {
     display: none;
@@ -1769,6 +1751,15 @@ button {
     height: 30px;
   }
   .logo-mobile {
+    cursor: pointer;
+  }
+  .logo-close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 0.625rem;
+    z-index: 15;
+    background-color: #FFFFFF;
     cursor: pointer;
   }
   .logo-line {
@@ -1829,44 +1820,24 @@ button {
     outline: none;
     box-shadow: none;
   }
-}
-
-.footer-mobile-listing-item {
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.footer__mobile__listing__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #FFFFFF;
-}
-
-.footer__mobile__contacts {
-  background-color: #FFFFFF;
-  padding-bottom: 40px;
-}
-
-.footer .scroll-arrow {
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  text-align: center;
-  display: block;
-  padding-top: 5px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #D9760F;
-  border: 6px solid #FFFFFF;
-  z-index: 99;
-}
-
-.footer .scroll-img {
-  width: 12px;
-  height: 6px;
+  .scroll-arrow {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D9760F;
+    border: 6px solid #FFFFFF;
+    z-index: 99;
+  }
+  .scroll-img {
+    width: 12px;
+    height: 6px;
+  }
 }
 
 .main {
@@ -2910,12 +2881,20 @@ button {
 }
 
 .searchmobile {
-  background-color: #F5F5F5;
+  display: none;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 15;
 }
 
 .searchmobile-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .searchmobile-title {
@@ -2935,7 +2914,7 @@ button {
   flex-wrap: wrap;
   cursor: pointer;
   background-color: #FFFFFF;
-  margin-bottom: 1px;
+  border-bottom: 1px solid #F5F5F5;
   margin-top: 1px;
 }
 
@@ -2945,6 +2924,17 @@ button {
   justify-content: space-between;
   min-height: 50px;
   width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.searchmobile-shadow {
+  display: block;
+  margin-bottom: -20px;
+  margin-top: 20px;
+  height: 5px;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .searchmobile-plus {
@@ -3056,5 +3046,28 @@ button {
 
 .searchmobile-submenu-item-last {
   border-bottom: none;
+}
+
+.footer-mobile {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.footer-mobile-listing-item {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.footer__mobile__listing__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #FFFFFF;
+}
+
+.footer__mobile__contacts {
+  background-color: #FFFFFF;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */

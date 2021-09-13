@@ -547,5 +547,25 @@ if ( $('.logo-search').hasClass('logo-search') ){
   
   });
 
+//переключение на мобильное меню при клике на "бургер"
+
+let openMobileMenu = $(".logo-mobile")
+
+openMobileMenu.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+   $(".searchmobile").fadeIn(),
+   $(".logo-close").fadeIn()
+
+  });
+
+let closeMobileMenu = $(".logo-close")
+
+closeMobileMenu.on("click", function(){
+  //  console.log ("Клик по кнопке меню")
+    $(".searchmobile").fadeOut(),
+    $(".logo-close").fadeOut()
+
+  });
+
 
 });
