@@ -1727,6 +1727,24 @@ button {
   }
 }
 
+.searchmobile {
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.searchmobile-wrapper {
+  margin-top: 30px;
+}
+
+.searchmobile-item-wrapper {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
 @media screen and (max-width: 740px) {
   .navigation, .info-wrapper, .searchbar {
     display: none;
@@ -1828,6 +1846,7 @@ button {
 
 .footer__mobile__contacts {
   background-color: #FFFFFF;
+  padding-bottom: 40px;
 }
 
 .footer .scroll-arrow {
