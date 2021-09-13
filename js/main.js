@@ -437,6 +437,7 @@ let openMobileHandtool = $(".searchmobile-handtool")
 //замена значка + на -, смена цвета фона 
 
 let plusMinusMenu = $(".plus")
+let subPlusMinusMenu = $(".subplus")
 
 plusMinusMenu.on("click", function(){
   
@@ -449,6 +450,23 @@ plusMinusMenu.on("click", function(){
     this.innerText = "–";
     this.innerText = "+";
     $(this).css({backgroundColor: '#F5F5F5', color: 'black'});
+    
+  }
+  
+
+});
+
+subPlusMinusMenu.on("click", function(){
+  
+   if (this.innerText == "+")
+    this.innerText = "–",
+    $(this).css({backgroundColor: 'black', color: 'white'});
+    
+
+  else {
+    this.innerText = "–";
+    this.innerText = "+";
+    $(this).css({backgroundColor: '#E3E3E3', color: 'black'});
     
   }
   
@@ -524,8 +542,10 @@ if ( $('.logo-search').hasClass('logo-search') ){
   $(".logo-search-visible").addClass('logo-search').removeClass('logo-search-visible'),
  $(".logo-search-input").fadeOut(),
  $(".logo-search-reset").fadeOut() 
-};
-   });
+   
+   };
+  
+  });
 
 
 });
