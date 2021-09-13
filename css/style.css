@@ -1787,7 +1787,11 @@ button {
     background-color: #FFFFFF;
     padding: 0 15px;
   }
+  .logo-search-reset {
+    display: none;
+  }
   .logo-search-input {
+    display: none;
     margin-bottom: 0;
     border: none;
     outline: none;

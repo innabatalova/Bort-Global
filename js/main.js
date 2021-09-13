@@ -345,7 +345,7 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 
 		if (!closeMenuTool.is(e.target) // если клик был не по блоку
 		    && closeMenuTool.has(e.target).length === 0) { // и не по его дочерним элементам
-			closeMenuTool.hide(); // скрываем его
+			  closeMenuTool.hide(); // скрываем его
 		}
 
     if (closeMenuClining.has(e.target).length === 0){
@@ -509,17 +509,23 @@ $(".submenu-welding").slideToggle(500)
 
 });
 
+//открытие строки поиска и закрытие по клику на "лупу"
 
 let openSearchInput = $(".logo-search-image")
 
 openSearchInput.on("click", function(){
   //  console.log ("Клик по кнопке меню")
+if ( $('.logo-search').hasClass('logo-search') ){
+ $(".logo-search").addClass('logo-search-visible').removeClass('logo-search'),
+ $(".logo-search-input").fadeIn(),
+ $(".logo-search-reset").fadeIn()   
+}
+ else {
+  $(".logo-search-visible").addClass('logo-search').removeClass('logo-search-visible'),
+ $(".logo-search-input").fadeOut(),
+ $(".logo-search-reset").fadeOut() 
+};
+   });
 
-   $(".logo-search").addClass('logo-search-visible').removeClass('logo-search')
-   
-
-  
-
-});
 
 });
