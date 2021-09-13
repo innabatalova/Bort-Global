@@ -554,7 +554,7 @@ let openMobileMenu = $(".logo-mobile")
 openMobileMenu.on("click", function(){
   //  console.log ("Клик по кнопке меню")
    $(".searchmobile").fadeIn(),
-   $(".logo-close").fadeIn()
+   $(".logo-close").fadeIn(1)
 
   });
 
@@ -563,7 +563,7 @@ let closeMobileMenu = $(".logo-close")
 closeMobileMenu.on("click", function(){
   //  console.log ("Клик по кнопке меню")
     $(".searchmobile").fadeOut(),
-    $(".logo-close").fadeOut()
+    $(".logo-close").fadeOut(1)
 
   });
 

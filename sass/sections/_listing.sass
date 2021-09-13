@@ -66,3 +66,53 @@
       font-size: 15px
       line-height: 26px
       color: $dark_grey
+
+//адаптив под мобильные устройств
+
+@media screen and ( max-width: 740px )
+
+  .listing
+    padding-top: 20px
+
+    &-product
+      padding-top: 20px
+      padding-bottom: 20px
+
+      &-title
+        margin-top: 20px
+        margin-bottom: 20px
+        font-size: 20px
+        line-height: 24px
+
+      &-card
+        padding: 20px 15px
+        max-width: 30%
+
+        &-image
+          max-width: 115px
+          max-height: 115px
+
+        &-title
+          font-size: 9px
+          line-height: 12px
+          margin-top: 13px
+          margin-bottom: 13px
+
+        &-button
+          font-size: 11px
+          line-height: 19px
+          background-position-x: 70px
+
+      &-info
+        display: none
+
+@media screen and ( max-width: 420px )
+
+  .listing
+
+    &-product
+
+      &-title
+
+      &-card
+        max-width: 48%
