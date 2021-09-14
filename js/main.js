@@ -12,6 +12,37 @@ $(document).ready(function () {
 
   });
 
+ //создание кликабельности для стрелочки "вверх"
+
+  let topArrow = $(".mobile-arrow")
+
+  topArrow.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    location.href = '#'
+
+  });
+
+ 
+ $(function() {
+  // при нажатии на кнопку scrollup
+  $('.scroll-arrow').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({scrollTop:0},200);
+  })
+})
+// при прокрутке окна (window)
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.scroll-arrow').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scroll-arrow').fadeOut();
+  }
+});
+
 
   //создание кликабельности для всего блока карточки categories
 
@@ -74,42 +105,11 @@ $(document).ready(function () {
 
   });
 
-  //создание кликабельности для стрелочки "вверх"
-
-  let topArrow = $(".mobile-arrow")
-
-  topArrow.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    location.href = '#'
-
-  });
-
  
 
-  $(function() {
-  // при нажатии на кнопку scrollup
-  $('.scroll-arrow').click(function() {
-    // переместиться в верхнюю часть страницы
-    $("html, body").animate({
-      scrollTop:0
-    },1000);
-  })
-})
-// при прокрутке окна (window)
-$(window).scroll(function() {
-  // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop()>200) {
-    // то сделать кнопку scrollup видимой
-    $('.scroll-arrow').fadeIn();
-  }
-  // иначе скрыть кнопку scrollup
-  else {
-    $('.scroll-arrow').fadeOut();
-  }
-});
+//маска для проверки ввода номера
 
-
-  $(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
+$(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
 
 
 //раскрывающийся пункт меню (дизайн-система)
@@ -566,6 +566,8 @@ closeMobileMenu.on("click", function(){
     $(".logo-close").fadeOut(1)
 
   });
+
+ 
 
 
 });
