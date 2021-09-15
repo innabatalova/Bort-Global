@@ -27,25 +27,45 @@
         left: -25px
         top: 47px
 
+        &__scrolling
+          left: 180px
+          top: 47px
+
       &__clining
         display: none
         left: 100px
         top: 47px
+
+        &__scrolling
+          left: 340px
+          top: 47px
 
       &__car
         display: none
         left: 220px
         top: 47px
 
+        &__scrolling
+          left: 460px
+          top: 47px
+
       &__tech
         display: none
         left: 370px
         top: 47px
 
+        &__scrolling
+          left: 630px
+          top: 47px
+
       &__handtool
         display: none
         left: 570px
         top: 47px
+
+        &__scrolling
+          left: 810px
+          top: 47px
 
     &__topline
 
@@ -146,6 +166,26 @@
       background-color: $orange
       margin-bottom: 0
 
+  &-scrolling
+    position: fixed
+    top: -5px
+    left: 0
+    right: 0
+    z-index: 10
+    background-color: white
+    padding-top: 15px
+    padding-right: 6rem
+    padding-left: 6rem
+    padding-bottom: 5px
+
+    &-logo
+      width: 70px
+      height: 20px
+      margin-bottom:
+
+    &-link
+      display: none
+
 //адаптив под средний размер
 @media screen and ( max-width: 986px )
 
@@ -174,4 +214,4 @@
   .searchbar
 
     &__item
-      margin-right: 10px
+      margin-right: 5px

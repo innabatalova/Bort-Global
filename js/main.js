@@ -102,11 +102,7 @@ $(window).scroll(function() {
       }
     }
 
-
   });
-
- 
-
 //маска для проверки ввода номера
 
 $(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
@@ -123,8 +119,6 @@ openBortMenu.on("click", function(){
 
    $(".bort-submenu-arrows").toggleClass('bort-submenu-arrows-transform')
 
-  
-
 });
 
   
@@ -134,8 +128,7 @@ openBortMenu.on("click", function(){
 
   $(function () {
     $(".main-slider").owlCarousel();
-
-  });
+});
 
 $('.main-slider').owlCarousel({
 
@@ -147,15 +140,13 @@ $('.main-slider').owlCarousel({
     dotsEach: true,
     navText: ["<img src='image/main-prev.svg'>", "<img src='image/main-next.svg'>"]
       }
-
-
-  );
+ );
 
 
 //карусель index novelty-slider
 
-  $(function () {
-    $(".novelty-slider").owlCarousel();
+$(function () {
+  $(".novelty-slider").owlCarousel();
 
   });
 
@@ -172,51 +163,30 @@ $('.novelty-slider').owlCarousel({
 
       360:{
         margin: -70
-
-
       },
 
       400:{
         margin: -160
-
-
       },
 
       530:{
         items: 2,
         margin: 0
-
-
       },
 
       680:{
         items: 3,
         margin: 0
-
-
       },
 
       1150: {
 
         items: 4,
         margin: 0
-        
-      
       }
-
-
-
-
     }
-    
-  
   }
-
-    
-      
-
-
-  );
+);
 
 
 //карусель index popular-slider
@@ -239,51 +209,30 @@ $('.popular-slider').owlCarousel({
 
       360:{
         margin: -70
-
-
-      },
+       },
 
       400:{
         margin: -160
-
-
-      },
+        },
 
       530:{
         items: 2,
         margin: 0
-
-
       },
 
       680:{
         items: 3,
         margin: 0
-
-
-      },
+       },
 
       1150: {
 
         items: 4,
         margin: 0
-        
-      
       }
-
-
-
-
     }
-    
-  
   }
-
-    
-      
-
-
-  );
+ );
 
   //создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
 
@@ -567,6 +516,31 @@ closeMobileMenu.on("click", function(){
 
   });
 
+//фиксация меню и строки поиска в header
+
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 100px
+  if ($(this).scrollTop()>100) {
+    // то сделать кнопку scrollup видимой
+    $('.searchbar').addClass('searchbar-scrolling'),
+    $(".searchbar-scrolling-link").fadeIn(),
+    $('.searchbar__menu__wrapper__tool').addClass('searchbar__menu__wrapper__tool__scrolling'),
+    $('.searchbar__menu__wrapper__clining').addClass('searchbar__menu__wrapper__clining__scrolling'),
+    $('.searchbar__menu__wrapper__car').addClass('searchbar__menu__wrapper__car__scrolling'),
+    $('.searchbar__menu__wrapper__tech').addClass('searchbar__menu__wrapper__tech__scrolling'),
+    $('.searchbar__menu__wrapper__handtool').addClass('searchbar__menu__wrapper__handtool__scrolling')
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.searchbar').removeClass('searchbar-scrolling'),
+    $(".searchbar-scrolling-link").fadeOut()
+    $('.searchbar__menu__wrapper__tool').removeClass('searchbar__menu__wrapper__tool__scrolling'),
+    $('.searchbar__menu__wrapper__clining').removeClass('searchbar__menu__wrapper__clining__scrolling'),
+    $('.searchbar__menu__wrapper__car').removeClass('searchbar__menu__wrapper__car__scrolling'),
+    $('.searchbar__menu__wrapper__tech').removeClass('searchbar__menu__wrapper__tech__scrolling'),
+    $('.searchbar__menu__wrapper__handtool').removeClass('searchbar__menu__wrapper__handtool__scrolling')
+  }
+});
 
 
 });
