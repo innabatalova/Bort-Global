@@ -567,7 +567,6 @@ closeMobileMenu.on("click", function(){
 
   });
 
- 
 
 
 });
