@@ -1655,6 +1655,26 @@ button {
   display: none;
 }
 
+.scroll-arrow {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  text-align: center;
+  display: block;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #D9760F;
+  border: 6px solid #FFFFFF;
+  z-index: 12;
+}
+
+.scroll-img {
+  width: 12px;
+  height: 6px;
+}
+
 @media screen and (max-width: 986px) {
   .top-line {
     margin-top: 70px;
@@ -1823,24 +1843,6 @@ button {
     border: none;
     outline: none;
     box-shadow: none;
-  }
-  .scroll-arrow {
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    text-align: center;
-    display: block;
-    padding-top: 5px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #D9760F;
-    border: 6px solid #FFFFFF;
-    z-index: 12;
-  }
-  .scroll-img {
-    width: 12px;
-    height: 6px;
   }
 }
 
@@ -2318,8 +2320,17 @@ button {
 }
 
 .novelty-video {
+  position: relative;
   width: 100%;
   height: 600px;
+}
+
+.novelty-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1420px) {
