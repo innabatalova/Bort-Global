@@ -2764,7 +2764,7 @@ button {
   margin-left: 0;
 }
 
-.searchbar-menu__topline {
+.searchbar__menu__topline {
   position: relative;
   width: 100%;
   height: 10px;
@@ -2772,7 +2772,7 @@ button {
   margin-bottom: 0;
 }
 
-.searchbar-menu__topline:after {
+.searchbar__menu__topline:after {
   content: '';
   position: absolute;
   left: 50px;
@@ -2781,7 +2781,7 @@ button {
   border-bottom: 8px solid #D9760F;
 }
 
-.searchbar-menu__item__tool {
+.searchbar__menu__item__tool {
   width: 100%;
   height: 50px;
 }
@@ -2911,7 +2911,7 @@ button {
 
 @media screen and (max-width: 986px) {
   .searchbar__item {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 }
 
