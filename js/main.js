@@ -521,8 +521,9 @@ closeMobileMenu.on("click", function(){
 $(window).scroll(function() {
   // если пользователь прокрутил страницу более чем на 100px
   if ($(this).scrollTop()>100) {
-    // то сделать кнопку scrollup видимой
+    // то сделать меню и строку поиска видимыми
     $('.searchbar').addClass('searchbar-scrolling'),
+    $('.searchbar-scrolling-wrapper').addClass('searchbar-scrolling-wrapper-visible'),
     $(".searchbar-scrolling-link").fadeIn(),
     $('.searchbar__menu__wrapper__tool').addClass('searchbar__menu__wrapper__tool__scrolling'),
     $('.searchbar__menu__wrapper__clining').addClass('searchbar__menu__wrapper__clining__scrolling'),
@@ -530,9 +531,10 @@ $(window).scroll(function() {
     $('.searchbar__menu__wrapper__tech').addClass('searchbar__menu__wrapper__tech__scrolling'),
     $('.searchbar__menu__wrapper__handtool').addClass('searchbar__menu__wrapper__handtool__scrolling')
   }
-  // иначе скрыть кнопку scrollup
+  // иначе скрыть меню и строку поиска
   else {
     $('.searchbar').removeClass('searchbar-scrolling'),
+    $('.searchbar-scrolling-wrapper').removeClass('searchbar-scrolling-wrapper-visible'),
     $(".searchbar-scrolling-link").fadeOut()
     $('.searchbar__menu__wrapper__tool').removeClass('searchbar__menu__wrapper__tool__scrolling'),
     $('.searchbar__menu__wrapper__clining').removeClass('searchbar__menu__wrapper__clining__scrolling'),

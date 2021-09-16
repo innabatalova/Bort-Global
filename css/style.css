@@ -2765,6 +2765,7 @@ button {
 
 .searchbar__menu__wrapper__tool__scrolling {
   left: 180px;
+  top: 47px;
 }
 
 .searchbar__menu__wrapper__clining {
@@ -2775,6 +2776,7 @@ button {
 
 .searchbar__menu__wrapper__clining__scrolling {
   left: 340px;
+  top: 47px;
 }
 
 .searchbar__menu__wrapper__car {
@@ -2785,6 +2787,7 @@ button {
 
 .searchbar__menu__wrapper__car__scrolling {
   left: 460px;
+  top: 47px;
 }
 
 .searchbar__menu__wrapper__tech {
@@ -2795,6 +2798,7 @@ button {
 
 .searchbar__menu__wrapper__tech__scrolling {
   left: 630px;
+  top: 47px;
 }
 
 .searchbar__menu__wrapper__handtool {
@@ -2805,6 +2809,7 @@ button {
 
 .searchbar__menu__wrapper__handtool__scrolling {
   left: 810px;
+  top: 47px;
 }
 
 .searchbar__menu__topline {
@@ -2919,20 +2924,45 @@ button {
   padding-right: 6rem;
   padding-left: 6rem;
   padding-bottom: 5px;
+  justify-content: center;
+}
+
+.searchbar-scrolling-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar-scrolling-wrapper-visible {
+  max-width: 85rem;
 }
 
 .searchbar-scrolling-logo {
   width: 70px;
   height: 20px;
+  margin-bottom: 5px;
 }
 
 .searchbar-scrolling-link {
   display: none;
 }
 
+@media screen and (max-width: 1400px) {
+  .searchbar-scrolling {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .searchbar__item {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 986px) {
   .searchbar__item {
-    margin-right: 25px;
+    margin-right: 15px;
   }
   .searchbar__menu__wrapper__car {
     left: 170px;
@@ -2948,6 +2978,10 @@ button {
 @media screen and (max-width: 837px) {
   .searchbar__item {
     margin-right: 5px;
+  }
+  .search-input {
+    padding: 0;
+    width: 30px;
   }
 }
 

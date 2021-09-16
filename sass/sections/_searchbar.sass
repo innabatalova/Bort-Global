@@ -177,22 +177,44 @@
     padding-right: 6rem
     padding-left: 6rem
     padding-bottom: 5px
+    justify-content: center
+
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+
+      &-visible
+        max-width: 85rem
 
     &-logo
       width: 70px
       height: 20px
-      margin-bottom:
+      margin-bottom: 5px
 
     &-link
       display: none
 
 //адаптив под средний размер
+@media screen and ( max-width: 1400px )
+  .searchbar
+
+    &-scrolling
+      padding-left: 1rem
+      padding-right: 1rem
+
+@media screen and ( max-width: 1050px )
+  .searchbar
+
+    &__item
+      margin-right: 30px
+
 @media screen and ( max-width: 986px )
 
   .searchbar
 
     &__item
-      margin-right: 25px
+      margin-right: 15px
 
   .searchbar
 
@@ -215,3 +237,9 @@
 
     &__item
       margin-right: 5px
+
+  .search
+
+    &-input
+      padding: 0
+      width: 30px
