@@ -524,23 +524,23 @@ $(window).scroll(function() {
     // то сделать меню и строку поиска видимыми
     $('.searchbar').addClass('searchbar-scrolling'),
     $('.searchbar-scrolling-wrapper').addClass('searchbar-scrolling-wrapper-visible'),
-    $(".searchbar-scrolling-link").fadeIn(),
-    $('.searchbar__menu__wrapper__tool').addClass('searchbar__menu__wrapper__tool__scrolling'),
-    $('.searchbar__menu__wrapper__clining').addClass('searchbar__menu__wrapper__clining__scrolling'),
-    $('.searchbar__menu__wrapper__car').addClass('searchbar__menu__wrapper__car__scrolling'),
-    $('.searchbar__menu__wrapper__tech').addClass('searchbar__menu__wrapper__tech__scrolling'),
-    $('.searchbar__menu__wrapper__handtool').addClass('searchbar__menu__wrapper__handtool__scrolling')
+    $(".searchbar-scrolling-link").fadeIn()
+    // $('.searchbar__menu__wrapper__tool').addClass('searchbar__menu__wrapper__tool__scrolling'),
+    // $('.searchbar__menu__wrapper__clining').addClass('searchbar__menu__wrapper__clining__scrolling'),
+    // $('.searchbar__menu__wrapper__car').addClass('searchbar__menu__wrapper__car__scrolling'),
+    // $('.searchbar__menu__wrapper__tech').addClass('searchbar__menu__wrapper__tech__scrolling'),
+    // $('.searchbar__menu__wrapper__handtool').addClass('searchbar__menu__wrapper__handtool__scrolling')
   }
   // иначе скрыть меню и строку поиска
   else {
     $('.searchbar').removeClass('searchbar-scrolling'),
     $('.searchbar-scrolling-wrapper').removeClass('searchbar-scrolling-wrapper-visible'),
     $(".searchbar-scrolling-link").fadeOut()
-    $('.searchbar__menu__wrapper__tool').removeClass('searchbar__menu__wrapper__tool__scrolling'),
-    $('.searchbar__menu__wrapper__clining').removeClass('searchbar__menu__wrapper__clining__scrolling'),
-    $('.searchbar__menu__wrapper__car').removeClass('searchbar__menu__wrapper__car__scrolling'),
-    $('.searchbar__menu__wrapper__tech').removeClass('searchbar__menu__wrapper__tech__scrolling'),
-    $('.searchbar__menu__wrapper__handtool').removeClass('searchbar__menu__wrapper__handtool__scrolling')
+    // $('.searchbar__menu__wrapper__tool').removeClass('searchbar__menu__wrapper__tool__scrolling'),
+    // $('.searchbar__menu__wrapper__clining').removeClass('searchbar__menu__wrapper__clining__scrolling'),
+    // $('.searchbar__menu__wrapper__car').removeClass('searchbar__menu__wrapper__car__scrolling'),
+    // $('.searchbar__menu__wrapper__tech').removeClass('searchbar__menu__wrapper__tech__scrolling'),
+    // $('.searchbar__menu__wrapper__handtool').removeClass('searchbar__menu__wrapper__handtool__scrolling')
   }
 });
 

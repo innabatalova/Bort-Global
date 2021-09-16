@@ -1179,6 +1179,7 @@ button {
 }
 
 .searchbar__item {
+  position: relative;
   text-transform: uppercase;
   margin-right: 50px;
   font-family: Russo One;
@@ -2756,63 +2757,12 @@ button {
   position: absolute;
   display: none;
   z-index: 5;
-}
-
-.searchbar__menu__wrapper__tool {
-  left: -25px;
   top: 47px;
+  left: 0;
+  margin-left: 0;
 }
 
-.searchbar__menu__wrapper__tool__scrolling {
-  left: 180px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__clining {
-  display: none;
-  left: 100px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__clining__scrolling {
-  left: 340px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__car {
-  display: none;
-  left: 220px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__car__scrolling {
-  left: 460px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__tech {
-  display: none;
-  left: 370px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__tech__scrolling {
-  left: 630px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__handtool {
-  display: none;
-  left: 570px;
-  top: 47px;
-}
-
-.searchbar__menu__wrapper__handtool__scrolling {
-  left: 810px;
-  top: 47px;
-}
-
-.searchbar__menu__topline {
+.searchbar-menu__topline {
   position: relative;
   width: 100%;
   height: 10px;
@@ -2820,7 +2770,7 @@ button {
   margin-bottom: 0;
 }
 
-.searchbar__menu__topline:after {
+.searchbar-menu__topline:after {
   content: '';
   position: absolute;
   left: 50px;
@@ -2829,7 +2779,7 @@ button {
   border-bottom: 8px solid #D9760F;
 }
 
-.searchbar__menu__item__tool {
+.searchbar-menu__item__tool {
   width: 100%;
   height: 50px;
 }
@@ -2948,30 +2898,18 @@ button {
 }
 
 @media screen and (max-width: 1400px) {
+  .searchbar__item {
+    margin-right: 30px;
+  }
   .searchbar-scrolling {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .searchbar__item {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (max-width: 986px) {
   .searchbar__item {
     margin-right: 15px;
-  }
-  .searchbar__menu__wrapper__car {
-    left: 170px;
-  }
-  .searchbar__menu__wrapper__tech {
-    left: 300px;
-  }
-  .searchbar__menu__wrapper__handtool {
-    left: 450px;
   }
 }
 

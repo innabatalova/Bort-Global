@@ -18,54 +18,9 @@
       position: absolute
       display: none
       z-index: 5
-
-  &__menu
-
-    &__wrapper
-
-      &__tool
-        left: -25px
-        top: 47px
-
-        &__scrolling
-          left: 180px
-          top: 47px
-
-      &__clining
-        display: none
-        left: 100px
-        top: 47px
-
-        &__scrolling
-          left: 340px
-          top: 47px
-
-      &__car
-        display: none
-        left: 220px
-        top: 47px
-
-        &__scrolling
-          left: 460px
-          top: 47px
-
-      &__tech
-        display: none
-        left: 370px
-        top: 47px
-
-        &__scrolling
-          left: 630px
-          top: 47px
-
-      &__handtool
-        display: none
-        left: 570px
-        top: 47px
-
-        &__scrolling
-          left: 810px
-          top: 47px
+      top: 47px
+      left: 0
+      margin-left: 0
 
     &__topline
 
@@ -199,15 +154,12 @@
 @media screen and ( max-width: 1400px )
   .searchbar
 
+    &__item
+      margin-right: 30px
+
     &-scrolling
       padding-left: 1rem
       padding-right: 1rem
-
-@media screen and ( max-width: 1050px )
-  .searchbar
-
-    &__item
-      margin-right: 30px
 
 @media screen and ( max-width: 986px )
 
@@ -215,21 +167,6 @@
 
     &__item
       margin-right: 15px
-
-  .searchbar
-
-    &__menu
-
-      &__wrapper
-
-        &__car
-          left: 170px
-
-        &__tech
-          left: 300px
-
-        &__handtool
-          left: 450px
 
 @media screen and ( max-width: 837px )
 
