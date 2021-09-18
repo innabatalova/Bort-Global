@@ -285,8 +285,8 @@ $(".searchbar__item__handtool").click(function(){
 
 //закрытие меню при клике вне элементов меню
 
-$(document).mouseup(function (e){ // событие клика по веб-документу
-		let closeMenuTool = $(".searchbar__menu__wrapper__tool"); // тут указываем ID элемента
+$(document).mouseup(function (e){
+		let closeMenuTool = $(".searchbar__menu__wrapper__tool"); 
     let closeMenuClining = $(".searchbar__menu__wrapper__clining");
     let closeMenuCar = $(".searchbar__menu__wrapper__car");
     let closeMenuTech = $(".searchbar__menu__wrapper__tech");
@@ -525,22 +525,52 @@ $(window).scroll(function() {
     $('.searchbar').addClass('searchbar-scrolling'),
     $('.searchbar-scrolling-wrapper').addClass('searchbar-scrolling-wrapper-visible'),
     $(".searchbar-scrolling-link").fadeIn()
-    // $('.searchbar__menu__wrapper__tool').addClass('searchbar__menu__wrapper__tool__scrolling'),
-    // $('.searchbar__menu__wrapper__clining').addClass('searchbar__menu__wrapper__clining__scrolling'),
-    // $('.searchbar__menu__wrapper__car').addClass('searchbar__menu__wrapper__car__scrolling'),
-    // $('.searchbar__menu__wrapper__tech').addClass('searchbar__menu__wrapper__tech__scrolling'),
-    // $('.searchbar__menu__wrapper__handtool').addClass('searchbar__menu__wrapper__handtool__scrolling')
   }
   // иначе скрыть меню и строку поиска
   else {
     $('.searchbar').removeClass('searchbar-scrolling'),
     $('.searchbar-scrolling-wrapper').removeClass('searchbar-scrolling-wrapper-visible'),
     $(".searchbar-scrolling-link").fadeOut()
-    // $('.searchbar__menu__wrapper__tool').removeClass('searchbar__menu__wrapper__tool__scrolling'),
-    // $('.searchbar__menu__wrapper__clining').removeClass('searchbar__menu__wrapper__clining__scrolling'),
-    // $('.searchbar__menu__wrapper__car').removeClass('searchbar__menu__wrapper__car__scrolling'),
-    // $('.searchbar__menu__wrapper__tech').removeClass('searchbar__menu__wrapper__tech__scrolling'),
-    // $('.searchbar__menu__wrapper__handtool').removeClass('searchbar__menu__wrapper__handtool__scrolling')
+  }
+});
+
+// галерея карточки товара
+
+$('.product-card-gallery').owlCarousel({ 
+           loop: true,
+           center: true,
+           items: 5,
+           nav: true,
+           mouseDrag: false
+         });
+
+//вывод картинки в большую область просмотра по клику
+
+let smallBigBackground = $(".product-card-gallery-image")
+
+smallBigBackground.on("click", function(){
+  
+  let backgroungUrl = $(this).attr('src');
+
+  $(".product-card-gallery-view").css({'background-image': 'url(' + backgroungUrl + ')', });
+
+    
+  });
+  
+//убрать прозрачность для выделенного блока в галерее
+
+$(".product-card-gallery-item").click(function(){
+    $(this).addClass("view")
+    
+
+});
+
+//вернуть прозрачность блокам вне области просмотра
+
+$(document).on('mouseup', function(e){ 
+  let s = $('.view'); 
+  if(!s.is(e.target) && s.has(e.target).length === 0) {
+    s.removeClass('view');
   }
 });
 

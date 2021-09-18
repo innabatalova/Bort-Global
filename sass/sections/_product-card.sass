@@ -1,0 +1,50 @@
+.product
+
+  &-card
+
+    &__breadcrumb
+
+      &__list
+        color: $dark_grey
+        margin-top: 25px
+
+      &__nav
+        margin-right: 0
+
+        &:after
+          position: relative
+          margin-left: 10px
+          margin-right: 10px
+          top: 2px
+          content: url(../image/card-breadcrumb.svg)
+
+        &__last
+          color: $black
+
+          &::after
+            visibility: hidden
+
+    &-gallery
+      transform: rotate(90deg)
+      width: 300px
+      height: 350px
+
+      &-item
+        transform: rotate(-90deg)
+        border: 1px solid red
+        opacity: 0.7
+
+      &-view
+        position: relative
+        left: 500px
+        top: -350px
+        width: 400px
+        height: 400px
+        z-index: 99
+        border: 1px solid green
+        background-image: url(../product-card-image/BAB-10,8X_1.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+
+.view
+  opacity: 1
