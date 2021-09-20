@@ -40,8 +40,8 @@
 
     &-gallery
       position: absolute
-      top: 340px
-      left: -340px
+      top: 50%
+      left: -46%
       transform: rotate(90deg)
       height: 60px
       z-index: 3
@@ -187,3 +187,19 @@
 
 .view
   opacity: 1
+
+//адаптив под средний размер
+
+@media screen and ( max-width: 1400px )
+  .product
+
+    &-card
+
+      &-gallery
+        top: 35%
+
+        &-view
+          width: 450px
+          height: 450px
+
+@media screen and ( max-width: 1050px )

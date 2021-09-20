@@ -3291,8 +3291,8 @@ button {
 
 .product-card-gallery {
   position: absolute;
-  top: 340px;
-  left: -340px;
+  top: 50%;
+  left: -46%;
   transform: rotate(90deg);
   height: 60px;
   z-index: 3;
@@ -3455,5 +3455,15 @@ button {
 
 .view {
   opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+  .product-card-gallery {
+    top: 25%;
+  }
+  .product-card-gallery-view {
+    width: 450px;
+    height: 450px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
