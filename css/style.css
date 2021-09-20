@@ -400,6 +400,10 @@ button {
   z-index: 1 !important;
 }
 
+.owl-item {
+  width: 90px !important;
+}
+
 .owl-dot.active {
   background-color: #FFFFFF !important;
   opacity: 1 !important;
@@ -3243,9 +3247,26 @@ button {
   }
 }
 
+.product-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product-card-wrapper-gallery {
+  position: relative;
+  width: 55%;
+}
+
+.product-card-wrapper-info {
+  width: 40%;
+  padding: 2px;
+}
+
 .product-card__breadcrumb__list {
   color: #8D8D8D;
   margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .product-card__breadcrumb__nav {
@@ -3269,28 +3290,167 @@ button {
 }
 
 .product-card-gallery {
+  position: absolute;
+  top: 340px;
+  left: -340px;
   transform: rotate(90deg);
-  width: 300px;
-  height: 350px;
+  height: 60px;
+  z-index: 3;
 }
 
 .product-card-gallery-item {
   transform: rotate(-90deg);
-  border: 1px solid red;
-  opacity: 0.7;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+.product-card-gallery-item__main {
+  opacity: 1;
 }
 
 .product-card-gallery-view {
-  position: relative;
-  left: 500px;
-  top: -350px;
-  width: 400px;
-  height: 400px;
-  z-index: 99;
-  border: 1px solid green;
+  width: 570px;
+  height: 570px;
+  margin-right: 0;
+  margin-left: auto;
   background-image: url(../product-card-image/BAB-10,8X_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.product-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card-info__title {
+  text-transform: uppercase;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.product-card-info__code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E3E3E3;
+  margin-bottom: 25px;
+}
+
+.product-card-info__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.product-card-info__specifications {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.product-card-info__specifications_item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.product-card-info__specifications_item:after {
+  position: relative;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #D9760F;
+  border-radius: 50%;
+  top: -10px;
+  left: -15px;
+}
+
+.product-card-info__price {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 34px;
+  color: #D9760F;
+  margin-bottom: 10px;
+}
+
+.product-card-info__recomend {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  color: #8D8D8D;
+  margin-bottom: 40px;
+}
+
+.product-card-info__buy_die {
+  display: flex;
+}
+
+.product-card-info__buy_title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.product-card-info__buy_bort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 110px;
+  border: 1px solid #B9B9B9;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.product-card-info__buy_bort_img {
+  width: 150px;
+  height: 60px;
+}
+
+.product-card-info__buy_bort_subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.product-card-info__buy_extego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 110px;
+  border: 1px solid #B9B9B9;
+  cursor: pointer;
 }
 
 .view {

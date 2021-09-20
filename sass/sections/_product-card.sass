@@ -2,11 +2,25 @@
 
   &-card
 
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      position: relative
+
+      &-gallery
+        position: relative
+        width: 55%
+
+      &-info
+        width: 40%
+        padding: 2px
+
     &__breadcrumb
 
       &__list
         color: $dark_grey
         margin-top: 25px
+        margin-bottom: 60px
 
       &__nav
         margin-right: 0
@@ -25,26 +39,151 @@
             visibility: hidden
 
     &-gallery
+      position: absolute
+      top: 340px
+      left: -340px
       transform: rotate(90deg)
-      width: 300px
-      height: 350px
+      height: 60px
+      z-index: 3
 
       &-item
         transform: rotate(-90deg)
-        border: 1px solid red
-        opacity: 0.7
+        width: 60px
+        height: 60px
+        opacity: 0.5
+
+        &__main
+          opacity: 1
 
       &-view
-        position: relative
-        left: 500px
-        top: -350px
-        width: 400px
-        height: 400px
-        z-index: 99
-        border: 1px solid green
+        width: 570px
+        height: 570px
+        margin-right: 0
+        margin-left: auto
         background-image: url(../product-card-image/BAB-10,8X_1.jpg)
         background-repeat: no-repeat
         background-size: cover
+
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      &__title
+        text-transform: uppercase
+        font-family: Russo One
+        font-style: normal
+        font-weight: normal
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 20px
+
+      &__code
+        display: flex
+        align-items: center
+        justify-content: space-between
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 13px
+        padding-bottom: 25px
+        border-bottom: 1px solid $light_grey
+        margin-bottom: 25px
+
+      &__description
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 30px
+
+      &__specifications
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 13px
+
+        &_item
+          position: relative
+          margin-bottom: 15px
+          padding-left: 15px
+
+          &:after
+            position: relative
+            display: block
+            content: ""
+            width: 7px
+            height: 7px
+            background-color: $orange
+            border-radius: 50%
+            top: -10px
+            left: -15px
+
+      &__price
+        font-family: Russo One
+        font-style: normal
+        font-weight: normal
+        font-size: 44px
+        line-height: 34px
+        color: $orange
+        margin-bottom: 10px
+
+      &__recomend
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 13px
+        color: $dark_grey
+        margin-bottom: 40px
+
+      &__buy
+
+        &_die
+          display: flex
+
+        &_title
+          font-family: Russo One
+          font-style: normal
+          font-weight: normal
+          font-size: 21px
+          line-height: 36px
+          margin-bottom: 20px
+
+        &_bort
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          width: 245px
+          height: 110px
+          border: 1px solid $grey
+          margin-right: 15px
+          cursor: pointer
+
+          &_img
+            width: 150px
+            height: 60px
+
+          &_subtitle
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 20px
+
+        &_extego
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          width: 245px
+          height: 110px
+          border: 1px solid $grey
+          cursor: pointer
 
 .view
   opacity: 1

@@ -537,10 +537,9 @@ $(window).scroll(function() {
 // галерея карточки товара
 
 $('.product-card-gallery').owlCarousel({ 
-           loop: true,
-           center: true,
+           loop: false,
            items: 5,
-           nav: true,
+           nav: false,
            mouseDrag: false
          });
 
@@ -574,5 +573,22 @@ $(document).on('mouseup', function(e){
   }
 });
 
+//создание кликабельности плашек Bort и Extego
+
+  let linkDieBort = $(".product-card-info__buy_bort")
+
+  linkDieBort.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    location.href = '#'
+
+  });
+
+  let linkDieExtego = $(".product-card-info__buy_extego")
+
+  linkDieExtego.on("click", function () {
+    //  console.log ("Клик по кнопке меню")
+    location.href = '#'
+
+  });
 
 });
