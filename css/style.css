@@ -3251,6 +3251,7 @@ button {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding-bottom: 90px;
 }
 
 .product-card-wrapper-gallery {
@@ -3369,13 +3370,13 @@ button {
   line-height: 13px;
 }
 
-.product-card-info__specifications_item {
+.product-card-info__specifications__item {
   position: relative;
   margin-bottom: 15px;
   padding-left: 15px;
 }
 
-.product-card-info__specifications_item:after {
+.product-card-info__specifications__item:after {
   position: relative;
   display: block;
   content: "";
@@ -3407,11 +3408,11 @@ button {
   margin-bottom: 40px;
 }
 
-.product-card-info__buy_die {
+.product-card-info__buy__die {
   display: flex;
 }
 
-.product-card-info__buy_title {
+.product-card-info__buy__title {
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
@@ -3420,7 +3421,7 @@ button {
   margin-bottom: 20px;
 }
 
-.product-card-info__buy_bort {
+.product-card-info__buy__bort {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3432,12 +3433,12 @@ button {
   cursor: pointer;
 }
 
-.product-card-info__buy_bort_img {
+.product-card-info__buy__bort__img {
   width: 150px;
   height: 60px;
 }
 
-.product-card-info__buy_bort_subtitle {
+.product-card-info__buy__bort__subtitle {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -3445,7 +3446,7 @@ button {
   line-height: 20px;
 }
 
-.product-card-info__buy_extego {
+.product-card-info__buy__extego {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3480,15 +3481,15 @@ button {
   .product-card-gallery-view {
     margin-left: 0;
   }
-  .product-card-info__buy_bort, .product-card-info__buy_extego {
+  .product-card-info__buy__bort, .product-card-info__buy__extego {
     width: 160px;
     height: 70px;
   }
-  .product-card-info__buy_bort_img, .product-card-info__buy_extego_img {
+  .product-card-info__buy__bort__img, .product-card-info__buy__extego__img {
     width: 100px;
     height: 40px;
   }
-  .product-card-info__buy_bort_subtitle, .product-card-info__buy_extego_subtitle {
+  .product-card-info__buy__bort__subtitle, .product-card-info__buy__extego__subtitle {
     font-size: 8px;
     line-height: 13px;
   }
@@ -3511,7 +3512,7 @@ button {
     font-size: 12px;
     line-height: 13px;
   }
-  .product-card-info__specifications_item {
+  .product-card-info__specifications__item {
     margin-bottom: 10px;
   }
   .product-card-info__description {
@@ -3522,7 +3523,7 @@ button {
     font-size: 32px;
     line-height: 32px;
   }
-  .product-card-info__buy_title {
+  .product-card-info__buy__title {
     font-size: 15px;
     line-height: 15px;
   }
@@ -3534,6 +3535,7 @@ button {
   }
   .product-card-wrapper {
     flex-direction: column-reverse;
+    padding-bottom: 40px;
   }
   .product-card-wrapper-gallery {
     position: absolute;
@@ -3572,7 +3574,7 @@ button {
   .product-card-info__recomend {
     margin-bottom: 30px;
   }
-  .product-card-info__buy_die {
+  .product-card-info__buy__die {
     margin-top: 15px;
   }
 }
@@ -3587,6 +3589,89 @@ button {
   }
   .product-card-info__code {
     margin-bottom: 425px;
+  }
+}
+
+.navline {
+  display: flex;
+}
+
+.navline__item {
+  position: relative;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 60px;
+}
+
+.navline__item__arrow {
+  display: none;
+}
+
+.navline__item__active:before {
+  position: absolute;
+  bottom: -20px;
+  content: "";
+  height: 5px;
+  width: 100px;
+  background-color: #D9760F;
+}
+
+.navline-under {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 5px;
+  background-color: #E3E3E3;
+}
+
+@media screen and (max-width: 1150px) {
+  .navline {
+    justify-content: space-between;
+  }
+  .navline__item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navline__item {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navline {
+    flex-direction: column;
+  }
+  .navline-under {
+    display: none;
+  }
+  .navline__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 13px;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+  }
+  .navline__item__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #F5F5F5;
+    background-image: url(/image/navline-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

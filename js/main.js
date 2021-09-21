@@ -597,4 +597,10 @@ $(document).on('mouseup', function(e){
 
   });
 
+//строка навигации по рич-контенту в product-card
+$(".navline__item").click(function(){
+    $(this).toggleClass('navline__item__active')  //нужно соединить с линком и перебросом к соотв. инфе
+
+  });
+
 });

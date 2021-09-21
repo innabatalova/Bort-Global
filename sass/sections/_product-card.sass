@@ -6,6 +6,7 @@
       display: flex
       justify-content: space-between
       position: relative
+      padding-bottom: 90px
 
       &-gallery
         position: relative
@@ -109,7 +110,7 @@
         font-size: 14px
         line-height: 13px
 
-        &_item
+        &__item
           position: relative
           margin-bottom: 15px
           padding-left: 15px
@@ -145,10 +146,10 @@
 
       &__buy
 
-        &_die
+        &__die
           display: flex
 
-        &_title
+        &__title
           font-family: Russo One
           font-style: normal
           font-weight: normal
@@ -156,7 +157,7 @@
           line-height: 36px
           margin-bottom: 20px
 
-        &_bort
+        &__bort
           display: flex
           flex-direction: column
           align-items: center
@@ -167,18 +168,18 @@
           margin-right: 15px
           cursor: pointer
 
-          &_img
+          &__img
             width: 150px
             height: 60px
 
-          &_subtitle
+          &__subtitle
             font-family: Roboto
             font-style: normal
             font-weight: normal
             font-size: 12px
             line-height: 20px
 
-        &_extego
+        &__extego
           display: flex
           flex-direction: column
           align-items: center
@@ -192,7 +193,6 @@
   opacity: 1
 
 //адаптив под средний размер
-
 @media screen and ( max-width: 1200px )
   .product
 
@@ -225,15 +225,15 @@
 
         &__buy
 
-          &_bort, &_extego
+          &__bort, &__extego
             width: 160px
             height: 70px
 
-            &_img
+            &__img
               width: 100px
               height: 40px
 
-            &_subtitle
+            &__subtitle
               font-size: 8px
               line-height: 13px
 
@@ -262,7 +262,7 @@
           font-size: 12px
           line-height: 13px
 
-          &_item
+          &__item
             margin-bottom: 10px
 
         &__description
@@ -275,7 +275,7 @@
 
         &__buy
 
-          &_title
+          &__title
             font-size: 15px
             line-height: 15px
 
@@ -292,6 +292,7 @@
 
       &-wrapper
         flex-direction: column-reverse
+        padding-bottom: 40px
 
         &-gallery
           position: absolute
@@ -334,7 +335,7 @@
 
         &__buy
 
-          &_die
+          &__die
             margin-top: 15px
 
 @media screen and ( max-width: 500px )

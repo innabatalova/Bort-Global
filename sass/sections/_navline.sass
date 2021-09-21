@@ -1,0 +1,77 @@
+.navline
+  display: flex
+
+  &__item
+    position: relative
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 20px
+    text-transform: uppercase
+    color: $black
+    margin-right: 60px
+
+    &__arrow
+      display: none
+
+    &__active
+
+      &:before
+        position: absolute
+        bottom: -20px
+        content: ""
+        height: 5px
+        width: 100px
+        background-color: $orange
+
+  &-under
+    display: block
+    margin-top: 15px
+    margin-bottom: 60px
+    width: 100%
+    height: 5px
+    background-color: $light_grey
+
+//адаптив под средний размер
+@media screen and ( max-width: 1150px )
+  .navline
+    justify-content: space-between
+
+    &__item
+      margin: 0
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 850px )
+  .navline
+
+    &__item
+      font-size: 11px
+      line-height: 16px
+
+@media screen and ( max-width: 740px )
+  .navline
+    flex-direction: column
+
+    &-under
+      display: none
+
+    &__item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      height: 50px
+      font-size: 13px
+      border-top: 1px solid $lighest_grey
+      border-bottom: 1px solid $lighest_grey
+
+      &__arrow
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 28px
+        height: 28px
+        background-color: $lighest_grey
+        background-image: url(/image/navline-arrow.svg)
+        background-repeat: no-repeat
+        background-position: center
