@@ -538,9 +538,15 @@ $(window).scroll(function() {
 
 $('.product-card-gallery').owlCarousel({ 
            loop: false,
-           items: 5,
+           items: 4,
            nav: false,
-           mouseDrag: false
+           mouseDrag: true,
+           responsive: {
+             1050: {
+               items: 5,
+               mouseDrag: false
+             }
+           }
          });
 
 //вывод картинки в большую область просмотра по клику
