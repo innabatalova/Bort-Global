@@ -21,6 +21,8 @@
         color: $dark_grey
         margin-top: 25px
         margin-bottom: 60px
+        width: 800px
+        overflow: hidden
 
       &__nav
         margin-right: 0
@@ -45,6 +47,7 @@
       transform: rotate(90deg)
       height: 60px
       z-index: 3
+      overflow: hidden
 
       &-item
         transform: rotate(-90deg)
@@ -190,16 +193,167 @@
 
 //адаптив под средний размер
 
-@media screen and ( max-width: 1400px )
+@media screen and ( max-width: 1200px )
   .product
 
     &-card
 
       &-gallery
-        top: 35%
 
         &-view
-          width: 450px
-          height: 450px
+          margin-left: 120px
+          width: 500px
+          height: 500px
 
-@media screen and ( max-width: 1050px )
+@media screen and ( max-width: 1100px )
+  .product
+
+    &-card
+
+      &-gallery
+        transform: none
+        top: 85%
+        left: 0
+
+        &-item
+          transform: none
+
+        &-view
+          margin-left: 0
+
+      &-info
+
+        &__buy
+
+          &_bort, &_extego
+            width: 160px
+            height: 70px
+
+            &_img
+              width: 100px
+              height: 40px
+
+            &_subtitle
+              font-size: 8px
+              line-height: 13px
+
+@media screen and ( max-width: 970px )
+  .product
+
+    &-card
+
+      &-gallery
+
+        &-view
+          width: 400px
+          height: 400px
+
+      &-info
+
+        &__title
+          font-size: 15px
+          line-height: 22px
+
+        &__code, &__recomend
+          font-size: 12px
+          line-height: 13px
+
+        &__specifications
+          font-size: 12px
+          line-height: 13px
+
+          &_item
+            margin-bottom: 10px
+
+        &__description
+          font-size: 12px
+          line-height: 16px
+
+        &__price
+          font-size: 32px
+          line-height: 32px
+
+        &__buy
+
+          &_title
+            font-size: 15px
+            line-height: 15px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .product
+
+    &-card
+
+      &__breadcrumb
+
+        &__list
+          margin-bottom: 20px
+
+      &-wrapper
+        flex-direction: column-reverse
+
+        &-gallery
+          position: absolute
+          top: 10%
+          width: 100%
+
+        &-info
+          width: 100%
+
+      &-gallery
+        top: 105%
+
+        &-view
+          height: 480px
+          width: 480px
+          margin: auto
+
+      &-info
+
+        &__title
+          margin-bottom: 15px
+
+        &__code
+          flex-direction: column
+          align-items: flex-start
+          justify-content: space-between
+          height: 50px
+          padding-bottom: 0
+          margin-bottom: 625px
+
+        &__description
+          margin-bottom: 20px
+
+        &__price
+          margin-top: 30px
+          margin-bottom: 5px
+
+        &__recomend
+          margin-bottom: 30px
+
+        &__buy
+
+          &_die
+            margin-top: 15px
+
+@media screen and ( max-width: 500px )
+  .product
+
+    &-card
+
+      &-wrapper
+
+        &-gallery
+          top: 13%
+
+      &-gallery
+
+        &-view
+          width: 310px
+          height: 310px
+
+      &-info
+
+        &__code
+          margin-bottom: 425px
