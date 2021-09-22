@@ -1,4 +1,6 @@
 .rich
+  display: flex
+  justify-content: space-between
 
   &-wrapper
     display: flex
@@ -101,3 +103,74 @@
 
     &__last
       margin-bottom: 0
+
+.fales
+
+  &-wrapper
+    position: relative
+    width: 25%
+
+  &-sticky
+    position: sticky
+    top: 150px
+
+  &-board
+    padding: 45px
+    padding-right: 110px
+    background-color: $light_grey
+
+    &__title
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+
+    &__pdf
+      display: flex
+
+    &__download
+      display: flex
+      flex-direction: column
+      margin-left: 20px
+
+    &__link
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      line-height: 26px
+      color: $blue
+      text-decoration: underline
+
+    &-kb
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 12px
+
+.support
+
+  &-info
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 18px
+    margin-top: 30px
+    margin-bottom: 20px
+
+  &-phone
+    display: block
+    margin-bottom: 20px
+
+  &-watch
+    display: flex
+    flex-direction: column
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 18px

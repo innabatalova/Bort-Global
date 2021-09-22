@@ -400,10 +400,6 @@ button {
   z-index: 1 !important;
 }
 
-.owl-item {
-  width: 90px !important;
-}
-
 .owl-dot.active {
   background-color: #FFFFFF !important;
   opacity: 1 !important;
@@ -1034,6 +1030,19 @@ button {
   background-color: #E3E3E3;
 }
 
+.bort-support-phone {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.bort-support-phone-code {
+  color: #D9760F;
+}
+
 .header {
   position: relative;
   background-color: #FFFFFF;
@@ -1625,19 +1634,6 @@ button {
   margin-bottom: 60px;
 }
 
-.footer-phone {
-  font-family: Russo One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-}
-
-.footer-phone-code {
-  color: #D9760F;
-}
-
 .footer-address {
   font-family: Roboto;
   font-style: normal;
@@ -1725,30 +1721,30 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .foot--contacts {
+  .footer-contacts {
     align-items: start;
   }
-  .foot-__logo {
+  .footer__logo {
     max-width: 140px;
     max-height: 40px;
     margin-bottom: 20px;
   }
-  .foot--phone {
+  .footer-phone {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
   }
-  .foot--address {
+  .footer-address {
     font-size: 11px;
     line-height: 13px;
     margin-bottom: 5px;
   }
-  .foot--map {
+  .footer-map {
     font-size: 11px;
     line-height: 13px;
     margin-bottom: 20px;
   }
-  .foot-__catalog {
+  .footer__catalog {
     margin-bottom: 30px;
   }
   .listing-wrapper {
@@ -3684,6 +3680,11 @@ button {
   }
 }
 
+.rich {
+  display: flex;
+  justify-content: space-between;
+}
+
 .rich-wrapper {
   display: flex;
   flex-direction: column;
@@ -3802,5 +3803,83 @@ button {
 
 .rich-section__last {
   margin-bottom: 0;
+}
+
+.fales-wrapper {
+  position: relative;
+  width: 25%;
+}
+
+.fales-sticky {
+  position: sticky;
+  top: 150px;
+}
+
+.fales-board {
+  padding: 45px;
+  padding-right: 110px;
+  background-color: #E3E3E3;
+}
+
+.fales-board__title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.fales-board__pdf {
+  display: flex;
+}
+
+.fales-board__download {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.fales-board__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #018DA7;
+  text-decoration: underline;
+}
+
+.fales-board-kb {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.support-info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.support-phone {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.support-watch {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */

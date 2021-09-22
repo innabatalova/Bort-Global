@@ -537,6 +537,7 @@ $(window).scroll(function() {
 // галерея карточки товара
 
 $('.product-card-gallery').owlCarousel({ 
+           margin: -90,
            loop: false,
            items: 4,
            nav: false,
@@ -545,7 +546,8 @@ $('.product-card-gallery').owlCarousel({
            responsive: {
              1050: {
                items: 5,
-               mouseDrag: false
+               mouseDrag: false, 
+               
              }
            }
          });
