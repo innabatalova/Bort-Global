@@ -23,7 +23,32 @@
     font-size: 15px
     line-height: 26px
 
+  &-img
+    height: 95%
+    width: 100%
+
   &-section
+    min-height: 380px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 45px
+
+    &__one
+      flex-direction: column
+
+      &__info
+        margin-bottom: 45px
+
+    &__three
+      flex-direction: row-reverse
+
+    &__image
+      width: 47%
+
+    &__info
+      position: relative
+      width: 47%
+      padding: 1px
 
     &__title
       font-family: Russo One
@@ -32,6 +57,16 @@
       font-size: 20px
       line-height: 24px
       text-transform: uppercase
+      margin-bottom: 50px
+
+      &:before
+        position: absolute
+        content: ""
+        top: 70px
+        left: 0
+        height: 5px
+        width: 100px
+        background-color: $orange
 
     &__subtitle
       font-family: Open Sans
@@ -39,12 +74,30 @@
       font-weight: normal
       font-size: 12px
       line-height: 26px
+      margin-bottom: 0
+      background-color: $light_grey
 
     &__list
+      margin-top: 30px
 
       &__item
+        padding-left: 15px
         font-family: Roboto
         font-style: normal
         font-weight: 300
         font-size: 15px
         line-height: 16px
+
+        &:after
+          position: relative
+          display: block
+          content: ""
+          width: 7px
+          height: 7px
+          background-color: $orange
+          border-radius: 50%
+          top: -10px
+          left: -15px
+
+    &__last
+      margin-bottom: 0

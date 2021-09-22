@@ -3711,6 +3711,40 @@ button {
   line-height: 26px;
 }
 
+.rich-img {
+  height: 95%;
+  width: 100%;
+}
+
+.rich-section {
+  min-height: 380px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.rich-section__one {
+  flex-direction: column;
+}
+
+.rich-section__one__info {
+  margin-bottom: 45px;
+}
+
+.rich-section__three {
+  flex-direction: row-reverse;
+}
+
+.rich-section__image {
+  width: 47%;
+}
+
+.rich-section__info {
+  position: relative;
+  width: 47%;
+  padding: 1px;
+}
+
 .rich-section__title {
   font-family: Russo One;
   font-style: normal;
@@ -3718,6 +3752,17 @@ button {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.rich-section__title:before {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 0;
+  height: 5px;
+  width: 100px;
+  background-color: #D9760F;
 }
 
 .rich-section__subtitle {
@@ -3726,13 +3771,36 @@ button {
   font-weight: normal;
   font-size: 12px;
   line-height: 26px;
+  margin-bottom: 0;
+  background-color: #E3E3E3;
+}
+
+.rich-section__list {
+  margin-top: 30px;
 }
 
 .rich-section__list__item {
+  padding-left: 15px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 16px;
+}
+
+.rich-section__list__item:after {
+  position: relative;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #D9760F;
+  border-radius: 50%;
+  top: -10px;
+  left: -15px;
+}
+
+.rich-section__last {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
