@@ -540,6 +540,7 @@ $('.product-card-gallery').owlCarousel({
            loop: false,
            items: 4,
            nav: false,
+           dots: false,
            mouseDrag: true,
            responsive: {
              1050: {
@@ -566,15 +567,14 @@ smallBigBackground.on("click", function(){
 
 $(".product-card-gallery-item").click(function(){
     $(this).addClass("view")
-    
-
 });
 
-//вернуть прозрачность блокам вне области просмотра
 
-$(document).on('mouseup', function(e){ 
+//смена прозрачности при переключении картинок
+
+$('.product-card-gallery').on('mouseup', function(e){ 
   let s = $('.view'); 
-  if(!s.is(e.target) && s.has(e.target).length === 0) {
+  if(!s.is('.product-card-gallery')) {
     s.removeClass('view');
   }
 });
