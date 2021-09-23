@@ -3639,6 +3639,9 @@ button {
   .navline__item {
     margin: 0;
   }
+  .navline-under {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -3881,5 +3884,45 @@ button {
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
+}
+
+@media screen and (max-width: 1350px) {
+  .rich-text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .rich-section {
+    min-height: 340px;
+  }
+  .rich-section__image {
+    width: 49%;
+  }
+  .rich-section__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .rich-section__title::before {
+    top: 50px;
+  }
+  .rich-section__list__item {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .fales-wrapper {
+    width: 27%;
+  }
+  .fales-board {
+    padding: 40px;
+    padding-right: 95px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .rich-section__title::before {
+    top: 60px;
+  }
+  .fales-board {
+    padding: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

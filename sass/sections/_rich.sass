@@ -174,3 +174,54 @@
     font-weight: 300
     font-size: 13px
     line-height: 18px
+
+//адаптив под средний размер
+@media screen and ( max-width: 1350px )
+  .rich
+
+    &-text
+      font-size: 13px
+      line-height: 22px
+
+    &-section
+      min-height: 340px
+
+      &__image
+        width: 49%
+
+      &__title
+        font-size: 16px
+        line-height: 20px
+
+        &::before
+          top: 50px
+
+      &__list
+
+        &__item
+          font-size: 13px
+          line-height: 16px
+
+  .fales
+
+    &-wrapper
+      width: 27%
+
+    &-board
+      padding: 40px
+      padding-right: 95px
+
+@media screen and ( max-width: 1100px )
+  .rich
+
+    &-section
+
+      &__title
+
+        &::before
+          top: 60px
+
+  .fales
+
+    &-board
+      padding: 35px
