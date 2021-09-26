@@ -15,7 +15,7 @@
   &-video iframe
     position: absolute
     width: 100%
-    height: 500px
+    height: 100%
     border: none
 
   &-text
@@ -215,13 +215,97 @@
   .rich
 
     &-section
+      flex-direction: column
+      min-height: auto
+      margin-bottom: 0
+
+      &__one
+        margin-bottom: 25px
+
+      &__image
+        width: 100%
+        height: 400px
+        margin-bottom: 20px
+
+      &__info
+        width: 100%
 
       &__title
+        font-size: 14px
+        line-height: 17px
+        margin-bottom: 35px
 
         &::before
-          top: 60px
+          top: 35px
+          width: 40px
+          height: 3px
+
+      &__subtitle
+        font-size: 10px
+        line-height: 18px
+        padding-top: 3px
+        padding-bottom: 3px
+
+      &__list__item
+        font-size: 11px
+        line-height: 14px
+
+    &-img
+      height: 95%
+
+    &-video
+      height: 350px
+
+    &-text
+      font-size: 11px
+      line-height: 14px
 
   .fales
 
     &-board
       padding: 35px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 866px )
+  .fales
+
+    &-wrapper
+      display: none
+
+  .rich
+
+    &-wrapper
+      width: 100%
+
+    &-section
+
+      &__four, &__five
+        display: none
+
+      &__one
+
+        &__info
+          margin-top: 40px
+          margin-bottom: 20px
+
+      &__image
+        height: 250px
+
+      &__list
+        margin-top: 5px
+
+    &-video
+      height: 230px
+
+@media screen and ( max-width: 398px )
+  .rich
+
+    &-section
+
+      &__title
+
+        &::before
+          top: 50px
+
+    &-video
+      height: 170px
