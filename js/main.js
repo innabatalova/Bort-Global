@@ -537,13 +537,28 @@ $(window).scroll(function() {
 // галерея карточки товара
 
 $('.product-card-gallery').owlCarousel({ 
-           margin: -90,
+           margin: -190,
            loop: false,
-           items: 4,
+           items: 1,
            nav: false,
            dots: false,
            mouseDrag: true,
            responsive: {
+
+            470: {
+               margin: -290,
+               items: 2,
+               mouseDrag: false, 
+               
+             }, 
+
+             740: {
+               margin: -90,
+               items: 4,
+               mouseDrag: false, 
+               
+             }, 
+
              1050: {
                items: 5,
                mouseDrag: false, 
@@ -598,6 +613,23 @@ $('.product-card-gallery').on('mouseup', function(e){
     location.href = '#'
 
   });
+
+//создание блоков с якорями для мобильного разрешения navline__item
+
+$(".navline__item").click(function(){
+
+    if($(window).width() < 740 ) 
+    {
+  
+  let clickN = $(this).children('a').attr('href');
+
+  location.href = clickN,
+
+  console.log ("Клик по кнопке меню")
+    
+  }
+
+});
 
 
 //карусель index related-slider
