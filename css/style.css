@@ -4086,4 +4086,69 @@ button {
     line-height: 14px;
   }
 }
+
+.buy-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.buy-line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 60px;
+  background-color: #E3E3E3;
+}
+
+.buy-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buy-block__item {
+  width: 15%;
+  height: 210px;
+  margin-bottom: 30px;
+  background-color: #C4C4C4;
+}
+
+@media screen and (max-width: 1100px) {
+  .buy-block__item {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .buy-block__item {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .buy {
+    padding-top: 40px;
+  }
+  .buy-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .buy-line {
+    margin-bottom: 25px;
+    background-color: #D9760F;
+  }
+  .buy-block__item {
+    width: 47%;
+    height: 90px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
