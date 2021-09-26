@@ -605,4 +605,50 @@ $(".navline__item").click(function(){
 
   });
 
+
+//карусель index related-slider
+
+$(function () {
+  $(".related-slider").owlCarousel();
+
+  });
+
+$('.related-slider').owlCarousel({
+
+    items: 1,
+    margin: -40,
+    loop: true,
+    dots: false,
+    nav: false,
+    navContainer: ".related-slider-navigation",
+    navText: ["<img src='image/novelty-slider-prev.svg'>", "<img src='image/novelty-slider-next.svg'>"],
+    responsive:{
+
+      360:{
+        margin: -70
+      },
+
+      400:{
+        margin: -160
+      },
+
+      530:{
+        items: 2,
+        margin: 0
+      },
+
+      680:{
+        items: 3,
+        margin: 0
+      },
+
+      1150: {
+
+        items: 4,
+        margin: 0
+      }
+    }
+  }
+);
+
 });
