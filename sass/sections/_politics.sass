@@ -42,7 +42,9 @@
     line-height: 42px
     margin-bottom: 50px
 
-    &-text
+  &-text
+    margin-left: -20px
+    margin-top: 30px
 
   &-text, &-title-text, &-text-black
     font-family: Roboto
@@ -124,6 +126,12 @@
 @media screen and ( max-width: 998px )
   .politics
 
+    &__breadcrumb
+
+      &__list
+        margin-bottom: 0
+        width: 100%
+
     &__list
 
       &__item
@@ -143,12 +151,6 @@
 //адаптив под мобильные устройства
 @media screen and ( max-width: 866px )
   .politics
-
-    &__breadcrumb
-
-      &__list
-        margin-bottom: 0
-        width: 100%
 
     &__list
 
@@ -173,3 +175,13 @@
 
         &-contacts
           width: 100%
+
+@media screen and ( max-width: 520px )
+  .politics
+
+    &__list
+
+      &__item
+
+        &::before
+          top: 40px

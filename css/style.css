@@ -4554,6 +4554,11 @@ button {
   margin-bottom: 50px;
 }
 
+.politics-text {
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
 .politics-text, .politics-title-text, .politics-text-black {
   font-family: Roboto;
   font-style: normal;
@@ -4635,6 +4640,10 @@ button {
 }
 
 @media screen and (max-width: 998px) {
+  .politics__breadcrumb__list {
+    margin-bottom: 0;
+    width: 100%;
+  }
   .politics__list__item {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -4652,10 +4661,6 @@ button {
 }
 
 @media screen and (max-width: 866px) {
-  .politics__breadcrumb__list {
-    margin-bottom: 0;
-    width: 100%;
-  }
   .politics__list__item {
     font-size: 14px;
     line-height: 18px;
@@ -4675,6 +4680,12 @@ button {
   }
   .politics-form-modal-contacts {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .politics__list__item::before {
+    top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
