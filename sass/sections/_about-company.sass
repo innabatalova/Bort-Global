@@ -1,0 +1,203 @@
+.about
+
+  &-company
+    display: flex
+
+    &__breadcrumb
+
+      &__list
+        color: $dark_grey
+        margin-top: 25px
+        margin-bottom: 50px
+        width: 800px
+        overflow: hidden
+
+      &__nav
+        margin-right: 0
+
+        &:after
+          position: relative
+          margin-left: 10px
+          margin-right: 10px
+          top: 2px
+          content: url(../image/card-breadcrumb.svg)
+
+        &__last
+          color: $black
+
+          &::after
+            visibility: hidden
+
+    &-wrapper
+      display: flex
+      justify-content: space-between
+
+    &-info
+
+      &-wrapper
+        width: 65%
+        margin-bottom: 90px
+
+    &-title
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 35px
+      line-height: 42px
+      margin-bottom: 30px
+
+      &-line
+        display: none
+
+    &__info
+
+      &__block
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: $dark_grey
+        margin-bottom: 30px
+
+      &__image
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+
+      &__img
+        width: 48%
+
+.dealer
+  position: relative
+
+  &-wrapper
+    width: 28%
+
+  &-board
+    position: sticky
+    top: 0
+    left: 0
+    padding: 45px
+    padding-bottom: 50px
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15)
+
+    &-title
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 13px
+      text-transform: uppercase
+      margin-bottom: 20px
+
+    &-info
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 18px
+      color: $dark_grey
+      margin-bottom: 20px
+
+    &-button
+      width: 100%
+
+//адаптив под средний размер
+@media screen and ( max-width: 1150px )
+  .about
+
+    &-company
+
+      &-title
+        font-size: 25px
+        line-height: 32px
+
+      &__info
+
+        &__block
+          font-size: 13px
+          line-height: 24px
+
+  .dealer
+
+    &-board
+      padding: 25px
+      padding-bottom: 30px
+
+@media screen and ( max-width: 998px )
+  .about
+
+    &-company
+
+      &-wrapper
+        flex-direction: column
+
+      &-info
+
+        &-wrapper
+          width: 100%
+          margin-bottom: 25px
+
+  .dealer
+
+    &-wrapper
+      width: 100%
+
+    &-board
+      position: relative
+      bottom: 0
+      max-width: 350px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 866px )
+  .about
+
+    &-company
+
+      &__breadcrumb
+
+        &__list
+          margin-bottom: 20px
+          width: 100%
+
+      &-title
+        font-size: 15px
+        line-height: 22px
+        margin-bottom: 15px
+
+        &-line
+          display: block
+          width: 100%
+          height: 1px
+          background-color: $light_grey
+          margin-bottom: 15px
+
+      &__info
+
+        &__block
+          font-size: 11px
+          line-height: 14px
+
+        &__image
+          flex-direction: column
+          margin-bottom: 0
+
+        &__img
+          width: 100%
+          margin-bottom: 20px
+
+  .dealer
+
+    &-board
+
+      &-title
+        font-size: 13px
+        line-height: 13px
+
+      &-info
+        font-size: 12px
+        line-height: 18px
+
+      &-button
+        margin-top: 0
