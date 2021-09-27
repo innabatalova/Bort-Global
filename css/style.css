@@ -4554,7 +4554,7 @@ button {
   margin-bottom: 50px;
 }
 
-.politics-text {
+.politics-text, .politics-title-text, .politics-text-black {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -4563,11 +4563,11 @@ button {
   color: #8D8D8D;
 }
 
-.politics-text-black {
+.politics-text-black, .politics-title-text-black, .politics-text-black-black {
   color: #000000;
 }
 
-.politics-text-link {
+.politics-text-link, .politics-title-text-link, .politics-text-black-link {
   text-decoration: underline;
   color: #018DA7;
 }
@@ -4645,7 +4645,7 @@ button {
     margin-top: 20px;
     margin-bottom: 35px;
   }
-  .politics-text {
+  .politics-text, .politics-title-text, .politics-text-black {
     font-size: 13px;
     line-height: 24px;
   }
@@ -4664,7 +4664,7 @@ button {
     font-size: 14px;
     line-height: 18px;
   }
-  .politics-text {
+  .politics-text, .politics-title-text, .politics-text-black {
     font-size: 11px;
     line-height: 14px;
   }
