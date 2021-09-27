@@ -1,5 +1,9 @@
 .politics
 
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
   &__breadcrumb
 
     &__list
@@ -75,6 +79,17 @@
         width: 88px
         height: 2px
         background-color: $orange
+
+  &-form
+    position: relative
+
+    &-wrapper
+      width: 28%
+
+    &-modal
+      position: sticky
+      top: 100px
+      left: 0
 
 //адаптив под мобильные устройства
 @media screen and ( max-width: 740px )

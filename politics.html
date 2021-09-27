@@ -975,7 +975,8 @@
           </ul>
         </nav>
         <!-- /.breadcrumb -->
-        <div class="politics-info-wrapper">
+        <div class="politics-wrapper">
+          <div class="politics-info-wrapper">
           <div class="politics-title">Политика конфиденциальности</div>
           <p class="politics-text">
             Настоящая Политика конфиденциальности персональных данных (далее –
@@ -1355,6 +1356,49 @@
               <p class="politics-text">Обновлено: 25 Сентября 2018 года</p>
             </p>
           </ol>
+        </div>
+        <div class="politics-form-wrapper">
+          <div class="bort-modal politics-form-modal">
+          <h3 class="bort-modal-title">обратная связь</h3>
+          <form action="#" class="bort-modal-form">
+            <span class="bort-modal-text">Ваше ФИО</span>
+            <input
+              type="text"
+              name="name"
+              class="bort-modal-contacts"
+              required
+              minlength="2"
+            />
+            <span class="bort-modal-text">Контактный телефон</span>
+            <input
+              name="phone"
+              type="tel"
+              class="bort-phone bort-modal-contacts invalid"
+              required
+              minlength="18"
+            />
+            <span class="bort-modal-text">E-mail</span>
+            <input
+              name="Email"
+              type="email"
+              class="bort-modal-contacts invalid"
+              required
+              minlength="2"
+            />
+            <span class="bort-modal-text">Ваше сообщение</span>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="bort-modal-message"
+            ></textarea>
+            <button class="bort-modal-button bort-button-orange50">
+              Отправить
+            </button>
+          </form>
+        </div>
+        </div>
+        <!-- /.politics-form-wrapper -->
         </div>
       </div>
       <!-- /.grid-container -->
