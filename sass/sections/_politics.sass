@@ -91,12 +91,83 @@
       top: 100px
       left: 0
 
+      &-contacts
+        width: 100%
+
+//адаптив под средний размер
+@media screen and ( max-width: 1350px )
+  .politics
+
+    &-form
+
+      &-modal
+        padding: 25px
+
+@media screen and ( max-width: 1250px )
+  .politics
+
+    &-wrapper
+      flex-direction: column
+
+    &-info
+
+      &-wrapper
+        width: 80%
+
+    &-form
+
+      &-wrapper
+        width: 100%
+
+@media screen and ( max-width: 998px )
+  .politics
+
+    &__list
+
+      &__item
+        margin-top: 20px
+        margin-bottom: 25px
+
+    &-title
+      font-size: 25px
+      line-height: 32px
+      margin-top: 20px
+      margin-bottom: 35px
+
+    &-text
+      font-size: 13px
+      line-height: 24px
+
 //адаптив под мобильные устройства
-@media screen and ( max-width: 740px )
+@media screen and ( max-width: 866px )
   .politics
 
     &__breadcrumb
 
       &__list
-        margin-bottom: 20px
+        margin-bottom: 0
         width: 100%
+
+    &__list
+
+      &__item
+        font-size: 14px
+        line-height: 18px
+
+    &-title
+      font-size: 14px
+      line-height: 18px
+
+    &-text
+      font-size: 11px
+      line-height: 14px
+
+    &-form
+
+      &-modal
+        min-width: 290px
+        max-width: 350px
+        width: auto
+
+        &-contacts
+          width: 100%
