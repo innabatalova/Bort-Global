@@ -4355,7 +4355,7 @@ button {
 
 .about-company-info-wrapper {
   width: 65%;
-  margin-bottom: 90px;
+  margin-bottom: 10px;
 }
 
 .about-company-title {
@@ -4401,7 +4401,7 @@ button {
 
 .dealer-board {
   position: sticky;
-  top: 0;
+  top: 100px;
   left: 0;
   padding: 45px;
   padding-bottom: 50px;
@@ -4459,9 +4459,10 @@ button {
     width: 100%;
   }
   .dealer-board {
-    position: relative;
     bottom: 0;
+    min-width: 290px;
     max-width: 350px;
+    width: auto;
   }
 }
 
@@ -4504,6 +4505,98 @@ button {
   }
   .dealer-board-button {
     margin-top: 0;
+  }
+}
+
+.politics__breadcrumb__list {
+  color: #8D8D8D;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 800px;
+  overflow: hidden;
+}
+
+.politics__breadcrumb__nav {
+  margin-right: 0;
+}
+
+.politics__breadcrumb__nav:after {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 2px;
+  content: url(../image/card-breadcrumb.svg);
+}
+
+.politics__breadcrumb__nav__last {
+  color: #000000;
+}
+
+.politics__breadcrumb__nav__last::after {
+  visibility: hidden;
+}
+
+.politics-info-wrapper {
+  width: 65%;
+}
+
+.politics-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+.politics-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8D8D8D;
+}
+
+.politics-text-black {
+  color: #000000;
+}
+
+.politics-text-link {
+  text-decoration: underline;
+  color: #018DA7;
+}
+
+.politics__list {
+  margin-left: 0;
+}
+
+.politics__list__item {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.politics__list__item::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 88px;
+  height: 2px;
+  background-color: #D9760F;
+}
+
+@media screen and (max-width: 740px) {
+  .politics__breadcrumb__list {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

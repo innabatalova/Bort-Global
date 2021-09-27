@@ -1,0 +1,87 @@
+.politics
+
+  &__breadcrumb
+
+    &__list
+      color: $dark_grey
+      margin-top: 25px
+      margin-bottom: 50px
+      width: 800px
+      overflow: hidden
+
+    &__nav
+      margin-right: 0
+
+      &:after
+        position: relative
+        margin-left: 10px
+        margin-right: 10px
+        top: 2px
+        content: url(../image/card-breadcrumb.svg)
+
+      &__last
+        color: $black
+
+        &::after
+          visibility: hidden
+
+  &-info
+
+    &-wrapper
+      width: 65%
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 42px
+    margin-bottom: 50px
+
+  &-text
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark_grey
+
+    &-black
+      color: $black
+
+    &-link
+      text-decoration: underline
+      color: $blue
+
+  &__list
+    margin-left: 0
+
+    &__item
+      position: relative
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 18px
+      margin-top: 70px
+      margin-bottom: 40px
+      margin-left: 20px
+
+      &::before
+        content: ''
+        position: absolute
+        top: 30px
+        left: -20px
+        width: 88px
+        height: 2px
+        background-color: $orange
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .politics
+
+    &__breadcrumb
+
+      &__list
+        margin-bottom: 20px
+        width: 100%
