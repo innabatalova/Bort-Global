@@ -55,3 +55,39 @@ button
 .owl-dot.active
   background-color: $white !important
   opacity: 1 !important
+
+.onelevel
+
+  &__breadcrumb
+
+    &__list
+      color: $dark_grey
+      margin-top: 25px
+      margin-bottom: 50px
+      width: 800px
+      overflow: hidden
+
+    &__nav
+      margin-right: 0 !important
+
+      &:after
+        position: relative
+        margin-left: 10px
+        margin-right: 10px
+        top: 2px
+        content: url(../image/card-breadcrumb.svg)
+
+      &__last
+        color: $black
+
+        &::after
+          visibility: hidden
+
+@media screen and ( max-width: 998px )
+  .onelevel
+
+    &__breadcrumb
+
+      &__list
+        margin-bottom: 0
+        width: 100%
