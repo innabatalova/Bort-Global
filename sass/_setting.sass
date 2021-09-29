@@ -83,11 +83,29 @@ button
         &::after
           visibility: hidden
 
+.media
+
+  &-title
+
+    &-line
+      display: none
+
 @media screen and ( max-width: 998px )
   .onelevel
 
     &__breadcrumb
 
       &__list
-        margin-bottom: 0
+        margin-bottom: 20px
         width: 100%
+
+  .media
+
+    &-title
+
+      &-line
+        display: block
+        width: 100%
+        height: 1px
+        background-color: $light_grey
+        margin-bottom: 15px

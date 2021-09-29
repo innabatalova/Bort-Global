@@ -1,23 +1,8 @@
 .contacts
 
-  &-info
-
-    &-wrapper
-      width: 65%
-
-    &-modal
-      max-width: 100%
-      padding-left: 2px
-      padding-right: 2px
-      box-shadow: none
-
-    &-title
-      font-family: Roboto
-      font-style: normal
-      font-weight: normal
-      font-size: 15px
-      line-height: 20px
-      text-transform: none
+  &-wrapper
+    display: flex
+    justify-content: space-between
 
   &-title
     font-family: Russo One
@@ -37,3 +22,176 @@
     position: absolute
     width: 100%
     height: 100%
+
+  &-info
+
+    &-wrapper
+      width: 65%
+
+    &-modal
+      max-width: 100%
+      padding-left: 2px
+      padding-right: 2px
+      box-shadow: none
+
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 20px
+      text-transform: none
+      margin-bottom: 50px
+
+    &-form
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+    &-input
+      margin-bottom: 25px
+      width: 420px
+
+    &-message
+      width: 100%
+
+      &-textarea
+        width: 100%
+        height: 170px
+        max-height: 170px
+        margin-bottom: 50px
+
+    &-button
+      width: 200px
+
+  &-address
+
+    &-wrapper
+      width: 28%
+      padding-top: 90px
+      display: flex
+      flex-direction: column
+
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 15px
+      line-height: 13px
+      margin-bottom: 30px
+
+    &-phone, &-worktime, &-reqi
+      font-family: Roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      margin-bottom: 15px
+
+      &-link
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        margin-bottom: 15px
+
+    &-worktime
+      margin-bottom: 30px
+
+    &-reqi
+      margin-bottom: 0
+
+//адаптив под средний размер
+@media screen and ( max-width: 1350px )
+  .contacts
+
+    &-info
+
+      &-input
+        width: 350px
+
+@media screen and ( max-width: 998px )
+  .contacts
+
+    &-wrapper
+      flex-direction: column-reverse
+      position: relative
+
+    &-title
+      position: absolute
+      top: 0
+
+    &-info
+
+      &-wrapper
+        width: 100%
+
+    &-address
+
+      &-wrapper
+        width: 100%
+        padding-top: 0
+        margin-top: 50px
+        height: 170px
+        flex-wrap: wrap
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .contacts
+
+    &-title
+      font-size: 15px
+      line-height: 22px
+      margin-bottom: 15px
+
+      &-line
+        position: absolute
+        top: 30px
+
+    &-map
+      height: 350px
+
+    &-info
+
+      &-title
+        font-size: 11px
+        line-height: 14px
+        margin-bottom: 20px
+
+    &-address
+
+      &-wrapper
+        height: 100%
+
+      &-title
+        font-size: 13px
+        line-height: 13px
+        margin-bottom: 20px
+
+      &-phone
+        font-size: 12px
+        line-height: 14px
+        margin-bottom: 5px
+
+        &-link
+          font-size: 20px
+          line-height: 24px
+          margin-bottom: 2px
+
+      &-worktime
+        font-size: 12px
+        line-height: 19px
+        margin-bottom: 15px
+
+      &-reqi
+        font-size: 10px
+        line-height: 18px
+
+@media screen and ( max-width: 460px )
+  .contacts
+
+    &-info
+
+      &-wrap, &-input, &-button
+        width: 100%

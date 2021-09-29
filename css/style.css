@@ -433,10 +433,21 @@ button {
   visibility: hidden;
 }
 
+.media-title-line {
+  display: none;
+}
+
 @media screen and (max-width: 998px) {
   .onelevel__breadcrumb__list {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     width: 100%;
+  }
+  .media-title-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E3E3E3;
+    margin-bottom: 15px;
   }
 }
 
@@ -4374,10 +4385,6 @@ button {
   margin-bottom: 30px;
 }
 
-.about-company-title-line {
-  display: none;
-}
-
 .about-company__info__block {
   font-family: Roboto;
   font-style: normal;
@@ -4477,13 +4484,6 @@ button {
   .about-company-title {
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 15px;
-  }
-  .about-company-title-line {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #E3E3E3;
     margin-bottom: 15px;
   }
   .about-company__info__block {
@@ -4622,8 +4622,7 @@ button {
   .politics-title {
     font-size: 25px;
     line-height: 32px;
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
   .politics-text, .politics-title-text, .politics-text-black {
     font-size: 13px;
@@ -4660,24 +4659,9 @@ button {
   }
 }
 
-.contacts-info-wrapper {
-  width: 65%;
-}
-
-.contacts-info-modal {
-  max-width: 100%;
-  padding-left: 2px;
-  padding-right: 2px;
-  box-shadow: none;
-}
-
-.contacts-info-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  text-transform: none;
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts-title {
@@ -4700,5 +4684,174 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.contacts-info-wrapper {
+  width: 65%;
+}
+
+.contacts-info-modal {
+  max-width: 100%;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-shadow: none;
+}
+
+.contacts-info-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.contacts-info-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts-info-input {
+  margin-bottom: 25px;
+  width: 420px;
+}
+
+.contacts-info-message {
+  width: 100%;
+}
+
+.contacts-info-message-textarea {
+  width: 100%;
+  height: 170px;
+  max-height: 170px;
+  margin-bottom: 50px;
+}
+
+.contacts-info-button {
+  width: 200px;
+}
+
+.contacts-address-wrapper {
+  width: 28%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-address-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 13px;
+  margin-bottom: 30px;
+}
+
+.contacts-address-phone, .contacts-address-worktime, .contacts-address-reqi {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 15px;
+}
+
+.contacts-address-phone-link, .contacts-address-worktime-link, .contacts-address-reqi-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.contacts-address-worktime {
+  margin-bottom: 30px;
+}
+
+.contacts-address-reqi {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .contacts-info-input {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .contacts-wrapper {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .contacts-title {
+    position: absolute;
+    top: 0;
+  }
+  .contacts-info-wrapper {
+    width: 100%;
+  }
+  .contacts-address-wrapper {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 50px;
+    height: 170px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .contacts-title {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .contacts-title-line {
+    position: absolute;
+    top: 30px;
+  }
+  .contacts-map {
+    height: 350px;
+  }
+  .contacts-info-title {
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+  .contacts-address-wrapper {
+    height: 100%;
+  }
+  .contacts-address-title {
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 20px;
+  }
+  .contacts-address-phone {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+  .contacts-address-phone-link {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
+  .contacts-address-worktime {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+  .contacts-address-reqi {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contacts-info-wrap, .contacts-info-input, .contacts-info-button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

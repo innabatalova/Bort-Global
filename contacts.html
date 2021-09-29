@@ -975,65 +975,112 @@
           </ul>
         </nav>
         <!-- /.breadcrumb -->
-        <div class="contacts-info-wrapper">
-          <h2 class="contacts-title">Контакты</h2>
-          <div class="contacts-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.161925787227!2d37.44747385059848!3d55.807789195123036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54864726e7323%3A0xb6832e6370ee4e1!2z0JDQstC40LDRhtC40L7QvdC90LDRjyDRg9C7LiwgNzksINCc0L7RgdC60LLQsCwgMTIzMTgy!5e0!3m2!1sru!2sru!4v1632773139226!5m2!1sru!2sru"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+        <div class="contacts-wrapper">
+          <div class="contacts-info-wrapper">
+            <h2 class="contacts-title">Контакты</h2>
+            <span class="media-title-line contacts-title-line"></span>
+            <div class="contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.161925787227!2d37.44747385059848!3d55.807789195123036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54864726e7323%3A0xb6832e6370ee4e1!2z0JDQstC40LDRhtC40L7QvdC90LDRjyDRg9C7LiwgNzksINCc0L7RgdC60LLQsCwgMTIzMTgy!5e0!3m2!1sru!2sru!4v1632773139226!5m2!1sru!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="bort-modal contacts-info-modal">
+              <h3 class="bort-modal-title contacts-info-title">
+                Для нас важно ваше мнение! <br />Если у вас возникли вопросы или
+                появились предложения, отправьте нам сообщение.
+              </h3>
+              <form action="#" class="bort-modal-form contacts-info-form">
+                <div class="contacts-info-wrap">
+                  <span class="bort-modal-text">Ваше имя</span>
+                  <input
+                    type="text"
+                    name="name"
+                    class="bort-modal-contacts contacts-info-input"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="contacts-info-wrap">
+                  <span class="bort-modal-text">Контактный телефон</span>
+                  <input
+                    name="phone"
+                    type="tel"
+                    class="
+                      bort-phone bort-modal-contacts
+                      contacts-info-input
+                      invalid
+                    "
+                    required
+                    minlength="18"
+                  />
+                </div>
+                <div class="contacts-info-wrap">
+                  <span class="bort-modal-text">E-mail</span>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="bort-modal-contacts contacts-info-input invalid"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="contacts-info-wrap">
+                  <span class="bort-modal-text">Тема сообщения</span>
+                  <input
+                    name="theme"
+                    type="text"
+                    class="bort-modal-contacts contacts-info-input invalid"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="contacts-info-message">
+                  <span class="bort-modal-text">Ваше сообщение</span>
+                  <textarea
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    class="bort-modal-message contacts-info-message-textarea"
+                  ></textarea>
+                </div>
+                <button
+                  class="
+                    bort-modal-button bort-button-orange45
+                    contacts-info-button
+                  "
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="bort-modal contacts-info-modal">
-            <h3 class="bort-modal-title contacts-info-title">
-              Для нас важно ваше мнение! <br />Если у вас возникли вопросы или
-              появились предложения, отправьте нам сообщение.
+          <div class="contacts-address-wrapper">
+            <h3 class="contacts-address-title">
+              г. Москва, Авиационная улица, дом 79
             </h3>
-            <form action="#" class="bort-modal-form">
-              <span class="bort-modal-text">Ваше имя</span>
-              <input
-                type="text"
-                name="name"
-                class="bort-modal-contacts"
-                required
-                minlength="2"
-              />
-              <span class="bort-modal-text">Контактный телефон</span>
-              <input
-                name="phone"
-                type="tel"
-                class="bort-phone bort-modal-contacts invalid"
-                required
-                minlength="18"
-              />
-              <span class="bort-modal-text">E-mail</span>
-              <input
-                name="Email"
-                type="email"
-                class="bort-modal-contacts invalid"
-                required
-                minlength="2"
-              />
-              <span class="bort-modal-text">Тема сообщения</span>
-              <input
-                name="theme"
-                type="text"
-                class="bort-modal-contacts invalid"
-                required
-                minlength="2"
-              />
-              <span class="bort-modal-text">Ваше сообщение</span>
-              <textarea
-                name="message"
-                cols="30"
-                rows="10"
-                class="bort-modal-message"
-              ></textarea>
-              <button class="bort-modal-button bort-button-orange50">
-                Отправить
-              </button>
-            </form>
+
+            <span class="contacts-address-phone">Телефон:</span>
+
+            <a
+              href="tel:74997001034"
+              target="_blank"
+              class="contacts-address-phone-link"
+            >
+              +7 (499) 700-10-34</a
+            >
+
+            <span class="contacts-address-worktime"
+              >Понедельник - Пятница: с 10:00 до 18:00</span
+            >
+            <span class="contacts-address-reqi"
+              >Наименование юр. лица: ООО "Экстего"</span
+            >
+            <span class="contacts-address-reqi">ИНН: 6321450605</span>
+            <span class="contacts-address-reqi">КПП: 632101001</span>
+            <span class="contacts-address-reqi">ОГРН: 1186313073132</span>
           </div>
         </div>
       </div>
