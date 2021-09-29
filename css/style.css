@@ -4713,6 +4713,11 @@ button {
   justify-content: space-between;
 }
 
+.contacts-info-subtitle::after {
+  content: '*';
+  color: #D9760F;
+}
+
 .contacts-info-input {
   margin-bottom: 25px;
   width: 420px;
