@@ -1,0 +1,137 @@
+.guarantee
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
+  &-info
+
+    &-wrapper
+      width: 65%
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 42px
+    margin-bottom: 50px
+
+  &__list
+    margin-left: 0
+
+    &__item
+      position: relative
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 18px
+      margin-bottom: 40px
+
+      &::before
+        content: ''
+        position: absolute
+        top: 30px
+        width: 88px
+        height: 2px
+        background-color: $orange
+
+  &-text
+    margin-top: 30px
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark_grey
+
+    &-black
+      color: $black
+
+  &-form
+    position: relative
+
+    &-wrapper
+      width: 28%
+
+    &-modal
+      position: sticky
+      top: 100px
+      left: 0
+
+      &-contacts
+        width: 100%
+
+//адаптив под средний размер
+@media screen and ( max-width: 1350px )
+  .guarantee
+
+    &-form
+
+      &-modal
+        padding: 25px
+
+@media screen and ( max-width: 1250px )
+  .guarantee
+
+    &-wrapper
+      flex-direction: column
+
+    &-info
+
+      &-wrapper
+        width: 100%
+
+    &-form
+
+      &-wrapper
+        width: 100%
+
+@media screen and ( max-width: 998px )
+  .guarantee
+
+    &__list
+
+      &__item
+        margin-top: 20px
+        margin-bottom: 25px
+
+    &-title
+      font-size: 25px
+      line-height: 32px
+      margin-bottom: 20px
+
+    &-text, &-text-black
+      font-size: 13px
+      line-height: 24px
+      margin-bottom: 0
+      margin-top: 20px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 866px )
+  .guarantee
+
+    &__list
+
+      &__item
+        font-size: 14px
+        line-height: 18px
+
+    &-title
+      font-size: 14px
+      line-height: 18px
+
+    &-text, &-text-black
+      font-size: 11px
+      line-height: 14px
+
+    &-form
+
+      &-modal
+        min-width: 290px
+        max-width: 350px
+        width: auto
+
+        &-contacts
+          width: 100%

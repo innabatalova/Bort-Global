@@ -4859,4 +4859,136 @@ button {
     width: 100%;
   }
 }
+
+.guarantee-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guarantee-info-wrapper {
+  width: 65%;
+}
+
+.guarantee-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+.guarantee__list {
+  margin-left: 0;
+}
+
+.guarantee__list__item {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+.guarantee__list__item::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 88px;
+  height: 2px;
+  background-color: #D9760F;
+}
+
+.guarantee-text {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8D8D8D;
+}
+
+.guarantee-text-black {
+  color: #000000;
+}
+
+.guarantee-form {
+  position: relative;
+}
+
+.guarantee-form-wrapper {
+  width: 28%;
+}
+
+.guarantee-form-modal {
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
+
+.guarantee-form-modal-contacts {
+  width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .guarantee-form-modal {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .guarantee-wrapper {
+    flex-direction: column;
+  }
+  .guarantee-info-wrapper {
+    width: 100%;
+  }
+  .guarantee-form-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .guarantee__list__item {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .guarantee-title {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .guarantee-text, .guarantee-text-black {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .guarantee__list__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .guarantee-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .guarantee-text, .guarantee-text-black {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .guarantee-form-modal {
+    min-width: 290px;
+    max-width: 350px;
+    width: auto;
+  }
+  .guarantee-form-modal-contacts {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
