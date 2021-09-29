@@ -365,6 +365,10 @@ button {
   cursor: pointer;
 }
 
+embed {
+  width: 100%;
+}
+
 .grid-container {
   max-width: 85rem;
 }
@@ -1087,6 +1091,15 @@ button {
 
 .bort-support-phone-code {
   color: #D9760F;
+}
+
+@media screen and (max-width: 740px) {
+  .bort-modal-contacts {
+    margin-bottom: 10px;
+  }
+  .bort-modal-title, .bort-modal-message {
+    margin-bottom: 20px;
+  }
 }
 
 .header {
@@ -4915,6 +4928,11 @@ button {
   color: #000000;
 }
 
+.guarantee-pdf {
+  width: 100%;
+  height: 970px;
+}
+
 .guarantee-form {
   position: relative;
 }
@@ -4982,6 +5000,10 @@ button {
     font-size: 11px;
     line-height: 14px;
   }
+  .guarantee-pdf {
+    height: 500px;
+    margin-bottom: 20px;
+  }
   .guarantee-form-modal {
     min-width: 290px;
     max-width: 350px;
@@ -4989,6 +5011,87 @@ button {
   }
   .guarantee-form-modal-contacts {
     width: 100%;
+  }
+}
+
+.news-preview-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+.news-preview-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-preview-card {
+  justify-content: space-between;
+  max-width: 31%;
+  padding: 1px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.news-preview-card-img {
+  margin-bottom: 15px;
+}
+
+.news-preview-card-date {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 11px;
+  color: #8D8D8D;
+  margin-bottom: 15px;
+}
+
+.news-preview-card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.news-preview-card-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8D8D8D;
+  margin-bottom: 15px;
+}
+
+.news-preview-card-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: underline;
+  color: #D9760F;
+}
+
+@media screen and (max-width: 998px) {
+  .news-preview-title {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .news-preview-title {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+.news-preview
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 42px
+    margin-bottom: 50px
+
+  &-board
+    display: flex
+    justify-content: space-between
+
+  &-card
+    justify-content: space-between
+    max-width: 31%
+    padding: 1px
+    padding-bottom: 15px
+    border: none
+    border-bottom: 1px solid $light_grey
+
+    &-img
+      margin-bottom: 15px
+
+    &-date
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 11px
+      line-height: 11px
+      color: $dark-grey
+      margin-bottom: 15px
+
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 13px
+      line-height: 20px
+      margin-bottom: 15px
+
+    &-text
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 18px
+      color: $dark-grey
+      margin-bottom: 15px
+
+    &-link
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 12px
+      text-decoration: underline
+      color: $orange
+
+@media screen and ( max-width: 998px )
+  .news-preview
+
+    &-title
+      font-size: 25px
+      line-height: 32px
+      margin-bottom: 20px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 866px )
+  .news-preview
+
+    &-title
+      font-size: 14px
+      line-height: 18px
