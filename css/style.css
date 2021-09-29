@@ -405,7 +405,7 @@ button {
   opacity: 1 !important;
 }
 
-.onelevel__breadcrumb__list {
+.onelevel-breadcrumb-list {
   color: #8D8D8D;
   margin-top: 25px;
   margin-bottom: 50px;
@@ -413,11 +413,11 @@ button {
   overflow: hidden;
 }
 
-.onelevel__breadcrumb__nav {
+.onelevel-breadcrumb-nav {
   margin-right: 0 !important;
 }
 
-.onelevel__breadcrumb__nav:after {
+.onelevel-breadcrumb-nav:after {
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
@@ -425,11 +425,11 @@ button {
   content: url(../image/card-breadcrumb.svg);
 }
 
-.onelevel__breadcrumb__nav__last {
+.onelevel-breadcrumb-nav-last {
   color: #000000;
 }
 
-.onelevel__breadcrumb__nav__last::after {
+.onelevel-breadcrumb-nav-last::after {
   visibility: hidden;
 }
 
@@ -438,7 +438,7 @@ button {
 }
 
 @media screen and (max-width: 998px) {
-  .onelevel__breadcrumb__list {
+  .onelevel-breadcrumb-list {
     margin-bottom: 20px;
     width: 100%;
   }
