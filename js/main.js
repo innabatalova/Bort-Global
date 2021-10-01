@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-  //console.log("Hello");
-
-  //выпадающее меню выбора языка
-  let chooseLanguage = $(".arrow")
+  let chooseLanguage = $(".language-wrapper")
 
   chooseLanguage.on("click", function () {
     //  console.log ("Клик по кнопке меню")

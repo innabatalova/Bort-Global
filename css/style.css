@@ -1239,42 +1239,6 @@ embed {
   margin-bottom: 0;
 }
 
-.searchbar {
-  position: relative;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.searchbar__list {
-  display: flex;
-}
-
-.searchbar__item {
-  position: relative;
-  text-transform: uppercase;
-  margin-right: 50px;
-  font-family: Russo One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.searchbar__item:hover, .searchbar__item:focus {
-  color: #D9760F;
-}
-
-.searchbar::before {
-  content: "";
-  background-color: #B9B9B9;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 45px;
-}
-
 .search {
   display: flex;
   height: 20px;
@@ -1995,8 +1959,6 @@ embed {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-left: 15px;
-  padding-right: 15px;
   height: 50px;
   background-color: inherit;
   display: flex;
@@ -2806,6 +2768,43 @@ embed {
     justify-content: space-between;
     padding-right: 5px;
   }
+}
+
+.searchbar {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar__list {
+  display: flex;
+}
+
+.searchbar__item {
+  position: relative;
+  text-transform: uppercase;
+  margin-right: 50px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.searchbar__item:hover, .searchbar__item:focus {
+  color: #D9760F;
+}
+
+.searchbar::before {
+  content: "";
+  background-color: #B9B9B9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45px;
 }
 
 .searchbar-menu-item {
