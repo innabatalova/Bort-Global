@@ -5354,4 +5354,110 @@ embed {
     width: 100%;
   }
 }
+
+.be-dealer {
+  border-top: 5px solid #E3E3E3;
+  width: 100%;
+}
+
+.be-dealer-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.be-dealer-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8D8D8D;
+  margin-bottom: 20px;
+}
+
+.be-dealer__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #D9760F;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.be-dealer__board__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.be-dealer__board__desc {
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  padding: 25px;
+  border: 1px solid #E3E3E3;
+  width: 49%;
+  margin-bottom: 20px;
+}
+
+.be-dealer__board__image {
+  margin-right: 20px;
+}
+
+.be-dealer__board__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.be-dealer__board__bar {
+  display: block;
+  width: 65%;
+  background-color: #E3E3E3;
+  height: 1px;
+  margin-bottom: 25px;
+}
+
+.be-dealer__board__list__item {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8D8D8D;
+  margin-left: 20px;
+  margin-bottom: 13px;
+}
+
+.be-dealer__board__list__item:before {
+  position: absolute;
+  content: '';
+  top: 2px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  background: url(/image/select.svg) no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #D9760F;
+}
+
+.be-dealer__board__img__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+.be-dealer
+  border-top: 5px solid $light_grey
+  width: 100%
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 40px
+    margin-bottom: 50px
+
+  &-subtitle
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark_grey
+    margin-bottom: 20px
+
+  &__title
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    color: $orange
+    text-transform: uppercase
+    margin-bottom: 40px
+
+  &__board
+
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      border: 1px solid red
+
+    &__desc
+      display: flex
+      flex-direction: column
+      height: 340px
+      padding: 25px
+      border: 1px solid $light_grey
+      width: 49%
+      margin-bottom: 20px
+
+    &__image
+      margin-right: 20px
+
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 17px
+      line-height: 22px
+      margin-bottom: 0
+
+    &__bar
+      display: block
+      width: 65%
+      background-color: $light_grey
+      height: 1px
+      margin-bottom: 25px
+
+    &__list
+
+      &__item
+        position: relative
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 22px
+        color: $dark_grey
+        margin-left: 20px
+        margin-bottom: 13px
+
+        &:before
+          position: absolute
+          content: ''
+          top: 2px
+          left: -20px
+          width: 16px
+          height: 16px
+          background: url(/image/select.svg) no-repeat
+          background-position-x: center
+          background-position-y: center
+          border-radius: 14px
+          background-color: $white
+          border: 1px solid $orange
+
+    &__img
+
+      &__wrap
+        display: flex
+        align-items: center
+        margin-bottom: 25px
