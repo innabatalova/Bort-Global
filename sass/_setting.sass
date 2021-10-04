@@ -93,6 +93,29 @@ embed
     &-line
       display: none
 
+.modal
+
+  &-overlay
+    display: none
+
+    &-visible
+      display: block
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 15
+      background: rgba(141, 141, 141, 0.7)
+
+    &-form
+
+      &-modal
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
 @media screen and ( max-width: 998px )
   .onelevel
 
@@ -112,3 +135,37 @@ embed
         height: 1px
         background-color: $light_grey
         margin-bottom: 15px
+
+@media ( max-height: 650px) and ( min-width: 540px)
+  .modal
+
+    &-overlay
+
+      &-title
+        margin-bottom: 15px !important
+
+      &-form
+
+        &-modal
+          max-width: 900px !important
+          width: 900px
+          padding: 20px !important
+
+          &-contacts
+            margin-bottom: 5px !important
+
+      &-modal
+
+        &-form
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+
+        &-button
+          width: 230px !important
+          height: 50px
+          margin-top: 45px
+          margin-right: 15px
+
+        &-message
+          width: 570px !important

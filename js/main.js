@@ -3,9 +3,8 @@ $(document).ready(function () {
   let chooseLanguage = $(".language-wrapper")
 
   chooseLanguage.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
+    
     $(".language__select").slideToggle(550)
-
 
   });
 
@@ -681,5 +680,22 @@ $('.related-slider').owlCarousel({
 });
 
 
+//всплывающее окно с формой обратной связи
+
+  $(".bort-button-orange45_ready").click(function(){
+
+    $(".modal-overlay").addClass("modal-overlay-visible")
+});
+
+//закрытие всплывающего окна с формой обратной связи по клику вне формы/дочерных элементов
+$(document).mouseup(function (e){
+  
+		let closeModalOverlay = $(".modal-overlay-form-modal"); 
+
+		if (!closeModalOverlay.is(e.target) 
+		    && closeModalOverlay.has(e.target).length === 0) { 
+      $(".modal-overlay-visible").removeClass("modal-overlay-visible")
+		}
+	});
 
 });
