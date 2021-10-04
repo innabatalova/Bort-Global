@@ -11,6 +11,7 @@
   &-board
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 
   &-card
     justify-content: space-between
@@ -19,6 +20,7 @@
     padding-bottom: 15px
     border: none
     border-bottom: 1px solid $light_grey
+    margin-bottom: 30px
 
     &-img
       margin-bottom: 15px
@@ -73,3 +75,27 @@
     &-title
       font-size: 14px
       line-height: 18px
+
+@media screen and ( max-width: 740px )
+  .news-preview
+
+    &-board
+      flex-direction: column
+
+    &-card
+      max-width: 100%
+      margin-bottom: 20px
+
+      &-title
+        font-size: 12px
+        line-height: 16px
+
+      &-text
+        font-size: 10px
+        line-height: 14px
+
+    &-wrap
+
+      &-img
+        display: flex
+        flex-direction: column
