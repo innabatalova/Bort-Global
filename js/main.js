@@ -676,12 +676,16 @@ $('.related-slider').owlCarousel({
 
 //ссылка по клику на кнопку "news-view-button"
 
-  let newsButtonLink = $(".news-view-button")
+  // let newsButtonLink = $(".news-view-button")
 
-  newsButtonLink.on("click", function () {
+  // newsButtonLink.on("click", function () {
     
-    location.href = 'news-preview.html'
+  //   location.href = 'news-preview.html'
 
-  });
+  // });
+
+  $(".news-view-button").click(function(){
+    location.href = 'news-preview.html'
+});
 
 });
