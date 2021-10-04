@@ -1,0 +1,113 @@
+.news-view
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 40px
+    margin-bottom: 2px
+
+  &-date
+    display: block
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    line-height: 26px
+    margin-bottom: 50px
+
+  &-button
+    margin-bottom: 40px
+
+  &-rich
+
+    &-wrapper
+      width: 65%
+
+  &-form
+    position: relative
+
+    &-wrapper
+      width: 28%
+
+    &-modal
+      position: sticky
+      top: 100px
+      left: 0
+
+      &-contacts
+        width: 100%
+
+//адаптив под средний размер
+@media screen and ( max-width: 1350px )
+  .news-view
+
+    &-rich
+
+      &-wrapper
+        margin-bottom: 30px
+
+    &-form
+
+      &-modal
+        padding: 25px
+
+    &-section
+
+      &__last
+
+        &__img
+          width: 100%
+
+@media screen and ( max-width: 1250px )
+  .news-view
+
+    &-wrapper
+      flex-direction: column
+
+    &-rich
+
+      &-wrapper
+        width: 100%
+
+    &-form
+
+      &-wrapper
+        width: 100%
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 866px )
+  .news-view
+
+    &-breadcrumb
+
+      &-list
+        width: 285%
+
+    &-wrapper
+      margin-bottom: 20px
+
+    &-title
+      font-size: 15px
+      line-height: 22px
+
+    &-date
+      font-size: 11px
+      line-height: 26px
+      margin-bottom: 15px
+
+    &-form
+
+      &-modal
+        min-width: 290px
+        max-width: 350px
+        width: auto
+
+        &-contacts
+          width: 100%
