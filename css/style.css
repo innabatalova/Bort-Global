@@ -5394,7 +5394,7 @@ embed {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 1px solid red;
+  margin-bottom: 50px;
 }
 
 .be-dealer__board__desc {
@@ -5459,5 +5459,70 @@ embed {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
+}
+
+.be-dealer__info__title {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.be-dealer__info__title::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 88px;
+  height: 2px;
+  background-color: #D9760F;
+}
+
+.be-dealer__info__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8D8D8D;
+  margin-bottom: 35px;
+}
+
+.be-dealer__form__wrapper {
+  margin-top: 60px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.be-dealer__input {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.be-dealer__input__field {
+  width: 100%;
+}
+
+.be-dealer__input__req::after {
+  content: '*';
+  color: #D9760F;
+}
+
+.be-dealer__area {
+  width: 100%;
+}
+
+.be-dealer__area__field {
+  width: 100%;
+  max-height: 170px;
+}
+
+.be-dealer__button {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
