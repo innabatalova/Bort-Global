@@ -5525,4 +5525,86 @@ embed {
 .be-dealer__button {
   width: 200px;
 }
+
+@media screen and (max-width: 998px) {
+  .be-dealer {
+    border: none;
+  }
+  .be-dealer-title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+  .be-dealer__board__wrapper {
+    margin-bottom: 40px;
+  }
+  .be-dealer__board__desc {
+    padding: 20px;
+    height: 270px;
+  }
+  .be-dealer__board__bar, .be-dealer__board__img__wrap {
+    margin-bottom: 20px;
+  }
+  .be-dealer__board__image {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+  .be-dealer__board__title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .be-dealer__board__list__item {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .be-dealer__form__wrapper {
+    margin-top: 35px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .be-dealer-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .be-dealer-subtitle {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .be-dealer__title {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .be-dealer__board__wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .be-dealer__board__desc {
+    width: 100%;
+  }
+  .be-dealer__info__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .be-dealer__info__title::before {
+    top: 20px;
+  }
+  .be-dealer__info__text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .be-dealer__form__wrapper {
+    flex-direction: column;
+  }
+  .be-dealer__input {
+    width: 100%;
+  }
+  .be-dealer__button {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
