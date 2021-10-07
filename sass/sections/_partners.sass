@@ -1,0 +1,119 @@
+.partners
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    height: 1500px
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 40px
+    margin-bottom: 30px
+    text-transform: uppercase
+
+  &-text
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark_grey
+    margin-bottom: 35px
+
+  &-subtitle
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 22px
+    margin-bottom: 60px
+
+  &-info
+
+    &-wrapper
+      width: 65%
+
+  &-country
+
+    &-title
+      position: relative
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 18px
+      margin-bottom: 60px
+
+      &::before
+        content: ''
+        position: absolute
+        top: 30px
+        left: 0
+        width: 88px
+        height: 2px
+        background-color: $orange
+
+    &-block
+      width: 300px
+      height: 115px
+      background-color: #C4C4C4
+
+  &-board
+
+    &-wrapper
+      position: relative
+      width: 28%
+
+    &-desk
+      padding: 45px
+      padding-bottom: 50px
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15)
+      position: sticky
+      top: 100px
+      left: 0
+
+    &-title
+      font-family: Russo One
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 13px
+      text-transform: uppercase
+      margin-bottom: 20px
+
+    &-text
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 18px
+      color: $dark_grey
+      margin-bottom: 20px
+
+    &-button
+      width: 100%
+
+//адаптив под средний размер
+@media screen and ( max-width: 998px )
+  .partners
+    border: none
+
+    &-title
+      font-size: 30px
+      line-height: 35px
+      margin-bottom: 35px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .partners
+
+    &-title
+      font-size: 15px
+      line-height: 22px
+
+    &-text
+      font-size: 11px
+      line-height: 14px
