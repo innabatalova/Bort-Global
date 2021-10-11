@@ -101,19 +101,61 @@
   .partners
     border: none
 
+    &-wrapper
+      flex-direction: column
+      height: 900px
+
     &-title
       font-size: 30px
       line-height: 35px
       margin-bottom: 35px
 
+    &-subtitle
+      font-size: 13px
+      line-height: 22px
+
+    &-info, &-board
+
+      &-wrapper
+        width: 100%
+
+    &-board
+
+      &-desk
+        width: 370px
+
 //адаптив под мобильные устройства
 @media screen and ( max-width: 740px )
   .partners
 
+    &-wrapper
+      height: 600px
+
     &-title
       font-size: 15px
       line-height: 22px
+      margin-bottom: 20px
 
     &-text
       font-size: 11px
       line-height: 14px
+      margin-bottom: 20px
+
+    &-subtitle
+      margin-bottom: 20px
+
+    &-country
+
+      &-title
+        font-size: 15px
+        line-height: 22px
+        margin-bottom: 30px
+
+    &-board
+
+      &-title, &-text, &-button
+        font-size: 13px
+        line-height: 13px
+
+      &-desk
+        padding: 30px

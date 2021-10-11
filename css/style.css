@@ -5716,21 +5716,55 @@ embed {
   .partners {
     border: none;
   }
+  .partners-wrapper {
+    flex-direction: column;
+    height: 900px;
+  }
   .partners-title {
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 35px;
   }
+  .partners-subtitle {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .partners-info-wrapper, .partners-board-wrapper {
+    width: 100%;
+  }
+  .partners-board-desk {
+    width: 370px;
+  }
 }
 
 @media screen and (max-width: 740px) {
+  .partners-wrapper {
+    height: 600px;
+  }
   .partners-title {
     font-size: 15px;
     line-height: 22px;
+    margin-bottom: 20px;
   }
   .partners-text {
     font-size: 11px;
     line-height: 14px;
+    margin-bottom: 20px;
+  }
+  .partners-subtitle {
+    margin-bottom: 20px;
+  }
+  .partners-country-title {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .partners-board-title, .partners-board-text, .partners-board-button {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .partners-board-desk {
+    padding: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
