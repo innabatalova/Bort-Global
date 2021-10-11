@@ -16,6 +16,11 @@
 
     &-item
 
+      &-active
+        color: $white
+        background-image: url(/image/menu-arrow-white.svg)
+        background-color: $blue
+
       &:hover, &:focus
         color: $black
         background-image: url(/image/menu-arrow-black.svg)
@@ -25,3 +30,74 @@
         color: $white
         background-image: url(/image/menu-arrow-white.svg)
         background-color: $blue
+
+  &-info
+    width: 65%
+
+    &-block
+      padding: 1px
+      border: 1px solid green //убрать границы блоков
+      margin-bottom: 20px //убрать отступы снизу
+
+    &-text
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $dark_grey
+
+    &-black
+      color: $black
+      margin-top: 25px
+      margin-bottom: 25px
+
+    &-list
+      list-style-type: disc
+      margin-left: 15px
+      margin-bottom: 25px
+
+    &-button
+      width: 310px
+      margin-top: 45px
+
+    &-link
+      color: $orange
+      text-decoration: underline
+
+    &-site
+
+      &-list
+        margin-bottom: 20px
+
+    &-price
+      color: $orange
+
+    &-modal
+
+      &-item
+        width: 48%
+
+      &-form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+      &-text
+
+        &:after
+          content: '*'
+          color: $orange
+
+      &-contacts
+        width: 100%
+
+      &-area
+        width: 100%
+
+      &-message
+        width: 100%
+        max-height: 170px
+
+      &-button
+        width: 200px

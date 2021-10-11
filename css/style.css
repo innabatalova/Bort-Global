@@ -5782,6 +5782,12 @@ embed {
   justify-content: space-between;
 }
 
+.dropshipping-menu-item-active {
+  color: #FFFFFF;
+  background-image: url(/image/menu-arrow-white.svg);
+  background-color: #018DA7;
+}
+
 .dropshipping-menu-item:hover, .dropshipping-menu-item:focus {
   color: #000000;
   background-image: url(/image/menu-arrow-black.svg);
@@ -5792,5 +5798,86 @@ embed {
   color: #FFFFFF;
   background-image: url(/image/menu-arrow-white.svg);
   background-color: #018DA7;
+}
+
+.dropshipping-info {
+  width: 65%;
+}
+
+.dropshipping-info-block {
+  padding: 1px;
+  border: 1px solid green;
+  margin-bottom: 20px;
+}
+
+.dropshipping-info-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8D8D8D;
+}
+
+.dropshipping-info-black {
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.dropshipping-info-list {
+  list-style-type: disc;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.dropshipping-info-button {
+  width: 310px;
+  margin-top: 45px;
+}
+
+.dropshipping-info-link {
+  color: #D9760F;
+  text-decoration: underline;
+}
+
+.dropshipping-info-site-list {
+  margin-bottom: 20px;
+}
+
+.dropshipping-info-price {
+  color: #D9760F;
+}
+
+.dropshipping-info-modal-item {
+  width: 48%;
+}
+
+.dropshipping-info-modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dropshipping-info-modal-text:after {
+  content: '*';
+  color: #D9760F;
+}
+
+.dropshipping-info-modal-contacts {
+  width: 100%;
+}
+
+.dropshipping-info-modal-area {
+  width: 100%;
+}
+
+.dropshipping-info-modal-message {
+  width: 100%;
+  max-height: 170px;
+}
+
+.dropshipping-info-modal-button {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
