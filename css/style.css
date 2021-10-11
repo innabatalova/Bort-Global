@@ -5788,13 +5788,7 @@ embed {
   background-color: #018DA7;
 }
 
-.dropshipping-menu-item:hover, .dropshipping-menu-item:focus {
-  color: #000000;
-  background-image: url(/image/menu-arrow-black.svg);
-  background-color: #E3E3E3;
-}
-
-.dropshipping-menu-item:active {
+.dropshipping-menu-item:hover, .dropshipping-menu-item:focus, .dropshipping-menu-item:active {
   color: #FFFFFF;
   background-image: url(/image/menu-arrow-white.svg);
   background-color: #018DA7;
@@ -5805,9 +5799,14 @@ embed {
 }
 
 .dropshipping-info-block {
+  display: none;
   padding: 1px;
   border: 1px solid green;
   margin-bottom: 20px;
+}
+
+.dropshipping-info-block-active {
+  display: block;
 }
 
 .dropshipping-info-text {

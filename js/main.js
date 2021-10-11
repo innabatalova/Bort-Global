@@ -619,9 +619,9 @@ $(".navline__item").click(function(){
   
   let clickN = $(this).children('a').attr('href');
 
-  location.href = clickN,
+  location.href = clickN
 
-  console.log ("Клик по кнопке меню")
+  //console.log ("Клик по кнопке меню")
     
   }
 
@@ -697,5 +697,30 @@ $(document).mouseup(function (e){
       $(".modal-overlay-visible").removeClass("modal-overlay-visible")
 		}
 	});
+
+
+//переключение табов для дропшипинга
+
+$(".dropshipping-menu-item").click(function(){
+  // console.log ("Клик по кнопке меню")
+   $(this).addClass("dropshipping-menu-item-active")
+});
+
+$('.dropshipping-menu').on('mouseup', function(e){ 
+  let s = $('.dropshipping-menu-item-active'); 
+  if(!s.is('.dropshipping-menu')) {
+    s.removeClass('dropshipping-menu-item-active');
+  }
+});
+
+
+//смена прозрачности при переключении картинок
+
+// $('.product-card-gallery').on('mouseup', function(e){ 
+//   let s = $('.view'); 
+//   if(!s.is('.product-card-gallery')) {
+//     s.removeClass('view');
+//   }
+// });
 
 });

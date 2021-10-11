@@ -21,12 +21,7 @@
         background-image: url(/image/menu-arrow-white.svg)
         background-color: $blue
 
-      &:hover, &:focus
-        color: $black
-        background-image: url(/image/menu-arrow-black.svg)
-        background-color: $light_grey
-
-      &:active
+      &:hover, &:focus, &:active
         color: $white
         background-image: url(/image/menu-arrow-white.svg)
         background-color: $blue
@@ -35,9 +30,13 @@
     width: 65%
 
     &-block
+      display: none
       padding: 1px
       border: 1px solid green //убрать границы блоков
       margin-bottom: 20px //убрать отступы снизу
+
+      &-active
+        display: block
 
     &-text
       font-family: Roboto
