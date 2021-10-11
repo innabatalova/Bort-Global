@@ -5767,4 +5767,30 @@ embed {
     padding: 30px;
   }
 }
+
+.dropshipping-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.dropshipping-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropshipping-menu-item:hover, .dropshipping-menu-item:focus {
+  color: #000000;
+  background-image: url(/image/menu-arrow-black.svg);
+  background-color: #E3E3E3;
+}
+
+.dropshipping-menu-item:active {
+  color: #FFFFFF;
+  background-image: url(/image/menu-arrow-white.svg);
+  background-color: #018DA7;
+}
 /*# sourceMappingURL=style.css.map */
