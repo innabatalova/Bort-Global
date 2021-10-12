@@ -5802,11 +5802,9 @@ embed {
 .dropshipping-info-block {
   display: none;
   padding: 1px;
-  border: 1px solid green;
-  margin-bottom: 20px;
 }
 
-.dropshipping-info-block-active {
+.dropshipping-info-block-visible {
   display: block;
 }
 
