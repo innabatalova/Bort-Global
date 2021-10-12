@@ -98,3 +98,74 @@
 
       &-button
         width: 200px
+
+//адаптив под средний размер
+@media screen and ( max-width: 1150px )
+  .dropshipping
+
+    &-info
+      width: 60%
+
+    &-menu
+
+      &-item
+        width: 300px
+        background-position-x: 250px
+
+@media screen and ( max-width: 866px )
+  .dropshipping
+
+    &-info
+      width: 55%
+
+      &-text
+        font-size: 13px
+        line-height: 18px
+
+//адаптив под мобильные устройств
+@media screen and ( max-width: 740px )
+  .dropshipping
+
+    &-title
+      font-size: 15px
+      line-height: 22px
+      margin-bottom: 35px
+
+    &-wrapper
+      flex-direction: column
+
+    &-menu
+
+      &-item
+        position: relative
+        justify-content: center
+        width: 100%
+        font-size: 12px
+        line-height: 12px
+        background-image: none
+        background-color: $blue
+        color: $white
+
+        &:hover
+          background-image: none
+
+        &::before
+          content: ''
+          position: absolute
+          top: 45%
+          left: 15px
+          background-image: url(/image/submenu-arrows.svg)
+          width: 12px
+          height: 8px
+
+        &:after
+          content: ''
+          position: absolute
+          top: 45%
+          right: 15px
+          background-image: url(/image/submenu-arrows.svg)
+          width: 12px
+          height: 8px
+
+    &-info
+      width: 100%

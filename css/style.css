@@ -5878,4 +5878,69 @@ embed {
 .dropshipping-info-modal-button {
   width: 200px;
 }
+
+@media screen and (max-width: 1150px) {
+  .dropshipping-info {
+    width: 60%;
+  }
+  .dropshipping-menu-item {
+    width: 300px;
+    background-position-x: 250px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .dropshipping-info {
+    width: 55%;
+  }
+  .dropshipping-info-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .dropshipping-title {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 35px;
+  }
+  .dropshipping-wrapper {
+    flex-direction: column;
+  }
+  .dropshipping-menu-item {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    background-image: none;
+    background-color: #018DA7;
+    color: #FFFFFF;
+  }
+  .dropshipping-menu-item:hover {
+    background-image: none;
+  }
+  .dropshipping-menu-item::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    background-image: url(/image/submenu-arrows.svg);
+    width: 12px;
+    height: 8px;
+  }
+  .dropshipping-menu-item:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    background-image: url(/image/submenu-arrows.svg);
+    width: 12px;
+    height: 8px;
+  }
+  .dropshipping-info {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
