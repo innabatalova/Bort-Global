@@ -5942,5 +5942,25 @@ embed {
   .dropshipping-info {
     width: 100%;
   }
+  .dropshipping-info-block {
+    margin-top: 20px;
+  }
+  .dropshipping-info-text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .dropshipping-info-button {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .dropshipping-info-modal-form {
+    flex-direction: column;
+  }
+  .dropshipping-info-modal-item {
+    width: 100%;
+  }
+  .dropshipping-info-modal-button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
