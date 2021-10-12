@@ -3088,6 +3088,7 @@ embed {
 
 .searchbar-scrolling-wrapper-visible {
   max-width: 85rem;
+  margin: auto;
 }
 
 .searchbar-scrolling-logo {
