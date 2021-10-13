@@ -5806,6 +5806,7 @@ embed {
 
 .dropshipping-info-block-visible {
   display: block;
+  z-index: 15;
 }
 
 .dropshipping-info-text {
