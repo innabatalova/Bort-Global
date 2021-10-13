@@ -5795,10 +5795,6 @@ embed {
   background-color: #018DA7;
 }
 
-.dropshipping-info {
-  width: 65%;
-}
-
 .dropshipping-info-block {
   display: none;
   padding: 1px;
@@ -5880,9 +5876,6 @@ embed {
 }
 
 @media screen and (max-width: 1150px) {
-  .dropshipping-info {
-    width: 60%;
-  }
   .dropshipping-menu-item {
     width: 300px;
     background-position-x: 250px;
@@ -5890,9 +5883,6 @@ embed {
 }
 
 @media screen and (max-width: 866px) {
-  .dropshipping-info {
-    width: 55%;
-  }
   .dropshipping-info-text {
     font-size: 13px;
     line-height: 18px;
@@ -5939,11 +5929,13 @@ embed {
     width: 12px;
     height: 8px;
   }
-  .dropshipping-info {
-    width: 100%;
+  .dropshipping-menu-item-transform::before, .dropshipping-menu-item-transform:after {
+    transform: rotate(180deg);
   }
   .dropshipping-info-block {
+    display: none;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .dropshipping-info-text {
     font-size: 11px;

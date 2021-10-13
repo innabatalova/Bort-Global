@@ -27,7 +27,6 @@
         background-color: $blue
 
   &-info
-    width: 65%
 
     &-block
       display: none
@@ -104,7 +103,6 @@
   .dropshipping
 
     &-info
-      width: 60%
 
     &-menu
 
@@ -116,13 +114,12 @@
   .dropshipping
 
     &-info
-      width: 55%
 
       &-text
         font-size: 13px
         line-height: 18px
 
-//адаптив под мобильные устройств
+//адаптив под мобильные устройства
 @media screen and ( max-width: 740px )
   .dropshipping
 
@@ -167,11 +164,17 @@
           width: 12px
           height: 8px
 
+        &-transform
+
+          &::before, &:after
+            transform: rotate(180deg)
+
     &-info
-      width: 100%
 
       &-block
+        display: none
         margin-top: 20px
+        margin-bottom: 20px
 
       &-text
         font-size: 11px
