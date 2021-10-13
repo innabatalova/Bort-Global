@@ -10,7 +10,8 @@
 
   &-wrapper
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    position: relative
 
   &-menu
 
@@ -30,6 +31,9 @@
 
     &-block
       display: none
+      position: absolute
+      width: 65%
+      right: 0
       padding: 1px
 
       &-visible
@@ -173,6 +177,8 @@
 
       &-block
         display: none
+        position: relative
+        width: 100%
         margin-top: 20px
         margin-bottom: 20px
 

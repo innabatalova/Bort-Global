@@ -708,9 +708,20 @@ $(document).mouseup(function (e){
 
 // });
  //
+
+//  $('.dropshipping').on('mouseup', function(e){ 
+//   let m = $('.dropshipping-menu-item-active'); 
+//   if(!m.is('.dropshipping-menu')) {
+//     m.removeClass('.dropshipping-menu-item-active');
+//   }
+// });
+
 $(".dropshipping-menu-item-drop").click(function(){
+
+   $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-drop").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
+
 });
 
 
@@ -722,6 +733,7 @@ $(".dropshipping-menu-item-drop").click(function(){
 // });
 //
 $(".dropshipping-menu-item-work").click(function(){
+   $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-work").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -734,6 +746,7 @@ $(".dropshipping-menu-item-work").click(function(){
 // });
 //
 $(".dropshipping-menu-item-site").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-site").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -746,6 +759,7 @@ $(".dropshipping-menu-item-site").click(function(){
 // });
 //
 $(".dropshipping-menu-item-delivery").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-delivery").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -758,6 +772,7 @@ $(".dropshipping-menu-item-delivery").click(function(){
 // });
 //
 $(".dropshipping-menu-item-api").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-api").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -769,6 +784,7 @@ $(".dropshipping-menu-item-api").click(function(){
 // });
 //
 $(".dropshipping-menu-item-docapi").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-docapi").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -781,6 +797,7 @@ $(".dropshipping-menu-item-docapi").click(function(){
 // });
 //
 $(".dropshipping-menu-item-opendrop").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-opendrop").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
@@ -792,16 +809,27 @@ $(".dropshipping-menu-item-opendrop").click(function(){
 // });
 //
 $(".dropshipping-menu-item-docs").click(function(){
+  $(this).addClass("dropshipping-menu-item-active"),
    $(".dropshipping-info-block-docs").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
 });
 
-// $('.dropshipping-menu').on('mouseup', function(e){ 
-//   let s = $('.dropshipping-menu-item-active'); 
-//   if(!s.is('.dropshipping-menu')) {
-//     s.removeClass('dropshipping-menu-item-active')
+
+// $('.dropshipping-menu-item').on('mouseup', function(e){ 
+//   let m = $('.dropshipping-menu-item-active'); 
+//   if(!m.is('.dropshipping-menu')) {
+//     m.removeClass('.dropshipping-menu-item-active');
 //   }
+//   console.log ("Клик по кнопке меню")
 // });
 
+//переключение выделения цветом у активного блока меню дропшипинг
+
+$('.dropshipping-menu-item').on('mouseup', function(e){ 
+  let s = $('.dropshipping-menu-item-active'); 
+  if(!s.is(e.target) && s.has(e.target).length === 0) {
+    s.removeClass('dropshipping-menu-item-active');
+  }
+});
 
 });

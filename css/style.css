@@ -5780,7 +5780,8 @@ embed {
 
 .dropshipping-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
 
 .dropshipping-menu-item-active {
@@ -5797,6 +5798,9 @@ embed {
 
 .dropshipping-info-block {
   display: none;
+  position: absolute;
+  width: 65%;
+  right: 0;
   padding: 1px;
 }
 
@@ -5934,6 +5938,8 @@ embed {
   }
   .dropshipping-info-block {
     display: none;
+    position: relative;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
