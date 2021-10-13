@@ -5806,7 +5806,6 @@ embed {
 
 .dropshipping-info-block-visible {
   display: block;
-  z-index: 15;
 }
 
 .dropshipping-info-text {
@@ -5887,7 +5886,10 @@ embed {
   }
 }
 
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 920px) {
+  .dropshipping-info-block {
+    width: 57%;
+  }
   .dropshipping-info-text {
     font-size: 13px;
     line-height: 18px;
