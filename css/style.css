@@ -5964,4 +5964,65 @@ embed {
     width: 100%;
   }
 }
+
+.registration-title {
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.registration-modal {
+  max-width: 600px;
+  padding: 70px;
+}
+
+.registration-form-contacts {
+  width: 460px;
+  margin-bottom: 25px;
+}
+
+.registration-form-antibot {
+  width: 175px;
+  height: 150px;
+  border: 1px solid #8D8D8D;
+  margin-bottom: 40px;
+}
+
+.registration-form-button {
+  width: 280px;
+}
+
+.registration-form-text::after {
+  content: "*";
+  color: #D9760F;
+}
+
+@media screen and (max-width: 998px) {
+  .registration-title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .registration-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+  .registration-modal {
+    max-width: 100%;
+    padding: 35px;
+  }
+  .registration-form-contacts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .registration-form-button {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

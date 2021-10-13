@@ -1,0 +1,64 @@
+.registration
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 40px
+    margin-bottom: 50px
+
+  &-modal
+    max-width: 600px
+    padding: 70px
+
+  &-form
+
+    &-contacts
+      width: 460px
+      margin-bottom: 25px
+
+    &-antibot
+      width: 175px
+      height: 150px
+      border: 1px solid $dark_grey
+      margin-bottom: 40px
+
+    &-button
+      width: 280px
+
+    &-text
+
+      &::after
+        content: "*"
+        color: $orange
+
+//адаптив под средний размер
+@media screen and ( max-width: 998px )
+  .registration
+
+    &-title
+      font-size: 25px
+      line-height: 32px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .registration
+
+    &-title
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 25px
+
+    &-modal
+      max-width: 100%
+      padding: 35px
+
+    &-form
+
+      &-contacts
+        width: 100%
+        margin-bottom: 20px
+
+      &-button
+        width: 100%
