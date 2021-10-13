@@ -1,26 +1,14 @@
 $(document).ready(function () {
 
-  let chooseLanguage = $(".language-wrapper")
+//выпадающее меню выбора языка
 
-  chooseLanguage.on("click", function () {
-    
+$(".language-wrapper").click(function(){
     $(".language__select").slideToggle(550)
+});
 
-  });
+//создание кликабельности для стрелочки "вверх"
 
- //создание кликабельности для стрелочки "вверх"
-
-  let topArrow = $(".mobile-arrow")
-
-  topArrow.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    location.href = '#'
-
-  });
-
- 
  $(function() {
-  // при нажатии на кнопку scrollup
   $('.scroll-arrow').click(function() {
     // переместиться в верхнюю часть страницы
     $("html, body").animate({scrollTop:0},200);
@@ -39,95 +27,68 @@ $(window).scroll(function() {
   }
 });
 
-
   //создание кликабельности для всего блока карточки categories
 
   let linkCard = $(".categories-card")
 
   linkCard.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
     location.href = '#' //ссылки на странички категорий
-
   });
 
-
-  //создание кликабельности стрелочки banner с открытием в новой вкладке
+//создание кликабельности стрелочки banner с открытием в новой вкладке
 
   let linkArrow = $(".banner__arrow")
 
   linkArrow.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
     window.open('#') //ссылки на странички категорий
-
   });
 
-  //карусель для секции news (slide-category)
+//карусель для секции news (slide-category)
+
+//инициализация слайдера
 
   $(function () {
     $(".slide-category").owlCarousel();
-
   });
 
-  //Адаптив карусели для секции news
-  $('.slide-category').owlCarousel({
+//адаптив карусели для секции news
 
+  $('.slide-category').owlCarousel({
     items: 1,
     margin: -30,
 
     responsive: {
-      // Ширина от 530 пикселей
       530: {
-        // Количество элементов 2
-
         items: 2,
-
       },
-      // Ширина от 740 пикселей
+    
       740: {
-        // Количество элементов 3
         items: 3,
         margin: 0
-
       },
-      // Ширина от 866 пикселей
+      
       866: {
-        // Количество элементов 4
         items: 4,
         margin: 0
-
       }
     }
-
   });
+
 //маска для проверки ввода номера
 
 $(".bort-phone").mask('+7 (900) 000 00 00', minlength = 10);
 
-
-//раскрывающийся пункт меню (дизайн-система)
-
-let openBortMenu = $(".bort-submenu-top")
-
-
-openBortMenu.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".bort-submenu-list").slideToggle(400),
-
-   $(".bort-submenu-arrows").toggleClass('bort-submenu-arrows-transform')
-
-});
-
-  
-
-
 //карусель index main-slider
+
+//инициализация слайдера
 
   $(function () {
     $(".main-slider").owlCarousel();
 });
 
-$('.main-slider').owlCarousel({
+//адаптив карусели index main-slider
 
+$('.main-slider').owlCarousel({
     items: 1,
     loop: true,
     dots: true,
@@ -135,19 +96,21 @@ $('.main-slider').owlCarousel({
     navContainer: ".main-slider-navigation",
     dotsEach: true,
     navText: ["<img src='image/main-prev.svg'>", "<img src='image/main-next.svg'>"]
-      }
+    }
  );
 
-
 //карусель index novelty-slider
+
+//инициализация слайдера
 
 $(function () {
   $(".novelty-slider").owlCarousel();
 
   });
 
-$('.novelty-slider').owlCarousel({
+//адаптив карусели index novelty-slider
 
+$('.novelty-slider').owlCarousel({
     items: 1,
     margin: -40,
     loop: true,
@@ -184,16 +147,18 @@ $('.novelty-slider').owlCarousel({
   }
 );
 
-
 //карусель index popular-slider
+
+//инициализация слайдера
 
   $(function () {
     $(".popular-slider").owlCarousel();
 
   });
 
-$('.popular-slider').owlCarousel({
+//адаптив карусели popular-slider
 
+$('.popular-slider').owlCarousel({
     items: 1,
     margin: -40,
     loop: true,
@@ -228,26 +193,21 @@ $('.popular-slider').owlCarousel({
       }
     }
   }
- );
+);
 
-  //создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
+//создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
 
   let linkNoveltyCardArrow = $(".novelty-card-wrapper-link")
 
   linkNoveltyCardArrow.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
     window.open('#') //ссылки на странички категорий
-
   });
 
-  let linkpopularCardArrow = $(".popular-card-wrapper-link")
+  let linkPopularCardArrow = $(".popular-card-wrapper-link")
 
-  linkpopularCardArrow.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
+  linkPopularCardArrow.on("click", function () {
     window.open('#') //ссылки на странички категорий
-
   });
-
 
 //раскрывающийся пункт меню (index decktop)
 
@@ -256,13 +216,10 @@ $(".searchbar__item__tool").click(function(){
     $(".searchbar__menu__wrapper__tool").removeClass("slided").slideUp(400);
 });
 
-
-
 $(".searchbar__item__clining").click(function(){
     if(!$(".searchbar__menu__wrapper__clining").hasClass("slided")) return $(".searchbar__menu__wrapper__clining").addClass("slided").slideDown(400);
     $(".searchbar__menu__wrapper__clining").removeClass("slided").slideUp(400);
 });
-
 
 $(".searchbar__item__car").click(function(){
     if(!$(".searchbar__menu__wrapper__car").hasClass("slided")) return $(".searchbar__menu__wrapper__car").addClass("slided").slideDown(400);
@@ -309,14 +266,16 @@ $(document).mouseup(function (e){
 	});
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 //раскрывающийся пункт подменю (index decktop)
 
 let openSubMenuTool = $(".searchbar-menu-item-grinders")
 
 openSubMenuTool.on("mouseover", function(){
-  //  console.log ("Клик по кнопке меню")
-
-   $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
+  $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
 
   
 
@@ -831,5 +790,15 @@ $('.dropshipping-menu-item').on('mouseup', function(e){
     s.removeClass('dropshipping-menu-item-active');
   }
 });
+
+//не применяется на рабочих страничках (удалить при необходимости)
+
+//раскрывающийся пункт меню (дизайн-система)
+
+$(".bort-submenu-top").click(function(){
+    $(".bort-submenu-list").slideToggle(400),
+    $(".bort-submenu-arrows").toggleClass('bort-submenu-arrows-transform')
+});
+
 
 });
