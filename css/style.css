@@ -6308,7 +6308,7 @@ embed {
     position: absolute;
     top: 45%;
     left: 15px;
-    background-image: url(/image/submenu-arrows.svg);
+    background-image: url(../image/submenu-arrows.svg);
     width: 12px;
     height: 8px;
   }
@@ -6317,7 +6317,7 @@ embed {
     position: absolute;
     top: 45%;
     right: 15px;
-    background-image: url(/image/submenu-arrows.svg);
+    background-image: url(../image/submenu-arrows.svg);
     width: 12px;
     height: 8px;
   }
