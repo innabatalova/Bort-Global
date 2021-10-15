@@ -1,0 +1,250 @@
+.cabinet
+
+  &-title
+    font-family: Russo One
+    font-style: normal
+    font-weight: normal
+    font-size: 35px
+    line-height: 40px
+    margin-bottom: 50px
+
+  &-wrapper
+    display: flex
+    flex-direction: column
+    position: relative
+
+  &-menu
+
+    &-item
+
+      &-active
+        color: $white
+        background-image: url(/image/menu-arrow-white.svg)
+        background-color: $blue
+
+      &:hover, &:focus, &:active
+        color: $white
+        background-image: url(/image/menu-arrow-white.svg)
+        background-color: $blue
+
+      &-close
+        background-image: none
+
+        &:hover, &:focus, &:active
+          background-image: none
+
+  &-userinfo
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark_grey
+
+  &-info
+
+    &-block
+      display: none
+      position: absolute
+      width: 65%
+      right: 0
+      padding: 1px
+
+      &-visible
+        display: block
+
+    &-subtitle
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 15px
+
+    &-form
+      display: flex
+      justify-content: space-between
+      width: 700px
+      height: 45px
+      padding: 0
+      border: none
+      box-shadow: none
+      margin-bottom: 30px
+
+    &-input
+      width: 460px
+      height: 100%
+      margin: 0
+
+    &-button
+      width: 190px
+
+  &-sert
+
+    &-title
+      height: 45px
+      padding: 15px
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 11px
+      background-color: $lighest_grey
+
+    &-item
+      padding: 15px
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 11px
+      background-color: $white
+      color: $dark_grey
+      border-bottom: 1px solid $light_grey
+
+    &-link
+      text-decoration: underline
+
+//адаптив под средний размер
+@media screen and ( max-width: 1150px )
+  .cabinet
+
+    &-menu
+
+      &-item
+        width: 250px
+        background-position-x: 200px
+        font-size: 11px
+        line-height: 18px
+
+    &-info
+
+      &-block
+        width: 70%
+
+      &-form
+        width: 600px
+
+      &-input
+        width: 360px
+
+@media screen and ( max-width: 980px )
+  .cabinet
+
+    &-title
+      font-size: 25px
+      line-height: 32px
+
+    &-wrapper
+      flex-direction: column
+
+    &-info
+
+      &-block
+        width: 57%
+
+    &-menu
+
+      &-item
+        position: relative
+        justify-content: center
+        width: 100%
+        font-size: 12px
+        line-height: 12px
+        background-image: none
+        background-color: $blue
+        color: $white
+
+        &:hover
+          background-image: none
+
+        &::before
+          content: ''
+          position: absolute
+          top: 45%
+          left: 15px
+          background-image: url(/image/submenu-arrows.svg)
+          width: 12px
+          height: 8px
+
+        &:after
+          content: ''
+          position: absolute
+          top: 45%
+          right: 15px
+          background-image: url(/image/submenu-arrows.svg)
+          width: 12px
+          height: 8px
+
+        &-transform
+
+          &::before, &:after
+            transform: rotate(180deg)
+
+        &-close
+
+          &:before, &:after
+            background-image: none
+
+    &-info
+
+      &-block
+        display: none
+        position: relative
+        width: 100%
+        margin-top: 20px
+        margin-bottom: 20px
+
+//адаптив под мобильные устройства
+@media screen and ( max-width: 740px )
+  .cabinet
+
+    &-title
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 25px
+
+    &-info
+
+      &-form
+        width: 100%
+        flex-direction: column
+        height: 90px
+
+      &-input
+        width: 100%
+        margin-bottom: 5px
+
+      &-button
+        width: 100%
+
+    &-sert
+
+      &-item, &-title
+        padding: 10px
+        font-size: 10px
+        line-height: 8px
+
+@media screen and ( max-width: 560px )
+  .cabinet
+
+    &-menu
+
+      &-item
+        padding: 10px 15px
+
+    &-sert
+
+      &-item, &-title
+        padding: 5px
+        font-size: 8px
+        line-height: 6px
+
+@media screen and ( max-width: 460px )
+  .cabinet
+
+    &-sert
+
+      &-item, &-title
+        padding: 5px
+        font-size: 5px
+        line-height: 5px
