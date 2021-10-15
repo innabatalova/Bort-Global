@@ -5887,6 +5887,12 @@ embed {
   width: 200px;
 }
 
+@media screen and (max-width: 1250px) {
+  .dropshipping-wrapper {
+    height: 850px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .dropshipping-menu-item {
     width: 300px;
@@ -5905,6 +5911,9 @@ embed {
 }
 
 @media screen and (max-width: 740px) {
+  .dropshipping-wrapper {
+    height: auto;
+  }
   .dropshipping-title {
     font-size: 15px;
     line-height: 22px;
