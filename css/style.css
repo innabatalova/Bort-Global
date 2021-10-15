@@ -1436,7 +1436,7 @@ embed {
 }
 
 .charter {
-  background: url(../image/BG-charter.jpg);
+  background-image: url(../image/BG-charter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
@@ -1486,6 +1486,7 @@ embed {
 
 @media screen and (max-width: 740px) {
   .charter {
+    background-image: url(../image/BG-charter-mobile.jpg);
     padding-top: 20px;
   }
   .charter-title {
@@ -3399,8 +3400,14 @@ embed {
     padding-top: 20px;
   }
   .listing-product {
+    background: url(../image/BG-listing-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .listing-product-breadcrumb {
+    width: 150%;
   }
   .listing-product-title {
     margin-top: 20px;
