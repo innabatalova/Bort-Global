@@ -3379,7 +3379,7 @@ embed {
   text-align: left;
   color: #D9760F;
   text-decoration: underline;
-  background-image: url(/image/listing-arrow.svg);
+  background-image: url(../image/listing-arrow.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 85px;
@@ -3879,7 +3879,7 @@ embed {
     width: 28px;
     height: 28px;
     background-color: #F5F5F5;
-    background-image: url(/image/navline-arrow.svg);
+    background-image: url(../image/navline-arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -5456,7 +5456,7 @@ embed {
   left: -20px;
   width: 16px;
   height: 16px;
-  background: url(/image/select.svg) no-repeat;
+  background: url(../image/select.svg) no-repeat;
   background-position-x: center;
   background-position-y: center;
   border-radius: 14px;
@@ -5794,13 +5794,13 @@ embed {
 
 .dropshipping-menu-item-active {
   color: #FFFFFF;
-  background-image: url(/image/menu-arrow-white.svg);
+  background-image: url(../image/menu-arrow-white.svg);
   background-color: #018DA7;
 }
 
 .dropshipping-menu-item:hover, .dropshipping-menu-item:focus, .dropshipping-menu-item:active {
   color: #FFFFFF;
-  background-image: url(/image/menu-arrow-white.svg);
+  background-image: url(../image/menu-arrow-white.svg);
   background-color: #018DA7;
 }
 
@@ -6160,13 +6160,13 @@ embed {
 
 .cabinet-menu-item-active {
   color: #FFFFFF;
-  background-image: url(/image/menu-arrow-white.svg);
+  background-image: url(../image/menu-arrow-white.svg);
   background-color: #018DA7;
 }
 
 .cabinet-menu-item:hover, .cabinet-menu-item:focus, .cabinet-menu-item:active {
   color: #FFFFFF;
-  background-image: url(/image/menu-arrow-white.svg);
+  background-image: url(../image/menu-arrow-white.svg);
   background-color: #018DA7;
 }
 
