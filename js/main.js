@@ -37,11 +37,20 @@ $(window).scroll(function() {
 
 //создание кликабельности для кнопки "Стать дилером"
 
-  let linkDealer = $(".story__button")
+  let linkDealer = $(".be-dealer-button-link")
 
   linkDealer.on("click", function () {
     window.open('be-dealer.html')//ссылки на странички категорий
   });
+
+//создание кликабельности для кнопки "Стать дилером"
+
+  let indexLogoLink = $(".index-link")
+
+  indexLogoLink.on("click", function () {
+    window.open('index.html')//ссылки на странички категорий
+  });
+  
 
 //создание кликабельности стрелочки banner с открытием в новой вкладке
 
