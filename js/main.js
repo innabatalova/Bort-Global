@@ -716,60 +716,53 @@ $(".dropshipping-menu-item-delivery").click(function(){
 $(".dropshipping-menu-item-api").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-api").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-   else {
-   $(".dropshipping-info-block-api").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-api").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-api").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-docapi").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-docapi").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-docapi").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-docapi").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-docapi").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-opendrop").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-opendrop").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-opendrop").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-opendrop").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-opendrop").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-docs").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-docs").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-docs").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-docs").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-docs").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 //переключение выделения цветом у активного блока меню дропшипинг
@@ -787,31 +780,27 @@ $('.dropshipping-menu-item').on('mouseup', function(e){
 $(".cabinet-menu-item-userinfo").click(function(){
 
   if(newWindowWidth > 980){
-   $(".cabinet-info-block").removeClass("cabinet-info-block-visible"),
-   $(".cabinet-info-block-userinfo").addClass("cabinet-info-block-visible"),
-   $(this).addClass("cabinet-menu-item-active")
-   } 
-
-   else {
-   $(".cabinet-info-block-userinfo").slideToggle(400),
-   $(this).toggleClass('cabinet-menu-item-transform')
-   }
-
+    $(".cabinet-info-block").removeClass("cabinet-info-block-visible"),
+    $(".cabinet-info-block-userinfo").addClass("cabinet-info-block-visible"),
+    $(this).addClass("cabinet-menu-item-active")
+    } 
+    else {
+    $(".cabinet-info-block-userinfo").slideToggle(400),
+    $(this).toggleClass('cabinet-menu-item-transform')
+    }
 });
 
 $(".cabinet-menu-item-sert").click(function(){
 
   if(newWindowWidth > 980){
-   $(".cabinet-info-block").removeClass("cabinet-info-block-visible"),
-   $(".cabinet-info-block-sert").addClass("cabinet-info-block-visible"),
-   $(this).addClass("cabinet-menu-item-active")
-   } 
-
-   else {
-   $(".cabinet-info-block-sert").slideToggle(400),
-   $(this).toggleClass('cabinet-menu-item-transform')
-   }
-
+    $(".cabinet-info-block").removeClass("cabinet-info-block-visible"),
+    $(".cabinet-info-block-sert").addClass("cabinet-info-block-visible"),
+    $(this).addClass("cabinet-menu-item-active")
+    } 
+    else {
+    $(".cabinet-info-block-sert").slideToggle(400),
+    $(this).toggleClass('cabinet-menu-item-transform')
+    }
 });
 
 
