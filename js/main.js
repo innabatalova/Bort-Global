@@ -18,10 +18,10 @@ $(".language-wrapper").click(function(){
 $(window).scroll(function() {
   // если пользователь прокрутил страницу более чем на 200px
   if ($(this).scrollTop()>200) {
-    // то сделать кнопку scrollup видимой
+    // то сделать кнопку scroll-arrow видимой
     $('.scroll-arrow').fadeIn();
   }
-  // иначе скрыть кнопку scrollup
+  // иначе скрыть кнопку scroll-arrow
   else {
     $('.scroll-arrow').fadeOut();
   }
@@ -282,31 +282,19 @@ $(document).mouseup(function (e){
 
 	});
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 //раскрывающийся пункт подменю (index decktop)
 
 let openSubMenuTool = $(".searchbar-menu-item-grinders")
 
 openSubMenuTool.on("mouseover", function(){
   $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
-
-  
-
 });
+
 
 let openSubMenuCordless = $(".searchbar-menu-item-cordless")
 
 openSubMenuCordless.on("mouseover", function(){
-  //  console.log ("Клик по кнопке меню")
-
-   $(".searchbar__submenu__wrapper__cordless").toggleClass('searchbar__submenu__wrapper__cordless__visability')
-
-  
-
+  $(".searchbar__submenu__wrapper__cordless").toggleClass('searchbar__submenu__wrapper__cordless__visability')
 });
 
 //открытие мобильного меню
@@ -318,84 +306,72 @@ let openMobileTech = $(".searchmobile-tech")
 let openMobileHandtool = $(".searchmobile-handtool")
 
  openMobileTool.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".menu-tool").slideToggle(500)
+    $(".menu-tool").slideToggle(500);
 
-
+    if (! openMobileTool.hasClass('minus')){
+    openMobileTool.addClass('minus'),
+    $(this).children('.plus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileTool.removeClass('minus'),
+    $(this).children('.plus').html(innerText = '+').css({'backgroundColor': '#F5F5F5', 'color': 'black'}).removeClass('minus')
+    }
   });
 
-  
 
   openMobileClining.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".menu-clining").slideToggle(500)
+    $(".menu-clining").slideToggle(500);
 
-
+    if (! openMobileClining.hasClass('minus')){
+    openMobileClining.addClass('minus'),
+    $(this).children('.plus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileClining.removeClass('minus'),
+    $(this).children('.plus').html(innerText = '+').css({'backgroundColor': '#F5F5F5', 'color': 'black'}).removeClass('minus')
+    }
   });
 
    openMobileCar.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".menu-car").slideToggle(500)
+    $(".menu-car").slideToggle(500);
 
-
+    if (! openMobileCar.hasClass('minus')){
+    openMobileCar.addClass('minus'),
+    $(this).children('.plus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileCar.removeClass('minus'),
+    $(this).children('.plus').html(innerText = '+').css({'backgroundColor': '#F5F5F5', 'color': 'black'}).removeClass('minus')
+    }
   });
 
    openMobileTech.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".menu-tech").slideToggle(500)
+    $(".menu-tech").slideToggle(500);
 
-
+    if (! openMobileTech.hasClass('minus')){
+    openMobileTech.addClass('minus'),
+    $(this).children('.plus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileTech.removeClass('minus'),
+    $(this).children('.plus').html(innerText = '+').css({'backgroundColor': '#F5F5F5', 'color': 'black'}).removeClass('minus')
+    }
   });
 
    openMobileHandtool.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".menu-handtool").slideToggle(500)
+    $(".menu-handtool").slideToggle(500);
 
-
+    if (! openMobileHandtool.hasClass('minus')){
+    openMobileHandtool.addClass('minus'),
+    $(this).children('.plus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileHandtool.removeClass('minus'),
+    $(this).children('.plus').html(innerText = '+').css({'backgroundColor': '#F5F5F5', 'color': 'black'}).removeClass('minus')
+    }
   });
 
-
-//замена значка + на -, смена цвета фона 
-
-let plusMinusMenu = $(".plus")
-let subPlusMinusMenu = $(".subplus")
-
-plusMinusMenu.on("click", function(){
   
-   if (this.innerText == "+")
-    this.innerText = "–",
-    $(this).css({backgroundColor: 'black', color: 'white'});
-    
-
-  else {
-    this.innerText = "–";
-    this.innerText = "+";
-    $(this).css({backgroundColor: '#F5F5F5', color: 'black'});
-    
-  }
-  
-
-});
-
-subPlusMinusMenu.on("click", function(){
-  
-   if (this.innerText == "+")
-    this.innerText = "–",
-    $(this).css({backgroundColor: 'black', color: 'white'});
-    
-
-  else {
-    this.innerText = "–";
-    this.innerText = "+";
-    $(this).css({backgroundColor: '#E3E3E3', color: 'black'});
-    
-  }
-  
-
-});
-
-
-
 //открытие мобильного подменю
 
 let openMobileSubmenuSaws = $(".searchmobile-saws")
@@ -407,45 +383,81 @@ let openMobileSubmenuWelding = $(".searchmobile-welding")
 
 
  openMobileSubmenuSaws.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".submenu-saws").slideToggle(500)
+    $(".submenu-saws").slideToggle(500);
 
-
+    if (! openMobileSubmenuSaws.hasClass('subminus')){
+    openMobileSubmenuSaws.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuSaws.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
   });
 
   openMobileSubmenuDrill.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".submenu-drill").slideToggle(500)
+    $(".submenu-drill").slideToggle(500);
 
-
+    if (! openMobileSubmenuDrill.hasClass('subminus')){
+    openMobileSubmenuDrill.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuDrill.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
   });
 
    openMobileSubmenuCordless.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-    $(".submenu-cordless").slideToggle(500)
+    $(".submenu-cordless").slideToggle(500);
 
-
+    if (! openMobileSubmenuCordless.hasClass('subminus')){
+    openMobileSubmenuCordless.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuCordless.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
   });
 
   openMobileSubmenuGrinder.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-$(".submenu-grinder").slideToggle(500)
+    $(".submenu-grinder").slideToggle(500);
 
-
+    if (! openMobileSubmenuGrinder.hasClass('subminus')){
+    openMobileSubmenuGrinder.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuGrinder.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
 });
 
   openMobileSubmenuMeasuring.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-$(".submenu-measuring").slideToggle(500)
+    $(".submenu-measuring").slideToggle(500);
 
-
+    if (! openMobileSubmenuMeasuring.hasClass('subminus')){
+    openMobileSubmenuMeasuring.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuMeasuring.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
 });
 
   openMobileSubmenuWelding.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
-$(".submenu-welding").slideToggle(500)
+    $(".submenu-welding").slideToggle(500);
 
-
+    if (! openMobileSubmenuWelding.hasClass('subminus')){
+    openMobileSubmenuWelding.addClass('subminus'),
+    $(this).children('.subplus').html(innerText = '–').css({'backgroundColor': 'black', 'color': 'white'})
+    } 
+    else {
+    openMobileSubmenuWelding.removeClass('subminus'),
+    $(this).children('.subplus').html(innerText = '+').css({'backgroundColor': '#E3E3E3', 'color': 'black'}).removeClass('minus')
+    }
 });
 
 //открытие строки поиска и закрытие по клику на "лупу"

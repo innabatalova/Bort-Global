@@ -3199,9 +3199,19 @@ embed {
   padding-bottom: 3px;
 }
 
-.searchmobile-plus:focus {
+.searchmobile-plus-minus {
+  position: relative;
   background-color: #000000;
   color: #FFFFFF;
+}
+
+.searchmobile-plus-minus::after {
+  position: absolute;
+  content: "-";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .searchmobile-menu {
