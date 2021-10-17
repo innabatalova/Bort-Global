@@ -371,7 +371,7 @@ let openMobileHandtool = $(".searchmobile-handtool")
     }
   });
 
-  
+
 //открытие мобильного подменю
 
 let openMobileSubmenuSaws = $(".searchmobile-saws")
@@ -465,7 +465,6 @@ let openMobileSubmenuWelding = $(".searchmobile-welding")
 let openSearchInput = $(".logo-search-image")
 
 openSearchInput.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
 if ( $('.logo-search').hasClass('logo-search') ){
  $(".logo-search").addClass('logo-search-visible').removeClass('logo-search'),
  $(".logo-search-input").fadeIn(),
@@ -475,30 +474,20 @@ if ( $('.logo-search').hasClass('logo-search') ){
   $(".logo-search-visible").addClass('logo-search').removeClass('logo-search-visible'),
  $(".logo-search-input").fadeOut(),
  $(".logo-search-reset").fadeOut() 
-   
-   };
-  
+   }; 
   });
 
 //переключение на мобильное меню при клике на "бургер"
 
-let openMobileMenu = $(".logo-mobile")
+$(".logo-mobile").click(function(){
+    $(".searchmobile").fadeIn(),
+    $(".logo-close").fadeIn(1)
+});
 
-openMobileMenu.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
-   $(".searchmobile").fadeIn(),
-   $(".logo-close").fadeIn(1)
-
-  });
-
-let closeMobileMenu = $(".logo-close")
-
-closeMobileMenu.on("click", function(){
-  //  console.log ("Клик по кнопке меню")
+$(".logo-close").click(function(){
     $(".searchmobile").fadeOut(),
     $(".logo-close").fadeOut(1)
-
-  });
+});
 
 //фиксация меню и строки поиска в header
 
@@ -521,48 +510,42 @@ $(window).scroll(function() {
 // галерея карточки товара
 
 $('.product-card-gallery').owlCarousel({ 
-           margin: -190,
-           loop: false,
-           items: 1,
-           nav: false,
-           dots: false,
-           mouseDrag: true,
-           responsive: {
+            margin: -190,
+            loop: false,
+            items: 1,
+            nav: false,
+            dots: false,
+            mouseDrag: true,
+            responsive: {
 
             470: {
-               margin: -290,
-               items: 2,
-               mouseDrag: false, 
-               
-             }, 
+                margin: -290,
+                items: 2,
+                mouseDrag: false, 
+                
+              }, 
 
-             740: {
-               margin: -90,
-               items: 4,
-               mouseDrag: false, 
-               
-             }, 
+            740: {
+                margin: -90,
+                items: 4,
+                mouseDrag: false,    
+              }, 
 
-             1050: {
-               items: 5,
-               mouseDrag: false, 
-               
-             }
-           }
-         });
+            1050: {
+                items: 5,
+                mouseDrag: false,  
+              }
+            }
+          });
 
 //вывод картинки в большую область просмотра по клику
 
 let smallBigBackground = $(".product-card-gallery-image")
 
 smallBigBackground.on("click", function(){
-  
   let backgroungUrl = $(this).attr('src');
-
-  $(".product-card-gallery-view").css({'background-image': 'url(' + backgroungUrl + ')', });
-
-    
-  });
+  $(".product-card-gallery-view").css({'background-image': 'url(' + backgroungUrl + ')', });  
+});
   
 //убрать прозрачность для выделенного блока в галерее
 
@@ -585,17 +568,13 @@ $('.product-card-gallery').on('mouseup', function(e){
   let linkDieBort = $(".product-card-info__buy_bort")
 
   linkDieBort.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
     location.href = '#'
-
   });
 
   let linkDieExtego = $(".product-card-info__buy_extego")
 
   linkDieExtego.on("click", function () {
-    //  console.log ("Клик по кнопке меню")
     location.href = '#'
-
   });
 
 //создание блоков с якорями для мобильного разрешения navline__item
@@ -604,15 +583,9 @@ $(".navline__item").click(function(){
 
     if($(window).width() < 740 ) 
     {
-  
-  let clickN = $(this).children('a').attr('href');
-
-  location.href = clickN
-
-  //console.log ("Клик по кнопке меню")
-    
+        let clickN = $(this).children('a').attr('href');
+        location.href = clickN  
   }
-
 });
 
 
@@ -620,8 +593,7 @@ $(".navline__item").click(function(){
 
 $(function () {
   $(".related-slider").owlCarousel();
-
-  });
+});
 
 $('.related-slider').owlCarousel({
 
@@ -667,11 +639,9 @@ $('.related-slider').owlCarousel({
     location.href = 'news-preview.html'
 });
 
-
 //всплывающее окно с формой обратной связи
 
   $(".bort-button-orange45_ready").click(function(){
-
     $(".modal-overlay").addClass("modal-overlay-visible")
 });
 
@@ -694,61 +664,53 @@ let newWindowWidth = $(window).width();
 $(".dropshipping-menu-item-drop").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-drop").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-drop").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-drop").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-drop").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-work").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-work").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-work").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-work").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-work").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-site").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-site").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-site").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-site").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-site").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-delivery").click(function(){
 
   if(newWindowWidth > 740){
-   $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
-   $(".dropshipping-info-block-delivery").addClass("dropshipping-info-block-visible"),
-   $(this).addClass("dropshipping-menu-item-active")
-   } 
-
-   else {
-   $(".dropshipping-info-block-delivery").slideToggle(400),
-   $(this).toggleClass('dropshipping-menu-item-transform')
-   }
-
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-delivery").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-delivery").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
 });
 
 $(".dropshipping-menu-item-api").click(function(){
@@ -758,7 +720,6 @@ $(".dropshipping-menu-item-api").click(function(){
    $(".dropshipping-info-block-api").addClass("dropshipping-info-block-visible"),
    $(this).addClass("dropshipping-menu-item-active")
    } 
-
    else {
    $(".dropshipping-info-block-api").slideToggle(400),
    $(this).toggleClass('dropshipping-menu-item-transform')
