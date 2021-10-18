@@ -1954,7 +1954,7 @@ embed {
     display: none;
     width: 28px;
     height: 28px;
-    left: 0.625rem;
+    left: 0.30rem;
     z-index: 15;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -5776,7 +5776,9 @@ embed {
     line-height: 13px;
   }
   .partners-board-desk {
+    width: 300px;
     padding: 30px;
+    margin-top: 30px;
   }
 }
 
