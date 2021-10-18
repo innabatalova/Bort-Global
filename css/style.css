@@ -5856,6 +5856,7 @@ embed {
 .dropshipping-info-link {
   color: #D9760F;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .dropshipping-info-site-list {

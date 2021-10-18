@@ -774,6 +774,71 @@ $('.dropshipping-menu-item').on('mouseup', function(e){
   }
 });
 
+// переключение на поле ввода данных по кнопке "подключить дропшиппинг"
+
+$(".dropshipping-info-button").click(function(){
+
+  if(newWindowWidth > 740){
+    $(".dropshipping-menu-item-opendrop").addClass("dropshipping-menu-item-active"),
+    $(".dropshipping-menu-item-drop").removeClass("dropshipping-menu-item-active"),
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-opendrop").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-opendrop").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
+});
+
+// переключение на поле ввода данных по ссылке "подключить дропшиппинг"
+$(".dropshipping-info-link-opendrop").click(function(){
+
+  if(newWindowWidth > 740){
+    $(".dropshipping-menu-item-opendrop").addClass("dropshipping-menu-item-active"),
+    $(".dropshipping-menu-item-work").removeClass("dropshipping-menu-item-active"),
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-opendrop").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-opendrop").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
+});
+
+// переключение на поле ввода данных по ссылке "документация API"
+$(".dropshipping-info-link-docapi").click(function(){
+
+  if(newWindowWidth > 740){
+    $(".dropshipping-menu-item-docapi").addClass("dropshipping-menu-item-active"),
+    $(".dropshipping-menu-item-work").removeClass("dropshipping-menu-item-active"),
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-docapi").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-docapi").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
+});
+
+// переключение на поле ввода данных по ссылке "регистрация дропшиппинг партнера"
+$(".dropshipping-info-link-regdrop").click(function(){
+
+  if(newWindowWidth > 740){
+    $(".dropshipping-menu-item-opendrop").addClass("dropshipping-menu-item-active"),
+    $(".dropshipping-menu-item-api").removeClass("dropshipping-menu-item-active"),
+    $(".dropshipping-info-block").removeClass("dropshipping-info-block-visible"),
+    $(".dropshipping-info-block-opendrop").addClass("dropshipping-info-block-visible"),
+    $(this).addClass("dropshipping-menu-item-active")
+    } 
+    else {
+    $(".dropshipping-info-block-opendrop").slideToggle(400),
+    $(this).toggleClass('dropshipping-menu-item-transform')
+    }
+});
+
 
 //переключение табов для личного кабинета
 
