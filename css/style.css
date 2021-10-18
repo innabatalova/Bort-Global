@@ -4331,6 +4331,7 @@ embed {
   height: 210px;
   margin-bottom: 30px;
   background-color: #C4C4C4;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1100px) {

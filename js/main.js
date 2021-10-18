@@ -878,6 +878,11 @@ $('.cabinet-menu-item').on('mouseup', function(e){
   }
 });
 
+//переключение на страничку "стать дилером" со страницы partners
+  $(".partners-board-button").click(function(){
+    location.href = 'be-dealer.html'
+});
+
 //не применяется на рабочих страничках (удалить при необходимости)
 
 //раскрывающийся пункт меню (дизайн-система)
