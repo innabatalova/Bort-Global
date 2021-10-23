@@ -25,10 +25,6 @@
     font-size: 15px
     line-height: 26px
 
-  &-img
-    height: 95%
-    width: 100%
-
   &-section
     min-height: 380px
     display: flex
@@ -45,7 +41,16 @@
       flex-direction: row-reverse
 
     &__image
+      position: relative
       width: 47%
+      height: 330px
+
+    &__img
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      height: 330px
 
     &__info
       position: relative
@@ -71,6 +76,10 @@
         background-color: $orange
 
     &__subtitle
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
       font-family: Open Sans
       font-style: normal
       font-weight: normal

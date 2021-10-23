@@ -3921,11 +3921,6 @@ embed {
   line-height: 26px;
 }
 
-.rich-img {
-  height: 95%;
-  width: 100%;
-}
-
 .rich-section {
   min-height: 380px;
   display: flex;
@@ -3946,7 +3941,17 @@ embed {
 }
 
 .rich-section__image {
+  position: relative;
   width: 47%;
+  height: 330px;
+}
+
+.rich-section__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 330px;
 }
 
 .rich-section__info {
@@ -3976,6 +3981,10 @@ embed {
 }
 
 .rich-section__subtitle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
