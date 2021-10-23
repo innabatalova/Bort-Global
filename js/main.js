@@ -884,6 +884,19 @@ $('.cabinet-menu-item').on('mouseup', function(e){
 });
 
 //не применяется на рабочих страничках (удалить при необходимости)
+ let scrollParallax = $(".rich-section-three");
+ let counter = 0;
+ 
+ $(window).scroll(function() {
+   let scroll = $(window).scrollTop() + $(window).height();
+   let offset = scrollParallax.offset().top;
+
+  if(scroll > offset && counter == 0){
+     $(".rich-section__img").css({'transform':'translateY(-65px)'});
+     counter = 0;
+    } 
+  
+});
 
 //раскрывающийся пункт меню (дизайн-система)
 
