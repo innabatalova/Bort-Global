@@ -883,6 +883,11 @@ $('.cabinet-menu-item').on('mouseup', function(e){
     location.href = 'be-dealer.html'
 });
 
+
+//   $(".rich-section__img").click(function(){
+//     naturalWidth: 380
+// });
+
 //не применяется на рабочих страничках (удалить при необходимости)
  let scrollParallax = $(".rich-section-three");
  let counter = 0;
