@@ -26,6 +26,7 @@
     line-height: 26px
 
   &-section
+    position: relative
     min-height: 380px
     display: flex
     justify-content: space-between
@@ -43,26 +44,15 @@
     &__image
       position: relative
       width: 47%
-<<<<<<< HEAD
       overflow: hidden
 
     &__img
       position: absolute
       top: -10%
       bottom: -10%
-      border: 1px solid red
       height: 120%
-      transition-duration: 0.4s
-=======
-      height: 330px
-
-    &__img
-      position: absolute
-      top: 0
-      right: 0
-      left: 0
-      height: 330px
->>>>>>> c6bf78d7ccda845a3a31f0d34f09b20ad0238bc7
+      transition-duration: 0.7s
+      perspective: 400px
 
     &__info
       position: relative
@@ -124,6 +114,18 @@
 
     &-last
       margin-bottom: 0
+      overflow: hidden
+
+    &__five
+
+      &__img
+        position: absolute
+        top: -10%
+        bottom: -10%
+        height: 140%
+        width: 100%
+        transition-duration: 0.7s
+        perspective: 400px
 
 .fales
 

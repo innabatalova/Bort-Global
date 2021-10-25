@@ -3922,6 +3922,7 @@ embed {
 }
 
 .rich-section {
+  position: relative;
   min-height: 380px;
   display: flex;
   justify-content: space-between;
@@ -3943,27 +3944,16 @@ embed {
 .rich-section__image {
   position: relative;
   width: 47%;
-<<<<<<< HEAD
   overflow: hidden;
-=======
-  height: 330px;
->>>>>>> c6bf78d7ccda845a3a31f0d34f09b20ad0238bc7
 }
 
 .rich-section__img {
   position: absolute;
-<<<<<<< HEAD
   top: -10%;
   bottom: -10%;
-  border: 1px solid red;
   height: 120%;
-  transition-duration: 0.4s;
-=======
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 330px;
->>>>>>> c6bf78d7ccda845a3a31f0d34f09b20ad0238bc7
+  transition-duration: 0.7s;
+  perspective: 400px;
 }
 
 .rich-section__info {
@@ -4033,6 +4023,17 @@ embed {
 
 .rich-section-last {
   margin-bottom: 0;
+  overflow: hidden;
+}
+
+.rich-section__five__img {
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  height: 140%;
+  width: 100%;
+  transition-duration: 0.7s;
+  perspective: 400px;
 }
 
 .fales-wrapper {
