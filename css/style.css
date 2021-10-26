@@ -1205,6 +1205,7 @@ embed {
 
 .language-wrapper {
   display: flex;
+  cursor: pointer;
 }
 
 .language__item {
@@ -1213,6 +1214,8 @@ embed {
 
 .language__select {
   display: none;
+  position: relative;
+  z-index: 999;
 }
 
 .arrow {
@@ -3066,7 +3069,7 @@ embed {
   top: -5px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9;
   background-color: white;
   padding-top: 15px;
   padding-right: 6rem;
