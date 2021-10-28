@@ -116,6 +116,35 @@ embed
         top: 50%
         transform: translate(-50%, -50%)
 
+  &-open
+    display: none
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 15
+
+    &__visible
+      display: block
+
+    &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+      padding: 30px
+      background-color: $white
+      width: 350px
+      height: 250px
+      position: fixed
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+
+    &__post
+      font-family: Russo One
+
 @media screen and ( max-width: 998px )
   .onelevel
 
