@@ -655,20 +655,70 @@ $(document).mouseup(function (e){
       $(".modal-overlay-visible").removeClass("modal-overlay-visible")
 		}
 	});
-  
 
-  //всплывающее окно с формой обратной связи
-$(".modal-overlay-modal-form").submit(function(){
+
+//отправка окна с формой обратной связи из кнопки "Написать нам"
+$(".modal-overlay-modal-form").submit(function(e){
+
+e.preventDefault();
   
 $(".modal-overlay").fadeOut(200),
 
     setTimeout(function() {
             $(".modal-open").addClass("modal-open__visible")
-        },1000)
+        },1000);
+
 });
 
+//закрытие окна успешной отправки формы
 $(".modal-open__button").click(function(){
     $(".modal-open__visible").removeClass("modal-open__visible")
+});
+
+
+//отправка окна с формой обратной связи со страницы "Контакты"
+$(".contacts-info-form").submit(function(e){
+
+e.preventDefault();
+  
+$(".modal-overlay").fadeOut(200),
+
+    setTimeout(function() {
+            $(".modal-open").addClass("modal-open__visible")
+        },1000),
+
+$(this).get(0).reset()
+
+});
+
+//отправка окна с формой обратной связи со страницы "Гарантия"
+$(".bort-modal-form").submit(function(e){
+
+e.preventDefault();
+  
+$(".modal-overlay").fadeOut(200),
+
+    setTimeout(function() {
+            $(".modal-open").addClass("modal-open__visible")
+        },1000),
+
+$(this).get(0).reset()
+
+});
+
+//отправка окна с формой обратной связи со страницы "Стать дилером"
+$(".be-dealer__form__wrapper").submit(function(e){
+
+e.preventDefault();
+  
+$(".modal-overlay").fadeOut(200),
+
+    setTimeout(function() {
+            $(".modal-open").addClass("modal-open__visible")
+        },1000),
+
+$(this).get(0).reset()
+
 });
 
 
