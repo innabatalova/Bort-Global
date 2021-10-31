@@ -655,16 +655,22 @@ $(document).mouseup(function (e){
       $(".modal-overlay-visible").removeClass("modal-overlay-visible")
 		}
 	});
-
+  
 
   //всплывающее окно с формой обратной связи
-$(".modal-overlay-modal-button").click(function(){
-    $(".modal-open").addClass("modal-open__visible")
+$(".modal-overlay-modal-form").submit(function(){
+  
+$(".modal-overlay").fadeOut(200),
+
+    setTimeout(function() {
+            $(".modal-open").addClass("modal-open__visible")
+        },1000)
 });
 
 $(".modal-open__button").click(function(){
     $(".modal-open__visible").removeClass("modal-open__visible")
 });
+
 
 //переключение табов для дропшипинга
 
