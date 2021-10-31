@@ -54,9 +54,9 @@ $(window).scroll(function() {
 
 //создание кликабельности стрелочки banner с открытием в новой вкладке
 
-  let linkArrow = $(".banner__arrow")
+  let linkBannerCard = $(".banner-card")
 
-  linkArrow.on("click", function () {
+  linkBannerCard.on("click", function () {
     window.open('#') //ссылки на странички категорий
   });
 
@@ -214,16 +214,16 @@ $('.popular-slider').owlCarousel({
 
 //создание кликабельности для ссылки "Где купить?" с открытием в новой вкладке
 
-  let linkNoveltyCardArrow = $(".novelty-card-wrapper-link")
+  let linkNoveltyCard = $(".novelty-card")
 
-  linkNoveltyCardArrow.on("click", function () {
-    window.open('#') //ссылки на странички категорий
+  linkNoveltyCard.on("click", function () {
+    window.open('product-card.html') //ссылки на странички категорий
   });
 
-  let linkPopularCardArrow = $(".popular-card-wrapper-link")
+  let linkPopularCard = $(".popular-card")
 
-  linkPopularCardArrow.on("click", function () {
-    window.open('#') //ссылки на странички категорий
+  linkPopularCard.on("click", function () {
+    window.open('product-card.html') //ссылки на странички категорий
   });
 
 //раскрывающийся пункт меню (index decktop)
