@@ -1272,6 +1272,10 @@ embed {
   margin-right: 40px;
 }
 
+.navbar__item:hover, .navbar__item:focus {
+  color: #FFFFFF;
+}
+
 .account {
   color: #FFFFFF;
   font-family: Roboto;
@@ -1283,7 +1287,7 @@ embed {
 }
 
 .account:hover, .account:focus {
-  color: #FFFFFF;
+  color: #B9B9B9;
 }
 
 .logo-wrapper {
@@ -1353,7 +1357,7 @@ embed {
 
 @media screen and (max-width: 1200px) {
   .search-input {
-    width: 100px;
+    width: 150px;
   }
 }
 
@@ -2451,19 +2455,18 @@ embed {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 60px;
   top: 55%;
-  padding-left: 2%;
-  padding-right: 2%;
   z-index: 1;
 }
 
 .novelty-slider-navigation:before {
   content: "";
   position: absolute;
-  top: -18px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
+  top: 0;
+  left: calc( 100% - 60px);
+  right: 0;
+  bottom: 0;
   background-color: #FFFFFF;
   z-index: -1;
 }
@@ -2471,10 +2474,10 @@ embed {
 .novelty-slider-navigation:after {
   content: "";
   position: absolute;
-  top: -18px;
-  right: 10px;
-  width: 60px;
-  height: 60px;
+  top: 0;
+  right: calc( 100% - 60px);
+  left: 0;
+  bottom: 0;
   background-color: #FFFFFF;
   z-index: -1;
 }
@@ -2648,19 +2651,18 @@ embed {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 60px;
   top: 55%;
-  padding-left: 2%;
-  padding-right: 2%;
   z-index: 1;
 }
 
 .popular-slider-navigation:before {
   content: "";
   position: absolute;
-  top: -18px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
+  top: 0;
+  left: calc( 100% - 60px);
+  right: 0;
+  bottom: 0;
   background-color: #FFFFFF;
   z-index: -1;
 }
@@ -2668,10 +2670,10 @@ embed {
 .popular-slider-navigation:after {
   content: "";
   position: absolute;
-  top: -18px;
-  right: 10px;
-  width: 60px;
-  height: 60px;
+  top: 0;
+  right: calc( 100% - 60px);
+  left: 0;
+  bottom: 0;
   background-color: #FFFFFF;
   z-index: -1;
 }
@@ -3008,7 +3010,7 @@ embed {
 .searchbar__menu__topline:after {
   content: '';
   position: absolute;
-  left: 50px;
+  left: 25px;
   bottom: 10px;
   border: 8px solid transparent;
   border-bottom: 8px solid #D9760F;
@@ -3155,7 +3157,7 @@ embed {
   }
   .search-input {
     padding: 0;
-    width: 30px;
+    width: 100px;
   }
 }
 
