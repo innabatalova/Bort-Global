@@ -2069,9 +2069,9 @@ embed {
 }
 
 .main-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   background: url(../image/bg-main-slider-card.jpg);
   background-repeat: no-repeat;
@@ -2081,6 +2081,8 @@ embed {
 }
 
 .main-card-wrapper {
+  position: absolute;
+  left: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

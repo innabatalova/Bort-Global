@@ -948,6 +948,10 @@ $('.cabinet-menu-item').on('mouseup', function(e){
     location.href = 'be-dealer.html'
 });
 
+//получение размера отступа для внутреннего контента в main-slider
+let left = $(".grid-container").offset().left;
+let marginLeft = left + 15;
+$(".main-card-wrapper").css("left",marginLeft + "px");
 
 
 //не применяется на рабочих страничках (удалить при необходимости)
