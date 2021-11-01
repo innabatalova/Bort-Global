@@ -1084,7 +1084,7 @@ embed {
   color: #8D8D8D;
   padding: 18px 25px;
   margin-bottom: 1px;
-  background-image: url(/image/menu-arrow.svg);
+  background-image: url(../image/menu-arrow.svg);
   background-repeat: no-repeat;
   background-position-x: 300px;
   padding-right: 25px;
@@ -1094,13 +1094,13 @@ embed {
 
 .bort-menu-item:hover, .bort-menu-item:focus {
   color: #000000;
-  background-image: url(/image/menu-arrow-black.svg);
+  background-image: url(../image/menu-arrow-black.svg);
   background-color: #E3E3E3;
 }
 
 .bort-menu-item:active {
   color: #FFFFFF;
-  background-image: url(/image/menu-arrow-white.svg);
+  background-image: url(../image/menu-arrow-white.svg);
   background-color: #D9760F;
 }
 
@@ -2069,7 +2069,6 @@ embed {
 }
 
 .main-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2081,8 +2080,7 @@ embed {
 }
 
 .main-card-wrapper {
-  position: absolute;
-  left: 150px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2253,8 +2251,6 @@ embed {
   }
   .main-slider-navigation {
     height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .main-chest-prev, .main-chest-next {
     width: 120px;
