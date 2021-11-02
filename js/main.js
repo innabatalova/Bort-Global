@@ -255,6 +255,10 @@ $(document).mouseout(function (e){
 		}
 	});
 
+menuFocusTool.on("click", function () {
+    location.href = 'listing.html' //ссылки на странички категорий
+  });
+
 menuFocusClining.on("mouseover", function(){   
   menuOpenClining.show()
 });
@@ -266,6 +270,9 @@ $(document).mouseout(function (e){
 		}
 	});
 
+menuFocusClining.on("click", function () {
+    location.href = 'listing.html' //ссылки на странички категорий
+  });
 
 menuFocusCar.on("mouseover", function(){   
 menuOpenCar.show()
@@ -278,6 +285,10 @@ $(document).mouseout(function (e){
 		}
 	});
 
+menuFocusCar.on("click", function () {
+    location.href = 'listing.html' //ссылки на странички категорий
+  });
+
 menuFocusTech.on("mouseover", function(){   
 menuOpenTech.show()
 });
@@ -288,6 +299,10 @@ $(document).mouseout(function (e){
 			  menuOpenTech.hide(); // скрываем меню
 		}
 	});
+
+menuFocusTech.on("click", function () {
+    location.href = 'listing.html' //ссылки на странички категорий
+  });
 
 menuFocusHandtool.on("mouseover", function(){   
 menuOpenHandtool.show()
@@ -300,6 +315,9 @@ $(document).mouseout(function (e){
 		}
 	});
 
+menuFocusHandtool.on("click", function () {
+    location.href = 'listing.html' //ссылки на странички категорий
+});
 
 //раскрывающийся пункт подменю (index decktop)
 
@@ -544,12 +562,19 @@ $(window).scroll(function() {
 
 $('.product-card-gallery').owlCarousel({ 
             margin: -190,
-            loop: false,
+            loop: true,
             items: 1,
             nav: false,
             dots: false,
             mouseDrag: true,
             responsive: {
+
+            400: {
+                margin: -190,
+                items: 2,
+                mouseDrag: false, 
+                
+              },
 
             470: {
                 margin: -290,
@@ -978,7 +1003,6 @@ $('.cabinet-menu-item').on('mouseup', function(e){
   $(".partners-board-button").click(function(){
     location.href = 'be-dealer.html'
 });
-
 
 //не применяется на рабочих страничках (удалить при необходимости)
 //раскрывающийся пункт меню (дизайн-система)
