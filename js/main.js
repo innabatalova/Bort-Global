@@ -121,6 +121,10 @@ $('.main-slider').owlCarousel({
     }
  );
 
+
+$('.main__button').on("click", function () {
+    location.href = 'product-card.html' //ссылки на странички категорий
+  });
 //карусель index novelty-slider
 
 //инициализация слайдера
