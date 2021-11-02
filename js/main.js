@@ -27,6 +27,11 @@ $(window).scroll(function() {
   }
 });
 
+//получение размера отступа для внутреннего контента в main-slider
+let left = $(".grid-container").offset().left;
+let marginLeft = left + 15;
+$(".main-card-wrapper").css("left",marginLeft + "px");
+
   //создание кликабельности для всего блока карточки categories
 
   let linkCard = $(".categories-card")
@@ -226,61 +231,74 @@ $('.popular-slider').owlCarousel({
     window.open('product-card.html') //ссылки на странички категорий
   });
 
-//раскрывающийся пункт меню (index decktop)
 
-$(".searchbar__item__tool").click(function(){
-    if(!$(".searchbar__menu__wrapper__tool").hasClass("slided")) return $(".searchbar__menu__wrapper__tool").addClass("slided").slideDown(400);
-    $(".searchbar__menu__wrapper__tool").removeClass("slided").slideUp(400);
+//выпадающее меню searchbar
+let menuFocusTool = $(".searchbar__item__tool");
+let menuOpenTool = $(".searchbar__menu__wrapper__tool");
+let menuFocusClining = $(".searchbar__item__clining");
+let menuOpenClining = $(".searchbar__menu__wrapper__clining");
+let menuFocusCar = $(".searchbar__item__car");
+let menuOpenCar = $(".searchbar__menu__wrapper__car");
+let menuFocusTech = $(".searchbar__item__tech");
+let menuOpenTech = $(".searchbar__menu__wrapper__tech");
+let menuFocusHandtool = $(".searchbar__item__handtool");
+let menuOpenHandtool = $(".searchbar__menu__wrapper__handtool");
+
+menuFocusTool.on("mouseover", function(){   
+  menuOpenTool.show()
 });
 
-$(".searchbar__item__clining").click(function(){
-    if(!$(".searchbar__menu__wrapper__clining").hasClass("slided")) return $(".searchbar__menu__wrapper__clining").addClass("slided").slideDown(400);
-    $(".searchbar__menu__wrapper__clining").removeClass("slided").slideUp(400);
-});
-
-$(".searchbar__item__car").click(function(){
-    if(!$(".searchbar__menu__wrapper__car").hasClass("slided")) return $(".searchbar__menu__wrapper__car").addClass("slided").slideDown(400);
-    $(".searchbar__menu__wrapper__car").removeClass("slided").slideUp(400);
-});
-
-$(".searchbar__item__tech").click(function(){
-    if(!$(".searchbar__menu__wrapper__tech").hasClass("slided")) return $(".searchbar__menu__wrapper__tech").addClass("slided").slideDown(400);
-    $(".searchbar__menu__wrapper__tech").removeClass("slided").slideUp(400);
-});
-
-$(".searchbar__item__handtool").click(function(){
-    if(!$(".searchbar__menu__wrapper__handtool").hasClass("slided")) return $(".searchbar__menu__wrapper__handtool").addClass("slided").slideDown(400);
-    $(".searchbar__menu__wrapper__handtool").removeClass("slided").slideUp(400);
-});
-
-//закрытие меню при клике вне элементов меню
-
-$(document).mouseup(function (e){
-		let closeMenuTool = $(".searchbar__menu__wrapper__tool"); 
-    let closeMenuClining = $(".searchbar__menu__wrapper__clining");
-    let closeMenuCar = $(".searchbar__menu__wrapper__car");
-    let closeMenuTech = $(".searchbar__menu__wrapper__tech");
-    let closeMenuHandtool = $(".searchbar__menu__wrapper__handtool");
-
-		if (!closeMenuTool.is(e.target) // если клик был не по блоку
-		    && closeMenuTool.has(e.target).length === 0) { // и не по его дочерним элементам
-			  closeMenuTool.hide(); // скрываем его
+$(document).mouseout(function (e){
+		if (!menuFocusTool.is(e.target) // если курсор не над элементом
+		    && menuFocusTool.has(e.target).length === 0) { // и не над дочерними элементами
+			  menuOpenTool.hide(); // скрываем меню
 		}
-
-    if (closeMenuClining.has(e.target).length === 0){
-         closeMenuClining.hide();
-     }
-     if (closeMenuCar.has(e.target).length === 0){
-         closeMenuCar.hide();
-     }
-     if (closeMenuTech.has(e.target).length === 0){
-        closeMenuTech.hide();
-     }
-     if (closeMenuHandtool.has(e.target).length === 0){
-         closeMenuHandtool.hide();
-    }
-
 	});
+
+menuFocusClining.on("mouseover", function(){   
+  menuOpenClining.show()
+});
+
+$(document).mouseout(function (e){
+		if (!menuFocusClining.is(e.target) // если курсор не над элементом
+		    && menuFocusClining.has(e.target).length === 0) { // и не над дочерними элементами
+			  menuOpenClining.hide(); // скрываем меню
+		}
+	});
+
+menuFocusCar.on("mouseover", function(){   
+menuOpenCar.show()
+});
+
+$(document).mouseout(function (e){
+		if (!menuFocusCar.is(e.target) // если курсор не над элементом
+		    && menuFocusCar.has(e.target).length === 0) { // и не над дочерними элементами
+			  menuOpenCar.hide(); // скрываем меню
+		}
+	});
+
+menuFocusTech.on("mouseover", function(){   
+menuOpenTech.show()
+});
+
+$(document).mouseout(function (e){
+		if (!menuFocusTech.is(e.target) // если курсор не над элементом
+		    && menuFocusTech.has(e.target).length === 0) { // и не над дочерними элементами
+			  menuOpenTech.hide(); // скрываем меню
+		}
+	});
+
+menuFocusHandtool.on("mouseover", function(){   
+menuOpenHandtool.show()
+});
+
+$(document).mouseout(function (e){
+		if (!menuFocusHandtool.is(e.target) // если курсор не над элементом
+		    && menuFocusHandtool.has(e.target).length === 0) { // и не над дочерними элементами
+			  menuOpenHandtool.hide(); // скрываем меню
+		}
+	});
+
 
 //раскрывающийся пункт подменю (index decktop)
 
@@ -634,13 +652,11 @@ $('.related-slider').owlCarousel({
 );
 
 //ссылка по клику на кнопку "news-view-button"
-
   $(".news-view-button").click(function(){
     location.href = 'news-preview.html'
 });
 
 //всплывающее окно с формой обратной связи
-
   $(".bort-button-orange45_ready").click(function(){
     $(".modal-overlay").addClass("modal-overlay-visible")
 });
@@ -947,11 +963,6 @@ $('.cabinet-menu-item').on('mouseup', function(e){
   $(".partners-board-button").click(function(){
     location.href = 'be-dealer.html'
 });
-
-//получение размера отступа для внутреннего контента в main-slider
-let left = $(".grid-container").offset().left;
-let marginLeft = left + 15;
-$(".main-card-wrapper").css("left",marginLeft + "px");
 
 
 //не применяется на рабочих страничках (удалить при необходимости)
