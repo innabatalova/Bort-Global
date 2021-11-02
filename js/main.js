@@ -266,6 +266,7 @@ $(document).mouseout(function (e){
 		}
 	});
 
+
 menuFocusCar.on("mouseover", function(){   
 menuOpenCar.show()
 });
@@ -302,18 +303,32 @@ $(document).mouseout(function (e){
 
 //раскрывающийся пункт подменю (index decktop)
 
-let openSubMenuTool = $(".searchbar-menu-item-grinders")
+let openSubMenuCordless = $(".searchbar-menu-item-cordless");
+let openSubMenuGrinders = $(".searchbar-menu-item-grinders");
 
-openSubMenuTool.on("mouseover", function(){
-  $(".searchbar__submenu__wrapper__grinders").toggleClass('searchbar__submenu__wrapper__grinders__visability')
+openSubMenuCordless.on("mouseover", function(){   
+ $(".searchbar__submenu__wrapper__cordless").addClass('searchbar__submenu__wrapper__cordless__visability')
 });
 
+$(document).mouseout(function (e){
+		if (!openSubMenuCordless.is(e.target) // если курсор не над элементом
+		    && openSubMenuCordless.has(e.target).length === 0) { // и не над дочерними элементами
+			 $(".searchbar__submenu__wrapper__cordless").removeClass('searchbar__submenu__wrapper__cordless__visability')
+		}
+	});
 
-let openSubMenuCordless = $(".searchbar-menu-item-cordless")
-
-openSubMenuCordless.on("mouseover", function(){
-  $(".searchbar__submenu__wrapper__cordless").toggleClass('searchbar__submenu__wrapper__cordless__visability')
+openSubMenuGrinders.on("mouseover", function(){   
+ $(".searchbar__submenu__wrapper__grinders").addClass('searchbar__submenu__wrapper__grinders__visability')
 });
+
+$(document).mouseout(function (e){
+		if (!openSubMenuGrinders.is(e.target) // если курсор не над элементом
+		    && openSubMenuGrinders.has(e.target).length === 0) { // и не над дочерними элементами
+			 $(".searchbar__submenu__wrapper__grinders").removeClass('searchbar__submenu__wrapper__grinders__visability')
+		}
+	});
+
+
 
 //открытие мобильного меню
 
