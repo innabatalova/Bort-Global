@@ -475,6 +475,13 @@ embed {
 
 .modal-open__visible {
   display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background: rgba(141, 141, 141, 0.7);
 }
 
 .modal-open__form {
@@ -1689,6 +1696,7 @@ embed {
   color: #FFFFFF;
   max-width: 48.5%;
   min-height: 300px;
+  cursor: pointer;
 }
 
 .banner-card:before {
@@ -3013,7 +3021,7 @@ embed {
 .searchbar__menu__topline:after {
   content: '';
   position: absolute;
-  left: 25px;
+  left: 1px;
   bottom: 10px;
   border: 8px solid transparent;
   border-bottom: 8px solid #D9760F;
