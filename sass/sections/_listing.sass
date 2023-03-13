@@ -32,6 +32,37 @@
       padding: 40px
       max-width: 320px
       justify-content: space-between
+      position: relative
+
+            // variant 1
+      // &::after 
+      //   position: absolute
+      //   left: 0
+      //   top: 0
+      //   content: 'Новинкa'
+      //   padding: 5px 25px
+      //   font-family: Russo One
+      //   font-style: normal
+      //   font-weight: normal
+      //   color: white
+      //   text-transform: uppercase
+      //   background-color: orange
+      //   background: linear-gradient(-45deg, transparent 15px, orange 0)
+
+      // variant 2
+      &::after
+        position: absolute
+        left: -37px
+        bottom: 40%
+        content: "Новинкa"
+        padding: 5px 45px
+        font-family: Russo One
+        font-style: normal
+        font-weight: normal
+        color: white
+        text-transform: uppercase
+        background: linear-gradient(-45deg, transparent 25px, #D9760F 0)
+        transform: rotate(45deg)
 
       &-title
         display: flex
@@ -94,6 +125,17 @@
         padding: 20px 15px
         max-width: 30%
 
+        // variant 1
+        &::after
+          font-size: 9px
+          line-height: 12px
+
+        // variant 2
+        // &::after
+          // bottom: 50%
+          // font-size: 9px
+          // line-height: 12px
+
         &-image
           max-width: 115px
           max-height: 115px
@@ -112,13 +154,25 @@
       &-info
         display: none
 
+@media screen and ( max-width: 560px )
+
+  .listing
+
+    &-product
+
+      &-card
+        // variant 2
+        // &::after
+        //   bottom: 60%
+
 @media screen and ( max-width: 420px )
 
   .listing
 
     &-product
 
-      &-title
-
       &-card
         max-width: 48%
+        // variant 2
+        // &::after
+        //   bottom: 50%
